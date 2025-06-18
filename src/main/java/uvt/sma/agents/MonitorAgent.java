@@ -1,5 +1,10 @@
 package uvt.sma.agents;
 
+import jade.domain.DFService;
+import jade.domain.FIPAAgentManagement.DFAgentDescription;
+import jade.domain.FIPAAgentManagement.ServiceDescription;
+import jade.domain.FIPAException;
+import jade.lang.acl.ACLMessage;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import jade.core.Agent;
@@ -13,7 +18,8 @@ import java.util.Set;
 public class MonitorAgent extends Agent {
     private Set<String> scannedFiles = new java.util.HashSet<>();
     private String directory;
-    private Boolean deepScan;
+    private Boolean deepScan;   // true for recursive scan, false for top-level only
+    private DFAgentDescription[] result;    // list of services
     private static final Logger LOGGER = LogManager.getLogger(MonitorAgent.class);
 
     @Override
@@ -30,7 +36,9 @@ public class MonitorAgent extends Agent {
         LOGGER.info("Monitoring directory: {}", directory);
         LOGGER.info("Deep scan enabled: {}", deepScan);
 
+        // behaviour list
         addBehaviour(new ScanFolder());
+        addBehaviour(new SendFileList());
     }
 
     @Override
@@ -49,10 +57,10 @@ public class MonitorAgent extends Agent {
                     Files.walk(Paths.get(directory))
                             .filter(Files::isRegularFile)
                             .forEach(filePath -> {
-                                String fileName = filePath.getFileName().toString();
-                                if (!scannedFiles.contains(fileName)) {
-                                    LOGGER.info("[Deep scan] File detected: {}", fileName);
-                                    scannedFiles.add(fileName);
+                                String scannedFilePath = filePath.toString();
+                                if (!scannedFiles.contains(scannedFilePath)) {
+                                    LOGGER.info("[Deep scan] File detected: {}", scannedFilePath);
+                                    scannedFiles.add(scannedFilePath);
                                 }
                             });
                 } else {
@@ -60,16 +68,50 @@ public class MonitorAgent extends Agent {
                     Files.list(Paths.get(directory))
                             .filter(Files::isRegularFile)
                             .forEach(filePath -> {
-                                String fileName = filePath.getFileName().toString();
-                                if (!scannedFiles.contains(fileName)) {
-                                    LOGGER.info("[Shallow scan] File detected: {}", fileName);
-                                    scannedFiles.add(fileName);
+                                String scannedFilePath = filePath.toString();
+                                if (!scannedFiles.contains(scannedFilePath)) {
+                                    LOGGER.info("[Shallow scan] File detected: {}", scannedFilePath);
+                                    scannedFiles.add(scannedFilePath);
                                 }
                             });
                 }
             } catch (IOException e) {
-                throw new RuntimeException(e);
+                LOGGER.warn("Error scanning directory {}: {}", directory, e.getMessage());
             }
+        }
+
+    }
+
+    private class SendFileList extends OneShotBehaviour {
+        @Override
+        public void action() {
+            myAgent.doWait(2000); // Wait for 2 seconds before sending the file list
+
+            DFAgentDescription dfd = new DFAgentDescription();
+            ServiceDescription sd = new ServiceDescription();
+            sd.setType("classification-coordinator");
+            dfd.addServices(sd);
+
+            try {
+                result = DFService.search(myAgent, dfd);
+
+                if(result.length > 0) {
+                    LOGGER.info("Found {} classification coordinator(s). Sending file list.", result.length);
+
+                    ACLMessage msg = new ACLMessage(ACLMessage.INFORM);
+                    msg.setConversationId("file-list");
+                    msg.setContent(String.join(",", scannedFiles));
+                    msg.addReceiver(result[0].getName());
+
+                    myAgent.send(msg);
+                    LOGGER.info("File list sent to: {}", result[0].getName().getLocalName());
+                } else {
+                    LOGGER.warn("No classification coordinator found.");
+                }
+            } catch (FIPAException e) {
+                LOGGER.error("Failed to send file list: {}", e.getMessage());
+            }
+
         }
     }
 }
