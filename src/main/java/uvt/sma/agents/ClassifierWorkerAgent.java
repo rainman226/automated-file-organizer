@@ -9,6 +9,7 @@ import jade.domain.FIPAException;
 import jade.lang.acl.ACLMessage;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import com.fasterxml.jackson.databind.ObjectMapper;
 
 import java.util.*;
 
@@ -28,6 +29,7 @@ public class ClassifierWorkerAgent extends Agent {
 
             LOGGER.info("Sucesfully processed scan request with {} files.", scannedFiles.size());
 
+            addBehaviour(new SearchForSorters());
             addBehaviour(new ClassifyFiles());
         } else {
             LOGGER.info("No arguments provided to the Classifier Worker Agent.");
@@ -83,13 +85,28 @@ public class ClassifierWorkerAgent extends Agent {
                 fileCategories.get(category).add(filePath);
             }
             LOGGER.info("Classified {} files into {} categories.", scannedFiles.size(), fileCategories.size());
-            for(Map.Entry<String, List<String>> entry : fileCategories.entrySet()) {
-                String category = entry.getKey();
-                List<String> filesInCategory = entry.getValue();
 
-                LOGGER.info("Category: {}, Files: {}", category, filesInCategory.size());
+            // TODO search the service directory for specified classifierss
+            sendClassifiedFilesToSorter(fileCategories);
+            //myAgent.doDelete(); // shut down the agent as we don't need it anymore
+        }
+
+        private void sendClassifiedFilesToSorter(Map<String, List<String>> fileCategories) {
+            try {
+                ObjectMapper objectMapper = new ObjectMapper();
+                String jsonPayload = objectMapper.writeValueAsString(fileCategories);
+
+                ACLMessage msg = new ACLMessage(ACLMessage.INFORM);
+                msg.addReceiver(sorters[0].getName()); // Send to the first sorter found
+                msg.setLanguage("JSON");
+                msg.setOntology("FileClassificationOntology");
+                msg.setConversationId("file-sorting-request");
+                msg.setContent(jsonPayload);
+                send(msg);
+
+            } catch (Exception e) {
+                e.printStackTrace();
             }
-            myAgent.doDelete(); // shut down the agent as we don't need it anymore
         }
     }
 

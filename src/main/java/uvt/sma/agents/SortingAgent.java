@@ -1,5 +1,6 @@
 package uvt.sma.agents;
 
+import com.fasterxml.jackson.core.type.TypeReference;
 import jade.core.Agent;
 import jade.core.behaviours.CyclicBehaviour;
 import jade.core.behaviours.OneShotBehaviour;
@@ -10,6 +11,10 @@ import jade.domain.FIPAException;
 import jade.lang.acl.ACLMessage;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import com.fasterxml.jackson.databind.ObjectMapper;
+
+import java.util.List;
+import java.util.Map;
 
 public class SortingAgent extends Agent {
     private static final long serialVersionUID = 1L;
@@ -54,8 +59,25 @@ public class SortingAgent extends Agent {
         public void action() {
             ACLMessage msg = myAgent.receive();
             if (msg != null && msg.getConversationId().equals("file-sorting-request")) {
-                LOGGER.info("Received message from {} : {}" , msg.getSender().getLocalName() ,msg.getContent());
-                //TODO add logic
+                try {
+                    ObjectMapper objectMapper = new ObjectMapper();
+                    String content = msg.getContent();
+
+                    Map<String, List<String>> fileMap = objectMapper.readValue(
+                            content,
+                            new TypeReference<Map<String, List<String>>>() {}
+                    );
+
+                    fileMap.forEach((category, files) -> {
+                        System.out.println("Category: " + category);
+                        files.forEach(file -> LOGGER.info("File: {}", file));
+
+                        // TODO: move/sort the file
+                    });
+
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
             } else {
                 block(); // Block until a new message arrives
             }
