@@ -1,0 +1,11 @@
+2025-06-18 13:37:29,970 INFO u.s.a.MonitorAgent [monitor] Monitor Agent monitor is starting up.
+2025-06-18 13:37:29,979 INFO u.s.a.MonitorAgent [monitor] Monitoring directory: C:\Users\Asus\Desktop\test
+2025-06-18 13:37:29,980 INFO u.s.a.MonitorAgent [monitor] Deep scan enabled: false
+2025-06-18 13:38:45,267 INFO u.s.a.MonitorAgent [monitor] Monitor Agent monitor is starting up.
+2025-06-18 13:38:45,284 INFO u.s.a.MonitorAgent [monitor] Monitoring directory: C:\Users\Asus\Desktop\test
+2025-06-18 13:38:45,285 INFO u.s.a.MonitorAgent [monitor] Deep scan enabled: false
+2025-06-18 13:38:45,290 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: denis.stanciu00.zip
+2025-06-18 13:38:45,291 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: Proiect-Proiectarea-aplicatiilor-ce-vor-rula-in-cloud.pdf
+2025-06-18 13:38:45,294 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: received_422879007176562.jpg
+2025-06-18 13:38:45,295 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: Referat_HaiostaMichelle.pdf
+2025-06-18 13:38:45,295 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: Screenshot 2023-12-04 104757.png
