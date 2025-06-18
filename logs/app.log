@@ -104,3 +104,449 @@
 2025-06-18 14:51:34,627 INFO u.s.a.MonitorAgent [monitor] File list sent to: manager
 2025-06-18 14:51:34,627 INFO u.s.a.ClassifierManager [manager] Received scan request from monitor: C:\Users\Asus\Desktop\test\denis.stanciu00.zip,C:\Users\Asus\Desktop\test\Proiect-Proiectarea-aplicatiilor-ce-vor-rula-in-cloud.pdf,C:\Users\Asus\Desktop\test\Referat_HaiostaMichelle.pdf,C:\Users\Asus\Desktop\test\received_422879007176562.jpg,C:\Users\Asus\Desktop\test\Screenshot 2023-12-04 104757.png
 2025-06-18 14:51:34,628 INFO u.s.a.ClassifierManager [manager] Processed scan request. Current scanned files: 5
+2025-06-18 15:15:46,875 INFO u.s.a.MonitorAgent [monitor] Monitor Agent monitor is starting up.
+2025-06-18 15:15:46,888 INFO u.s.a.MonitorAgent [monitor] Monitoring directory: C:\Users\Asus\Desktop\test
+2025-06-18 15:15:46,888 INFO u.s.a.MonitorAgent [monitor] Deep scan enabled: false
+2025-06-18 15:15:46,892 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Desktop\test\denis.stanciu00.zip
+2025-06-18 15:15:46,893 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Desktop\test\Proiect-Proiectarea-aplicatiilor-ce-vor-rula-in-cloud.pdf
+2025-06-18 15:15:46,894 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Desktop\test\received_422879007176562.jpg
+2025-06-18 15:15:46,894 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Desktop\test\Referat_HaiostaMichelle.pdf
+2025-06-18 15:15:46,894 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Desktop\test\Screenshot 2023-12-04 104757.png
+2025-06-18 15:15:46,944 INFO u.s.a.ClassifierManager [manager] Classifier Manager Agent manager is starting up.
+2025-06-18 15:15:46,945 INFO u.s.a.ClassifierManager [manager] Registering service: manager-classification-coordinator
+2025-06-18 15:15:46,956 INFO u.s.a.ClassifierManager [manager] Service registered successfully.
+2025-06-18 15:15:48,898 INFO u.s.a.MonitorAgent [monitor] Found 1 classification coordinator(s). Sending file list.
+2025-06-18 15:15:48,898 INFO u.s.a.MonitorAgent [monitor] File list sent to: manager
+2025-06-18 15:15:48,900 INFO u.s.a.ClassifierManager [manager] Received scan request from monitor: C:\Users\Asus\Desktop\test\denis.stanciu00.zip,C:\Users\Asus\Desktop\test\Proiect-Proiectarea-aplicatiilor-ce-vor-rula-in-cloud.pdf,C:\Users\Asus\Desktop\test\Referat_HaiostaMichelle.pdf,C:\Users\Asus\Desktop\test\received_422879007176562.jpg,C:\Users\Asus\Desktop\test\Screenshot 2023-12-04 104757.png
+2025-06-18 15:15:48,900 INFO u.s.a.ClassifierManager [manager] Processed scan request. Current scanned files: 5
+2025-06-18 15:16:32,140 INFO u.s.a.MonitorAgent [monitor] Monitor Agent monitor is starting up.
+2025-06-18 15:16:32,160 INFO u.s.a.MonitorAgent [monitor] Monitoring directory: C:\Users\Asus\Desktop\test
+2025-06-18 15:16:32,160 INFO u.s.a.MonitorAgent [monitor] Deep scan enabled: false
+2025-06-18 15:16:32,168 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Desktop\test\denis.stanciu00.zip
+2025-06-18 15:16:32,169 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Desktop\test\Proiect-Proiectarea-aplicatiilor-ce-vor-rula-in-cloud.pdf
+2025-06-18 15:16:32,170 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Desktop\test\received_422879007176562.jpg
+2025-06-18 15:16:32,170 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Desktop\test\Referat_HaiostaMichelle.pdf
+2025-06-18 15:16:32,170 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Desktop\test\Screenshot 2023-12-04 104757.png
+2025-06-18 15:16:32,173 INFO u.s.a.ClassifierManager [manager] Classifier Manager Agent manager is starting up.
+2025-06-18 15:16:32,175 INFO u.s.a.ClassifierManager [manager] Registering service: manager-classification-coordinator
+2025-06-18 15:16:32,188 INFO u.s.a.ClassifierManager [manager] Service registered successfully.
+2025-06-18 15:16:34,174 INFO u.s.a.MonitorAgent [monitor] Found 1 classification coordinator(s). Sending file list.
+2025-06-18 15:16:34,174 INFO u.s.a.MonitorAgent [monitor] File list sent to: manager
+2025-06-18 15:16:34,175 INFO u.s.a.ClassifierManager [manager] Received scan request from monitor: C:\Users\Asus\Desktop\test\denis.stanciu00.zip,C:\Users\Asus\Desktop\test\Proiect-Proiectarea-aplicatiilor-ce-vor-rula-in-cloud.pdf,C:\Users\Asus\Desktop\test\Referat_HaiostaMichelle.pdf,C:\Users\Asus\Desktop\test\received_422879007176562.jpg,C:\Users\Asus\Desktop\test\Screenshot 2023-12-04 104757.png
+2025-06-18 15:16:34,175 INFO u.s.a.ClassifierManager [manager] Processed scan request. Current scanned files: 5
+2025-06-18 15:16:34,180 ERROR u.s.a.ClassifierManager [manager] Failed to create Classifier Worker Agent: Class uvt.sma.agents.ClassifierWorkerAgent for agent ( agent-identifier :name classifier-worker-1750248994175@192.168.1.17:1099/JADE ) not found - Caused by:  uvt.sma.agents.ClassifierWorkerAgent
+2025-06-18 15:17:18,473 INFO u.s.a.MonitorAgent [monitor] Monitor Agent monitor is starting up.
+2025-06-18 15:17:18,489 INFO u.s.a.MonitorAgent [monitor] Monitoring directory: C:\Users\Asus\Desktop\test
+2025-06-18 15:17:18,490 INFO u.s.a.MonitorAgent [monitor] Deep scan enabled: false
+2025-06-18 15:17:18,497 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Desktop\test\denis.stanciu00.zip
+2025-06-18 15:17:18,497 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Desktop\test\Proiect-Proiectarea-aplicatiilor-ce-vor-rula-in-cloud.pdf
+2025-06-18 15:17:18,499 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Desktop\test\received_422879007176562.jpg
+2025-06-18 15:17:18,499 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Desktop\test\Referat_HaiostaMichelle.pdf
+2025-06-18 15:17:18,499 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Desktop\test\Screenshot 2023-12-04 104757.png
+2025-06-18 15:17:18,500 INFO u.s.a.ClassifierManager [manager] Classifier Manager Agent manager is starting up.
+2025-06-18 15:17:18,502 INFO u.s.a.ClassifierManager [manager] Registering service: manager-classification-coordinator
+2025-06-18 15:17:18,515 INFO u.s.a.ClassifierManager [manager] Service registered successfully.
+2025-06-18 15:17:20,503 INFO u.s.a.MonitorAgent [monitor] Found 1 classification coordinator(s). Sending file list.
+2025-06-18 15:17:20,503 INFO u.s.a.MonitorAgent [monitor] File list sent to: manager
+2025-06-18 15:17:20,503 INFO u.s.a.ClassifierManager [manager] Received scan request from monitor: C:\Users\Asus\Desktop\test\denis.stanciu00.zip,C:\Users\Asus\Desktop\test\Proiect-Proiectarea-aplicatiilor-ce-vor-rula-in-cloud.pdf,C:\Users\Asus\Desktop\test\Referat_HaiostaMichelle.pdf,C:\Users\Asus\Desktop\test\received_422879007176562.jpg,C:\Users\Asus\Desktop\test\Screenshot 2023-12-04 104757.png
+2025-06-18 15:17:20,504 INFO u.s.a.ClassifierManager [manager] Processed scan request. Current scanned files: 5
+2025-06-18 15:17:20,504 INFO u.s.a.ClassifierManager [manager] Trying to create a woker
+2025-06-18 15:17:20,508 ERROR u.s.a.ClassifierManager [manager] Failed to create Classifier Worker Agent: Class uvt.sma.agents.ClassifierWorkerAgent for agent ( agent-identifier :name classifier-worker-1750249040504@192.168.1.17:1099/JADE ) not found - Caused by:  uvt.sma.agents.ClassifierWorkerAgent
+2025-06-18 15:17:40,239 INFO u.s.a.MonitorAgent [monitor] Monitor Agent monitor is starting up.
+2025-06-18 15:17:40,255 INFO u.s.a.MonitorAgent [monitor] Monitoring directory: C:\Users\Asus\Desktop\test
+2025-06-18 15:17:40,255 INFO u.s.a.MonitorAgent [monitor] Deep scan enabled: false
+2025-06-18 15:17:40,264 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Desktop\test\denis.stanciu00.zip
+2025-06-18 15:17:40,265 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Desktop\test\Proiect-Proiectarea-aplicatiilor-ce-vor-rula-in-cloud.pdf
+2025-06-18 15:17:40,266 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Desktop\test\received_422879007176562.jpg
+2025-06-18 15:17:40,267 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Desktop\test\Referat_HaiostaMichelle.pdf
+2025-06-18 15:17:40,267 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Desktop\test\Screenshot 2023-12-04 104757.png
+2025-06-18 15:17:40,274 INFO u.s.a.ClassifierManager [manager] Classifier Manager Agent manager is starting up.
+2025-06-18 15:17:40,276 INFO u.s.a.ClassifierManager [manager] Registering service: manager-classification-coordinator
+2025-06-18 15:17:40,291 INFO u.s.a.ClassifierManager [manager] Service registered successfully.
+2025-06-18 15:17:42,271 INFO u.s.a.MonitorAgent [monitor] Found 1 classification coordinator(s). Sending file list.
+2025-06-18 15:17:42,272 INFO u.s.a.MonitorAgent [monitor] File list sent to: manager
+2025-06-18 15:17:42,272 INFO u.s.a.ClassifierManager [manager] Received scan request from monitor: C:\Users\Asus\Desktop\test\denis.stanciu00.zip,C:\Users\Asus\Desktop\test\Proiect-Proiectarea-aplicatiilor-ce-vor-rula-in-cloud.pdf,C:\Users\Asus\Desktop\test\Referat_HaiostaMichelle.pdf,C:\Users\Asus\Desktop\test\received_422879007176562.jpg,C:\Users\Asus\Desktop\test\Screenshot 2023-12-04 104757.png
+2025-06-18 15:17:42,273 INFO u.s.a.ClassifierManager [manager] Processed scan request. Current scanned files: 5
+2025-06-18 15:17:42,273 INFO u.s.a.ClassifierManager [manager] Trying to create a woker
+2025-06-18 15:17:58,924 INFO u.s.a.MonitorAgent [monitor] Monitor Agent monitor is starting up.
+2025-06-18 15:17:58,936 INFO u.s.a.MonitorAgent [monitor] Monitoring directory: C:\Users\Asus\Desktop\test
+2025-06-18 15:17:58,937 INFO u.s.a.MonitorAgent [monitor] Deep scan enabled: false
+2025-06-18 15:17:58,943 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Desktop\test\denis.stanciu00.zip
+2025-06-18 15:17:58,944 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Desktop\test\Proiect-Proiectarea-aplicatiilor-ce-vor-rula-in-cloud.pdf
+2025-06-18 15:17:58,944 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Desktop\test\received_422879007176562.jpg
+2025-06-18 15:17:58,944 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Desktop\test\Referat_HaiostaMichelle.pdf
+2025-06-18 15:17:58,945 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Desktop\test\Screenshot 2023-12-04 104757.png
+2025-06-18 15:17:58,955 INFO u.s.a.ClassifierManager [manager] Classifier Manager Agent manager is starting up.
+2025-06-18 15:17:58,956 INFO u.s.a.ClassifierManager [manager] Registering service: manager-classification-coordinator
+2025-06-18 15:17:58,970 INFO u.s.a.ClassifierManager [manager] Service registered successfully.
+2025-06-18 15:18:00,949 INFO u.s.a.MonitorAgent [monitor] Found 1 classification coordinator(s). Sending file list.
+2025-06-18 15:18:00,949 INFO u.s.a.MonitorAgent [monitor] File list sent to: manager
+2025-06-18 15:18:00,950 INFO u.s.a.ClassifierManager [manager] Received scan request from monitor: C:\Users\Asus\Desktop\test\denis.stanciu00.zip,C:\Users\Asus\Desktop\test\Proiect-Proiectarea-aplicatiilor-ce-vor-rula-in-cloud.pdf,C:\Users\Asus\Desktop\test\Referat_HaiostaMichelle.pdf,C:\Users\Asus\Desktop\test\received_422879007176562.jpg,C:\Users\Asus\Desktop\test\Screenshot 2023-12-04 104757.png
+2025-06-18 15:18:00,950 INFO u.s.a.ClassifierManager [manager] Processed scan request. Current scanned files: 5
+2025-06-18 15:18:00,950 INFO u.s.a.ClassifierManager [manager] Trying to create a woker
+2025-06-18 15:18:00,955 INFO u.s.a.ClassifierWokerAgent [classifier-worker-1750249080950] Classifier Worker Agent classifier-worker-1750249080950 is starting up.
+2025-06-18 15:18:00,956 INFO u.s.a.ClassifierWokerAgent [classifier-worker-1750249080950] Processed scan request. Current scanned files: 5
+2025-06-18 15:18:00,956 INFO u.s.a.ClassifierWokerAgent [classifier-worker-1750249080950] Sucesfully processed scan request with 5 files.
+2025-06-18 15:19:16,763 INFO u.s.a.MonitorAgent [monitor] Monitor Agent monitor is starting up.
+2025-06-18 15:19:16,782 INFO u.s.a.MonitorAgent [monitor] Monitoring directory: C:\Users\Asus\Desktop\test
+2025-06-18 15:19:16,783 INFO u.s.a.MonitorAgent [monitor] Deep scan enabled: false
+2025-06-18 15:19:16,795 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Desktop\test\denis.stanciu00.zip
+2025-06-18 15:19:16,797 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Desktop\test\Proiect-Proiectarea-aplicatiilor-ce-vor-rula-in-cloud.pdf
+2025-06-18 15:19:16,797 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Desktop\test\received_422879007176562.jpg
+2025-06-18 15:19:16,798 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Desktop\test\Referat_HaiostaMichelle.pdf
+2025-06-18 15:19:16,799 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Desktop\test\Screenshot 2023-12-04 104757.png
+2025-06-18 15:19:16,804 INFO u.s.a.ClassifierManager [manager] Classifier Manager Agent manager is starting up.
+2025-06-18 15:19:16,806 INFO u.s.a.ClassifierManager [manager] Registering service: manager-classification-coordinator
+2025-06-18 15:19:16,820 INFO u.s.a.ClassifierManager [manager] Service registered successfully.
+2025-06-18 15:19:18,803 INFO u.s.a.MonitorAgent [monitor] Found 1 classification coordinator(s). Sending file list.
+2025-06-18 15:19:18,804 INFO u.s.a.MonitorAgent [monitor] File list sent to: manager
+2025-06-18 15:19:18,804 INFO u.s.a.ClassifierManager [manager] Received scan request from monitor: C:\Users\Asus\Desktop\test\denis.stanciu00.zip,C:\Users\Asus\Desktop\test\Proiect-Proiectarea-aplicatiilor-ce-vor-rula-in-cloud.pdf,C:\Users\Asus\Desktop\test\Referat_HaiostaMichelle.pdf,C:\Users\Asus\Desktop\test\received_422879007176562.jpg,C:\Users\Asus\Desktop\test\Screenshot 2023-12-04 104757.png
+2025-06-18 15:19:18,805 INFO u.s.a.ClassifierManager [manager] Processed scan request. Current scanned files: 5
+2025-06-18 15:19:18,805 INFO u.s.a.ClassifierManager [manager] Trying to create a woker
+2025-06-18 15:19:18,828 INFO u.s.a.ClassifierWorkerAgent [classifier-worker-1750249158805] Classifier Worker Agent classifier-worker-1750249158805 is starting up.
+2025-06-18 15:19:18,829 INFO u.s.a.ClassifierWorkerAgent [classifier-worker-1750249158805] Processed scan request. Current scanned files: 5
+2025-06-18 15:19:18,829 INFO u.s.a.ClassifierWorkerAgent [classifier-worker-1750249158805] Sucesfully processed scan request with 5 files.
+2025-06-18 15:23:17,422 INFO u.s.a.MonitorAgent [monitor] Monitor Agent monitor is starting up.
+2025-06-18 15:23:17,433 INFO u.s.a.MonitorAgent [monitor] Monitoring directory: C:\Users\Asus\Desktop\test
+2025-06-18 15:23:17,434 INFO u.s.a.MonitorAgent [monitor] Deep scan enabled: false
+2025-06-18 15:23:17,439 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Desktop\test\denis.stanciu00.zip
+2025-06-18 15:23:17,441 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Desktop\test\Proiect-Proiectarea-aplicatiilor-ce-vor-rula-in-cloud.pdf
+2025-06-18 15:23:17,441 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Desktop\test\received_422879007176562.jpg
+2025-06-18 15:23:17,442 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Desktop\test\Referat_HaiostaMichelle.pdf
+2025-06-18 15:23:17,442 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Desktop\test\Screenshot 2023-12-04 104757.png
+2025-06-18 15:23:17,448 INFO u.s.a.ClassifierManager [manager] Classifier Manager Agent manager is starting up.
+2025-06-18 15:23:17,450 INFO u.s.a.ClassifierManager [manager] Registering service: manager-classification-coordinator
+2025-06-18 15:23:17,464 INFO u.s.a.ClassifierManager [manager] Service registered successfully.
+2025-06-18 15:23:19,451 INFO u.s.a.MonitorAgent [monitor] Found 1 classification coordinator(s). Sending file list.
+2025-06-18 15:23:19,451 INFO u.s.a.MonitorAgent [monitor] File list sent to: manager
+2025-06-18 15:23:19,451 INFO u.s.a.ClassifierManager [manager] Received scan request from monitor: C:\Users\Asus\Desktop\test\denis.stanciu00.zip,C:\Users\Asus\Desktop\test\Proiect-Proiectarea-aplicatiilor-ce-vor-rula-in-cloud.pdf,C:\Users\Asus\Desktop\test\Referat_HaiostaMichelle.pdf,C:\Users\Asus\Desktop\test\received_422879007176562.jpg,C:\Users\Asus\Desktop\test\Screenshot 2023-12-04 104757.png
+2025-06-18 15:23:19,452 INFO u.s.a.ClassifierManager [manager] Processed scan request. Current scanned files: 5
+2025-06-18 15:23:19,471 INFO u.s.a.ClassifierWorkerAgent [classifier-worker-1750249399452] Classifier Worker Agent classifier-worker-1750249399452 is starting up.
+2025-06-18 15:23:19,472 INFO u.s.a.ClassifierWorkerAgent [classifier-worker-1750249399452] Processed scan request. Current scanned files: 5
+2025-06-18 15:23:19,472 INFO u.s.a.ClassifierWorkerAgent [classifier-worker-1750249399452] Sucesfully processed scan request with 5 files.
+2025-06-18 15:23:38,973 INFO u.s.a.ClassifierManager [manager] Classifier Manager Agent manager is starting up.
+2025-06-18 15:23:38,964 INFO u.s.a.MonitorAgent [monitor] Monitor Agent monitor is starting up.
+2025-06-18 15:23:38,975 INFO u.s.a.MonitorAgent [monitor] Monitoring directory: C:\Users\Asus\Desktop\test
+2025-06-18 15:23:38,977 INFO u.s.a.MonitorAgent [monitor] Deep scan enabled: false
+2025-06-18 15:23:38,977 INFO u.s.a.ClassifierManager [manager] Registering service: manager-classification-coordinator
+2025-06-18 15:23:38,984 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Desktop\test\denis.stanciu00.zip
+2025-06-18 15:23:38,985 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Desktop\test\Proiect-Proiectarea-aplicatiilor-ce-vor-rula-in-cloud.pdf
+2025-06-18 15:23:38,985 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Desktop\test\received_422879007176562.jpg
+2025-06-18 15:23:38,986 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Desktop\test\Referat_HaiostaMichelle.pdf
+2025-06-18 15:23:38,986 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Desktop\test\Screenshot 2023-12-04 104757.png
+2025-06-18 15:23:38,988 INFO u.s.a.ClassifierManager [manager] Service registered successfully.
+2025-06-18 15:23:40,990 INFO u.s.a.MonitorAgent [monitor] Found 1 classification coordinator(s). Sending file list.
+2025-06-18 15:23:40,990 INFO u.s.a.MonitorAgent [monitor] File list sent to: manager
+2025-06-18 15:23:40,990 INFO u.s.a.ClassifierManager [manager] Received scan request from monitor: C:\Users\Asus\Desktop\test\denis.stanciu00.zip,C:\Users\Asus\Desktop\test\Proiect-Proiectarea-aplicatiilor-ce-vor-rula-in-cloud.pdf,C:\Users\Asus\Desktop\test\Referat_HaiostaMichelle.pdf,C:\Users\Asus\Desktop\test\received_422879007176562.jpg,C:\Users\Asus\Desktop\test\Screenshot 2023-12-04 104757.png
+2025-06-18 15:23:40,991 INFO u.s.a.ClassifierManager [manager] Processed scan request. Current scanned files: 5
+2025-06-18 15:23:41,023 INFO u.s.a.ClassifierWorkerAgent [classifier-worker-1750249420991] Classifier Worker Agent classifier-worker-1750249420991 is starting up.
+2025-06-18 15:23:41,023 INFO u.s.a.ClassifierWorkerAgent [classifier-worker-1750249420991] Processed scan request. Current scanned files: 5
+2025-06-18 15:23:41,023 INFO u.s.a.ClassifierWorkerAgent [classifier-worker-1750249420991] Sucesfully processed scan request with 5 files.
+2025-06-18 15:23:41,023 INFO u.s.a.ClassifierWorkerAgent [classifier-worker-1750249420991] We are in the ClassifyFiles behaviour of ClassifierWorkerAgent.
+2025-06-18 15:23:41,025 INFO u.s.a.ClassifierWorkerAgent [classifier-worker-1750249420991] File to classify: C:\Users\Asus\Desktop\test\denis.stanciu00.zip
+2025-06-18 15:23:41,025 INFO u.s.a.ClassifierWorkerAgent [classifier-worker-1750249420991] File to classify: C:\Users\Asus\Desktop\test\Proiect-Proiectarea-aplicatiilor-ce-vor-rula-in-cloud.pdf
+2025-06-18 15:23:41,025 INFO u.s.a.ClassifierWorkerAgent [classifier-worker-1750249420991] File to classify: C:\Users\Asus\Desktop\test\Referat_HaiostaMichelle.pdf
+2025-06-18 15:23:41,025 INFO u.s.a.ClassifierWorkerAgent [classifier-worker-1750249420991] File to classify: C:\Users\Asus\Desktop\test\received_422879007176562.jpg
+2025-06-18 15:23:41,025 INFO u.s.a.ClassifierWorkerAgent [classifier-worker-1750249420991] File to classify: C:\Users\Asus\Desktop\test\Screenshot 2023-12-04 104757.png
+2025-06-18 15:23:41,025 INFO u.s.a.ClassifierWorkerAgent [classifier-worker-1750249420991] Classifier Worker Agent classifier-worker-1750249420991 is shutting down.
+2025-06-18 15:33:39,697 INFO u.s.a.MonitorAgent [monitor] Monitor Agent monitor is starting up.
+2025-06-18 15:33:39,711 INFO u.s.a.MonitorAgent [monitor] Monitoring directory: C:\Users\Asus\Desktop\test
+2025-06-18 15:33:39,711 INFO u.s.a.MonitorAgent [monitor] Deep scan enabled: false
+2025-06-18 15:33:39,717 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Desktop\test\denis.stanciu00.zip
+2025-06-18 15:33:39,717 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Desktop\test\Proiect-Proiectarea-aplicatiilor-ce-vor-rula-in-cloud.pdf
+2025-06-18 15:33:39,718 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Desktop\test\received_422879007176562.jpg
+2025-06-18 15:33:39,718 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Desktop\test\Referat_HaiostaMichelle.pdf
+2025-06-18 15:33:39,718 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Desktop\test\Screenshot 2023-12-04 104757.png
+2025-06-18 15:33:39,767 INFO u.s.a.ClassifierManager [manager] Classifier Manager Agent manager is starting up.
+2025-06-18 15:33:39,769 INFO u.s.a.ClassifierManager [manager] Registering service: manager-classification-coordinator
+2025-06-18 15:33:39,783 INFO u.s.a.ClassifierManager [manager] Service registered successfully.
+2025-06-18 15:33:41,721 INFO u.s.a.MonitorAgent [monitor] Found 1 classification coordinator(s). Sending file list.
+2025-06-18 15:33:41,722 INFO u.s.a.MonitorAgent [monitor] File list sent to: manager
+2025-06-18 15:33:41,722 INFO u.s.a.ClassifierManager [manager] Received scan request from monitor: C:\Users\Asus\Desktop\test\denis.stanciu00.zip,C:\Users\Asus\Desktop\test\Proiect-Proiectarea-aplicatiilor-ce-vor-rula-in-cloud.pdf,C:\Users\Asus\Desktop\test\Referat_HaiostaMichelle.pdf,C:\Users\Asus\Desktop\test\received_422879007176562.jpg,C:\Users\Asus\Desktop\test\Screenshot 2023-12-04 104757.png
+2025-06-18 15:33:41,722 INFO u.s.a.ClassifierManager [manager] Processed scan request. Current scanned files: 5
+2025-06-18 15:33:41,722 INFO u.s.a.ClassifierManager [manager] Creating 2 worker agents to process 5 files.
+2025-06-18 15:33:41,724 INFO u.s.a.ClassifierWorkerAgent [worker-1] Classifier Worker Agent worker-1 is starting up.
+2025-06-18 15:33:41,726 INFO u.s.a.ClassifierWorkerAgent [worker-1] Processed scan request. Current scanned files: 3
+2025-06-18 15:33:41,724 INFO u.s.a.ClassifierWorkerAgent [worker-2] Classifier Worker Agent worker-2 is starting up.
+2025-06-18 15:33:41,726 INFO u.s.a.ClassifierWorkerAgent [worker-1] Sucesfully processed scan request with 3 files.
+2025-06-18 15:33:41,727 INFO u.s.a.ClassifierWorkerAgent [worker-2] Processed scan request. Current scanned files: 3
+2025-06-18 15:33:41,727 INFO u.s.a.ClassifierWorkerAgent [worker-1] We are in the ClassifyFiles behaviour of ClassifierWorkerAgent.
+2025-06-18 15:33:41,727 INFO u.s.a.ClassifierWorkerAgent [worker-2] Sucesfully processed scan request with 3 files.
+2025-06-18 15:33:41,728 INFO u.s.a.ClassifierWorkerAgent [worker-2] We are in the ClassifyFiles behaviour of ClassifierWorkerAgent.
+2025-06-18 15:33:41,728 INFO u.s.a.ClassifierWorkerAgent [worker-2] File to classify: C:\Users\Asus\Desktop\test\denis.stanciu00.zip
+2025-06-18 15:33:41,728 INFO u.s.a.ClassifierWorkerAgent [worker-1] File to classify: C:\Users\Asus\Desktop\test\denis.stanciu00.zip
+2025-06-18 15:33:41,728 INFO u.s.a.ClassifierWorkerAgent [worker-2] File to classify: C:\Users\Asus\Desktop\test\Proiect-Proiectarea-aplicatiilor-ce-vor-rula-in-cloud.pdf
+2025-06-18 15:33:41,728 INFO u.s.a.ClassifierWorkerAgent [worker-1] File to classify: C:\Users\Asus\Desktop\test\Proiect-Proiectarea-aplicatiilor-ce-vor-rula-in-cloud.pdf
+2025-06-18 15:33:41,728 INFO u.s.a.ClassifierWorkerAgent [worker-1] File to classify: C:\Users\Asus\Desktop\test\Referat_HaiostaMichelle.pdf
+2025-06-18 15:33:41,728 INFO u.s.a.ClassifierWorkerAgent [worker-2] File to classify: C:\Users\Asus\Desktop\test\Referat_HaiostaMichelle.pdf
+2025-06-18 15:33:41,728 INFO u.s.a.ClassifierWorkerAgent [worker-1] Classifier Worker Agent worker-1 is shutting down.
+2025-06-18 15:33:41,728 INFO u.s.a.ClassifierWorkerAgent [worker-2] Classifier Worker Agent worker-2 is shutting down.
+2025-06-18 15:34:52,606 INFO u.s.a.MonitorAgent [monitor] Monitor Agent monitor is starting up.
+2025-06-18 15:34:52,622 INFO u.s.a.MonitorAgent [monitor] Monitoring directory: C:\Users\Asus\Desktop\test
+2025-06-18 15:34:52,622 INFO u.s.a.MonitorAgent [monitor] Deep scan enabled: false
+2025-06-18 15:34:52,632 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Desktop\test\denis.stanciu00.zip
+2025-06-18 15:34:52,634 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Desktop\test\Proiect-Proiectarea-aplicatiilor-ce-vor-rula-in-cloud.pdf
+2025-06-18 15:34:52,634 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Desktop\test\received_422879007176562.jpg
+2025-06-18 15:34:52,635 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Desktop\test\Referat_HaiostaMichelle.pdf
+2025-06-18 15:34:52,635 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Desktop\test\Screenshot 2023-12-04 104757.png
+2025-06-18 15:34:52,642 INFO u.s.a.ClassifierManager [manager] Classifier Manager Agent manager is starting up.
+2025-06-18 15:34:52,644 INFO u.s.a.ClassifierManager [manager] Registering service: manager-classification-coordinator
+2025-06-18 15:34:52,656 INFO u.s.a.ClassifierManager [manager] Service registered successfully.
+2025-06-18 15:34:54,641 INFO u.s.a.MonitorAgent [monitor] Found 1 classification coordinator(s). Sending file list.
+2025-06-18 15:34:54,641 INFO u.s.a.MonitorAgent [monitor] File list sent to: manager
+2025-06-18 15:34:54,641 INFO u.s.a.ClassifierManager [manager] Received scan request from monitor: C:\Users\Asus\Desktop\test\denis.stanciu00.zip,C:\Users\Asus\Desktop\test\Proiect-Proiectarea-aplicatiilor-ce-vor-rula-in-cloud.pdf,C:\Users\Asus\Desktop\test\Referat_HaiostaMichelle.pdf,C:\Users\Asus\Desktop\test\received_422879007176562.jpg,C:\Users\Asus\Desktop\test\Screenshot 2023-12-04 104757.png
+2025-06-18 15:34:54,641 INFO u.s.a.ClassifierManager [manager] Processed scan request. Current scanned files: 5
+2025-06-18 15:34:54,641 INFO u.s.a.ClassifierManager [manager] Creating 2 worker agents to process 5 files.
+2025-06-18 15:34:54,642 ERROR u.s.a.ClassifierManager [manager] Failed to create worker agents: null
+2025-06-18 15:35:39,838 INFO u.s.a.MonitorAgent [monitor] Monitor Agent monitor is starting up.
+2025-06-18 15:35:39,854 INFO u.s.a.MonitorAgent [monitor] Monitoring directory: C:\Users\Asus\Desktop\test
+2025-06-18 15:35:39,855 INFO u.s.a.MonitorAgent [monitor] Deep scan enabled: false
+2025-06-18 15:35:39,865 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Desktop\test\denis.stanciu00.zip
+2025-06-18 15:35:39,866 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Desktop\test\Proiect-Proiectarea-aplicatiilor-ce-vor-rula-in-cloud.pdf
+2025-06-18 15:35:39,866 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Desktop\test\received_422879007176562.jpg
+2025-06-18 15:35:39,867 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Desktop\test\Referat_HaiostaMichelle.pdf
+2025-06-18 15:35:39,867 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Desktop\test\Screenshot 2023-12-04 104757.png
+2025-06-18 15:35:39,874 INFO u.s.a.ClassifierManager [manager] Classifier Manager Agent manager is starting up.
+2025-06-18 15:35:39,876 INFO u.s.a.ClassifierManager [manager] Registering service: manager-classification-coordinator
+2025-06-18 15:35:39,887 INFO u.s.a.ClassifierManager [manager] Service registered successfully.
+2025-06-18 15:35:41,871 INFO u.s.a.MonitorAgent [monitor] Found 1 classification coordinator(s). Sending file list.
+2025-06-18 15:35:41,871 INFO u.s.a.MonitorAgent [monitor] File list sent to: manager
+2025-06-18 15:35:41,872 INFO u.s.a.ClassifierManager [manager] Received scan request from monitor: C:\Users\Asus\Desktop\test\denis.stanciu00.zip,C:\Users\Asus\Desktop\test\Proiect-Proiectarea-aplicatiilor-ce-vor-rula-in-cloud.pdf,C:\Users\Asus\Desktop\test\Referat_HaiostaMichelle.pdf,C:\Users\Asus\Desktop\test\received_422879007176562.jpg,C:\Users\Asus\Desktop\test\Screenshot 2023-12-04 104757.png
+2025-06-18 15:35:41,872 INFO u.s.a.ClassifierManager [manager] Processed scan request. Current scanned files: 5
+2025-06-18 15:35:41,872 INFO u.s.a.ClassifierManager [manager] Creating 2 worker agents to process 5 files.
+2025-06-18 15:35:41,876 INFO u.s.a.ClassifierWorkerAgent [worker-1] Classifier Worker Agent worker-1 is starting up.
+2025-06-18 15:35:41,877 INFO u.s.a.ClassifierWorkerAgent [worker-1] Processed scan request. Current scanned files: 3
+2025-06-18 15:35:41,876 INFO u.s.a.ClassifierWorkerAgent [worker-2] Classifier Worker Agent worker-2 is starting up.
+2025-06-18 15:35:41,877 INFO u.s.a.ClassifierWorkerAgent [worker-1] Sucesfully processed scan request with 3 files.
+2025-06-18 15:35:41,877 INFO u.s.a.ClassifierWorkerAgent [worker-2] Processed scan request. Current scanned files: 2
+2025-06-18 15:35:41,877 INFO u.s.a.ClassifierWorkerAgent [worker-2] Sucesfully processed scan request with 2 files.
+2025-06-18 15:35:41,877 INFO u.s.a.ClassifierWorkerAgent [worker-1] We are in the ClassifyFiles behaviour of ClassifierWorkerAgent.
+2025-06-18 15:35:41,877 INFO u.s.a.ClassifierWorkerAgent [worker-2] We are in the ClassifyFiles behaviour of ClassifierWorkerAgent.
+2025-06-18 15:35:41,878 INFO u.s.a.ClassifierWorkerAgent [worker-2] File to classify: C:\Users\Asus\Desktop\test\received_422879007176562.jpg
+2025-06-18 15:35:41,878 INFO u.s.a.ClassifierWorkerAgent [worker-1] File to classify: C:\Users\Asus\Desktop\test\denis.stanciu00.zip
+2025-06-18 15:35:41,878 INFO u.s.a.ClassifierWorkerAgent [worker-2] File to classify: C:\Users\Asus\Desktop\test\Screenshot 2023-12-04 104757.png
+2025-06-18 15:35:41,879 INFO u.s.a.ClassifierWorkerAgent [worker-1] File to classify: C:\Users\Asus\Desktop\test\Proiect-Proiectarea-aplicatiilor-ce-vor-rula-in-cloud.pdf
+2025-06-18 15:35:41,879 INFO u.s.a.ClassifierWorkerAgent [worker-1] File to classify: C:\Users\Asus\Desktop\test\Referat_HaiostaMichelle.pdf
+2025-06-18 15:35:41,879 INFO u.s.a.ClassifierWorkerAgent [worker-1] Classifier Worker Agent worker-1 is shutting down.
+2025-06-18 15:35:41,879 INFO u.s.a.ClassifierWorkerAgent [worker-2] Classifier Worker Agent worker-2 is shutting down.
+2025-06-18 15:36:11,373 INFO u.s.a.MonitorAgent [monitor] Monitor Agent monitor is starting up.
+2025-06-18 15:36:11,386 INFO u.s.a.MonitorAgent [monitor] Monitoring directory: C:\Users\Asus\Desktop\test
+2025-06-18 15:36:11,386 INFO u.s.a.ClassifierManager [manager] Classifier Manager Agent manager is starting up.
+2025-06-18 15:36:11,387 INFO u.s.a.MonitorAgent [monitor] Deep scan enabled: true
+2025-06-18 15:36:11,387 INFO u.s.a.ClassifierManager [manager] Registering service: manager-classification-coordinator
+2025-06-18 15:36:11,398 INFO u.s.a.MonitorAgent [monitor] [Deep scan] File detected: C:\Users\Asus\Desktop\test\denis.stanciu00.zip
+2025-06-18 15:36:11,401 INFO u.s.a.MonitorAgent [monitor] [Deep scan] File detected: C:\Users\Asus\Desktop\test\folder\2025-Lab7_Modelare-Domeniu.pdf
+2025-06-18 15:36:11,402 INFO u.s.a.MonitorAgent [monitor] [Deep scan] File detected: C:\Users\Asus\Desktop\test\folder\keyr1new.ppk
+2025-06-18 15:36:11,403 INFO u.s.a.MonitorAgent [monitor] [Deep scan] File detected: C:\Users\Asus\Desktop\test\folder\lab2lab3
+2025-06-18 15:36:11,404 INFO u.s.a.ClassifierManager [manager] Service registered successfully.
+2025-06-18 15:36:11,405 INFO u.s.a.MonitorAgent [monitor] [Deep scan] File detected: C:\Users\Asus\Desktop\test\Proiect-Proiectarea-aplicatiilor-ce-vor-rula-in-cloud.pdf
+2025-06-18 15:36:11,406 INFO u.s.a.MonitorAgent [monitor] [Deep scan] File detected: C:\Users\Asus\Desktop\test\received_422879007176562.jpg
+2025-06-18 15:36:11,406 INFO u.s.a.MonitorAgent [monitor] [Deep scan] File detected: C:\Users\Asus\Desktop\test\Referat_HaiostaMichelle.pdf
+2025-06-18 15:36:11,407 INFO u.s.a.MonitorAgent [monitor] [Deep scan] File detected: C:\Users\Asus\Desktop\test\Screenshot 2023-12-04 104757.png
+2025-06-18 15:36:13,410 INFO u.s.a.MonitorAgent [monitor] Found 1 classification coordinator(s). Sending file list.
+2025-06-18 15:36:13,411 INFO u.s.a.MonitorAgent [monitor] File list sent to: manager
+2025-06-18 15:36:13,411 INFO u.s.a.ClassifierManager [manager] Received scan request from monitor: C:\Users\Asus\Desktop\test\denis.stanciu00.zip,C:\Users\Asus\Desktop\test\Proiect-Proiectarea-aplicatiilor-ce-vor-rula-in-cloud.pdf,C:\Users\Asus\Desktop\test\folder\keyr1new.ppk,C:\Users\Asus\Desktop\test\Referat_HaiostaMichelle.pdf,C:\Users\Asus\Desktop\test\folder\2025-Lab7_Modelare-Domeniu.pdf,C:\Users\Asus\Desktop\test\folder\lab2lab3,C:\Users\Asus\Desktop\test\received_422879007176562.jpg,C:\Users\Asus\Desktop\test\Screenshot 2023-12-04 104757.png
+2025-06-18 15:36:13,412 INFO u.s.a.ClassifierManager [manager] Processed scan request. Current scanned files: 8
+2025-06-18 15:36:13,412 INFO u.s.a.ClassifierManager [manager] Creating 3 worker agents to process 8 files.
+2025-06-18 15:36:13,415 INFO u.s.a.ClassifierWorkerAgent [worker-1] Classifier Worker Agent worker-1 is starting up.
+2025-06-18 15:36:13,415 INFO u.s.a.ClassifierWorkerAgent [worker-2] Classifier Worker Agent worker-2 is starting up.
+2025-06-18 15:36:13,416 INFO u.s.a.ClassifierWorkerAgent [worker-1] Processed scan request. Current scanned files: 3
+2025-06-18 15:36:13,416 INFO u.s.a.ClassifierWorkerAgent [worker-2] Processed scan request. Current scanned files: 3
+2025-06-18 15:36:13,416 INFO u.s.a.ClassifierWorkerAgent [worker-1] Sucesfully processed scan request with 3 files.
+2025-06-18 15:36:13,416 INFO u.s.a.ClassifierWorkerAgent [worker-2] Sucesfully processed scan request with 3 files.
+2025-06-18 15:36:13,416 INFO u.s.a.ClassifierWorkerAgent [worker-2] We are in the ClassifyFiles behaviour of ClassifierWorkerAgent.
+2025-06-18 15:36:13,416 INFO u.s.a.ClassifierWorkerAgent [worker-3] Classifier Worker Agent worker-3 is starting up.
+2025-06-18 15:36:13,416 INFO u.s.a.ClassifierWorkerAgent [worker-1] We are in the ClassifyFiles behaviour of ClassifierWorkerAgent.
+2025-06-18 15:36:13,418 INFO u.s.a.ClassifierWorkerAgent [worker-3] Processed scan request. Current scanned files: 2
+2025-06-18 15:36:13,418 INFO u.s.a.ClassifierWorkerAgent [worker-3] Sucesfully processed scan request with 2 files.
+2025-06-18 15:36:13,418 INFO u.s.a.ClassifierWorkerAgent [worker-3] We are in the ClassifyFiles behaviour of ClassifierWorkerAgent.
+2025-06-18 15:36:13,419 INFO u.s.a.ClassifierWorkerAgent [worker-1] File to classify: C:\Users\Asus\Desktop\test\denis.stanciu00.zip
+2025-06-18 15:36:13,419 INFO u.s.a.ClassifierWorkerAgent [worker-2] File to classify: C:\Users\Asus\Desktop\test\Referat_HaiostaMichelle.pdf
+2025-06-18 15:36:13,419 INFO u.s.a.ClassifierWorkerAgent [worker-3] File to classify: C:\Users\Asus\Desktop\test\received_422879007176562.jpg
+2025-06-18 15:36:13,419 INFO u.s.a.ClassifierWorkerAgent [worker-1] File to classify: C:\Users\Asus\Desktop\test\Proiect-Proiectarea-aplicatiilor-ce-vor-rula-in-cloud.pdf
+2025-06-18 15:36:13,419 INFO u.s.a.ClassifierWorkerAgent [worker-2] File to classify: C:\Users\Asus\Desktop\test\folder\2025-Lab7_Modelare-Domeniu.pdf
+2025-06-18 15:36:13,419 INFO u.s.a.ClassifierWorkerAgent [worker-3] File to classify: C:\Users\Asus\Desktop\test\Screenshot 2023-12-04 104757.png
+2025-06-18 15:36:13,419 INFO u.s.a.ClassifierWorkerAgent [worker-1] File to classify: C:\Users\Asus\Desktop\test\folder\keyr1new.ppk
+2025-06-18 15:36:13,419 INFO u.s.a.ClassifierWorkerAgent [worker-2] File to classify: C:\Users\Asus\Desktop\test\folder\lab2lab3
+2025-06-18 15:36:13,420 INFO u.s.a.ClassifierWorkerAgent [worker-1] Classifier Worker Agent worker-1 is shutting down.
+2025-06-18 15:36:13,420 INFO u.s.a.ClassifierWorkerAgent [worker-3] Classifier Worker Agent worker-3 is shutting down.
+2025-06-18 15:36:13,420 INFO u.s.a.ClassifierWorkerAgent [worker-2] Classifier Worker Agent worker-2 is shutting down.
+2025-06-18 15:37:00,530 INFO u.s.a.ClassifierManager [manager] Classifier Manager Agent manager is starting up.
+2025-06-18 15:37:00,526 INFO u.s.a.MonitorAgent [monitor] Monitor Agent monitor is starting up.
+2025-06-18 15:37:00,533 INFO u.s.a.MonitorAgent [monitor] Monitoring directory: C:\Users\Asus\Desktop\test
+2025-06-18 15:37:00,534 INFO u.s.a.MonitorAgent [monitor] Deep scan enabled: true
+2025-06-18 15:37:00,534 INFO u.s.a.ClassifierManager [manager] Registering service: manager-classification-coordinator
+2025-06-18 15:37:00,546 INFO u.s.a.MonitorAgent [monitor] [Deep scan] File detected: C:\Users\Asus\Desktop\test\denis.stanciu00.zip
+2025-06-18 15:37:00,548 INFO u.s.a.MonitorAgent [monitor] [Deep scan] File detected: C:\Users\Asus\Desktop\test\folder\2025-Lab7_Modelare-Domeniu.pdf
+2025-06-18 15:37:00,549 INFO u.s.a.MonitorAgent [monitor] [Deep scan] File detected: C:\Users\Asus\Desktop\test\folder\keyr1new.ppk
+2025-06-18 15:37:00,550 INFO u.s.a.MonitorAgent [monitor] [Deep scan] File detected: C:\Users\Asus\Desktop\test\folder\lab2lab3
+2025-06-18 15:37:00,550 INFO u.s.a.MonitorAgent [monitor] [Deep scan] File detected: C:\Users\Asus\Desktop\test\Proiect-Proiectarea-aplicatiilor-ce-vor-rula-in-cloud.pdf
+2025-06-18 15:37:00,551 INFO u.s.a.MonitorAgent [monitor] [Deep scan] File detected: C:\Users\Asus\Desktop\test\received_422879007176562.jpg
+2025-06-18 15:37:00,551 INFO u.s.a.MonitorAgent [monitor] [Deep scan] File detected: C:\Users\Asus\Desktop\test\Referat_HaiostaMichelle.pdf
+2025-06-18 15:37:00,552 INFO u.s.a.ClassifierManager [manager] Service registered successfully.
+2025-06-18 15:37:00,552 INFO u.s.a.MonitorAgent [monitor] [Deep scan] File detected: C:\Users\Asus\Desktop\test\Screenshot 2023-12-04 104757.png
+2025-06-18 15:37:02,557 INFO u.s.a.MonitorAgent [monitor] Found 1 classification coordinator(s). Sending file list.
+2025-06-18 15:37:02,558 INFO u.s.a.MonitorAgent [monitor] File list sent to: manager
+2025-06-18 15:37:02,558 INFO u.s.a.ClassifierManager [manager] Received scan request from monitor: C:\Users\Asus\Desktop\test\denis.stanciu00.zip,C:\Users\Asus\Desktop\test\Proiect-Proiectarea-aplicatiilor-ce-vor-rula-in-cloud.pdf,C:\Users\Asus\Desktop\test\folder\keyr1new.ppk,C:\Users\Asus\Desktop\test\Referat_HaiostaMichelle.pdf,C:\Users\Asus\Desktop\test\folder\2025-Lab7_Modelare-Domeniu.pdf,C:\Users\Asus\Desktop\test\folder\lab2lab3,C:\Users\Asus\Desktop\test\received_422879007176562.jpg,C:\Users\Asus\Desktop\test\Screenshot 2023-12-04 104757.png
+2025-06-18 15:37:02,559 INFO u.s.a.ClassifierManager [manager] Processed scan request. Current scanned files: 8
+2025-06-18 15:37:02,559 INFO u.s.a.ClassifierManager [manager] Creating 3 worker agents to process 8 files.
+2025-06-18 15:37:02,562 INFO u.s.a.ClassifierWorkerAgent [worker-1] Classifier Worker Agent worker-1 is starting up.
+2025-06-18 15:37:02,563 INFO u.s.a.ClassifierWorkerAgent [worker-2] Classifier Worker Agent worker-2 is starting up.
+2025-06-18 15:37:02,564 INFO u.s.a.ClassifierWorkerAgent [worker-1] Processed scan request. Current scanned files: 3
+2025-06-18 15:37:02,564 INFO u.s.a.ClassifierWorkerAgent [worker-2] Processed scan request. Current scanned files: 3
+2025-06-18 15:37:02,564 INFO u.s.a.ClassifierWorkerAgent [worker-1] Sucesfully processed scan request with 3 files.
+2025-06-18 15:37:02,564 INFO u.s.a.ClassifierWorkerAgent [worker-2] Sucesfully processed scan request with 3 files.
+2025-06-18 15:37:02,564 INFO u.s.a.ClassifierWorkerAgent [worker-1] We are in the ClassifyFiles behaviour of ClassifierWorkerAgent.
+2025-06-18 15:37:02,564 INFO u.s.a.ClassifierWorkerAgent [worker-2] We are in the ClassifyFiles behaviour of ClassifierWorkerAgent.
+2025-06-18 15:37:02,564 INFO u.s.a.ClassifierWorkerAgent [worker-3] Classifier Worker Agent worker-3 is starting up.
+2025-06-18 15:37:02,564 INFO u.s.a.ClassifierWorkerAgent [worker-3] Processed scan request. Current scanned files: 2
+2025-06-18 15:37:02,565 INFO u.s.a.ClassifierWorkerAgent [worker-3] Sucesfully processed scan request with 2 files.
+2025-06-18 15:37:02,565 INFO u.s.a.ClassifierWorkerAgent [worker-3] We are in the ClassifyFiles behaviour of ClassifierWorkerAgent.
+2025-06-18 15:37:02,565 INFO u.s.a.ClassifierWorkerAgent [worker-2] File to classify: C:\Users\Asus\Desktop\test\Referat_HaiostaMichelle.pdf
+2025-06-18 15:37:02,565 INFO u.s.a.ClassifierWorkerAgent [worker-1] File to classify: C:\Users\Asus\Desktop\test\denis.stanciu00.zip
+2025-06-18 15:37:02,565 INFO u.s.a.ClassifierWorkerAgent [worker-3] File to classify: C:\Users\Asus\Desktop\test\received_422879007176562.jpg
+2025-06-18 15:37:02,565 INFO u.s.a.ClassifierWorkerAgent [worker-2] File to classify: C:\Users\Asus\Desktop\test\folder\2025-Lab7_Modelare-Domeniu.pdf
+2025-06-18 15:37:02,565 INFO u.s.a.ClassifierWorkerAgent [worker-1] File to classify: C:\Users\Asus\Desktop\test\Proiect-Proiectarea-aplicatiilor-ce-vor-rula-in-cloud.pdf
+2025-06-18 15:37:02,565 INFO u.s.a.ClassifierWorkerAgent [worker-3] File to classify: C:\Users\Asus\Desktop\test\Screenshot 2023-12-04 104757.png
+2025-06-18 15:37:02,565 INFO u.s.a.ClassifierWorkerAgent [worker-2] File to classify: C:\Users\Asus\Desktop\test\folder\lab2lab3
+2025-06-18 15:37:02,566 INFO u.s.a.ClassifierWorkerAgent [worker-1] File to classify: C:\Users\Asus\Desktop\test\folder\keyr1new.ppk
+2025-06-18 15:37:02,566 INFO u.s.a.ClassifierWorkerAgent [worker-2] Classifier Worker Agent worker-2 is shutting down.
+2025-06-18 15:37:02,566 INFO u.s.a.ClassifierWorkerAgent [worker-3] Classifier Worker Agent worker-3 is shutting down.
+2025-06-18 15:37:02,566 INFO u.s.a.ClassifierWorkerAgent [worker-1] Classifier Worker Agent worker-1 is shutting down.
+2025-06-18 15:37:59,864 INFO u.s.a.MonitorAgent [monitor] Monitor Agent monitor is starting up.
+2025-06-18 15:37:59,867 INFO u.s.a.ClassifierManager [manager] Classifier Manager Agent manager is starting up.
+2025-06-18 15:37:59,871 INFO u.s.a.MonitorAgent [monitor] Monitoring directory: C:\Users\Asus\Desktop\test
+2025-06-18 15:37:59,872 INFO u.s.a.MonitorAgent [monitor] Deep scan enabled: true
+2025-06-18 15:37:59,872 INFO u.s.a.ClassifierManager [manager] Registering service: manager-classification-coordinator
+2025-06-18 15:37:59,881 INFO u.s.a.MonitorAgent [monitor] [Deep scan] File detected: C:\Users\Asus\Desktop\test\denis.stanciu00.zip
+2025-06-18 15:37:59,882 INFO u.s.a.MonitorAgent [monitor] [Deep scan] File detected: C:\Users\Asus\Desktop\test\folder\2025-Lab7_Modelare-Domeniu.pdf
+2025-06-18 15:37:59,883 INFO u.s.a.MonitorAgent [monitor] [Deep scan] File detected: C:\Users\Asus\Desktop\test\folder\keyr1new.ppk
+2025-06-18 15:37:59,883 INFO u.s.a.MonitorAgent [monitor] [Deep scan] File detected: C:\Users\Asus\Desktop\test\folder\lab2lab3
+2025-06-18 15:37:59,884 INFO u.s.a.MonitorAgent [monitor] [Deep scan] File detected: C:\Users\Asus\Desktop\test\Proiect-Proiectarea-aplicatiilor-ce-vor-rula-in-cloud.pdf
+2025-06-18 15:37:59,884 INFO u.s.a.MonitorAgent [monitor] [Deep scan] File detected: C:\Users\Asus\Desktop\test\received_422879007176562.jpg
+2025-06-18 15:37:59,885 INFO u.s.a.MonitorAgent [monitor] [Deep scan] File detected: C:\Users\Asus\Desktop\test\Referat_HaiostaMichelle.pdf
+2025-06-18 15:37:59,885 INFO u.s.a.MonitorAgent [monitor] [Deep scan] File detected: C:\Users\Asus\Desktop\test\Screenshot 2023-12-04 104757.png
+2025-06-18 15:37:59,885 INFO u.s.a.ClassifierManager [manager] Service registered successfully.
+2025-06-18 15:38:01,888 INFO u.s.a.MonitorAgent [monitor] Found 1 classification coordinator(s). Sending file list.
+2025-06-18 15:38:01,888 INFO u.s.a.MonitorAgent [monitor] File list sent to: manager
+2025-06-18 15:38:01,889 INFO u.s.a.ClassifierManager [manager] Received scan request from monitor: C:\Users\Asus\Desktop\test\denis.stanciu00.zip,C:\Users\Asus\Desktop\test\Proiect-Proiectarea-aplicatiilor-ce-vor-rula-in-cloud.pdf,C:\Users\Asus\Desktop\test\folder\keyr1new.ppk,C:\Users\Asus\Desktop\test\Referat_HaiostaMichelle.pdf,C:\Users\Asus\Desktop\test\folder\2025-Lab7_Modelare-Domeniu.pdf,C:\Users\Asus\Desktop\test\folder\lab2lab3,C:\Users\Asus\Desktop\test\received_422879007176562.jpg,C:\Users\Asus\Desktop\test\Screenshot 2023-12-04 104757.png
+2025-06-18 15:38:01,889 INFO u.s.a.ClassifierManager [manager] Processed scan request. Current scanned files: 8
+2025-06-18 15:38:01,889 INFO u.s.a.ClassifierManager [manager] Creating 3 worker agents to process 8 files.
+2025-06-18 15:38:01,892 INFO u.s.a.ClassifierWorkerAgent [worker-1] Classifier Worker Agent worker-1 is starting up.
+2025-06-18 15:38:01,893 INFO u.s.a.ClassifierWorkerAgent [worker-1] Processed scan request. Current scanned files: 3
+2025-06-18 15:38:01,893 INFO u.s.a.ClassifierWorkerAgent [worker-3] Classifier Worker Agent worker-3 is starting up.
+2025-06-18 15:38:01,892 INFO u.s.a.ClassifierWorkerAgent [worker-2] Classifier Worker Agent worker-2 is starting up.
+2025-06-18 15:38:01,893 INFO u.s.a.ClassifierWorkerAgent [worker-1] Sucesfully processed scan request with 3 files.
+2025-06-18 15:38:01,893 INFO u.s.a.ClassifierWorkerAgent [worker-3] Processed scan request. Current scanned files: 2
+2025-06-18 15:38:01,893 INFO u.s.a.ClassifierWorkerAgent [worker-2] Processed scan request. Current scanned files: 3
+2025-06-18 15:38:01,893 INFO u.s.a.ClassifierWorkerAgent [worker-3] Sucesfully processed scan request with 2 files.
+2025-06-18 15:38:01,893 INFO u.s.a.ClassifierWorkerAgent [worker-2] Sucesfully processed scan request with 3 files.
+2025-06-18 15:38:01,893 INFO u.s.a.ClassifierWorkerAgent [worker-1] We are in the ClassifyFiles behaviour of ClassifierWorkerAgent.
+2025-06-18 15:38:01,893 INFO u.s.a.ClassifierWorkerAgent [worker-3] We are in the ClassifyFiles behaviour of ClassifierWorkerAgent.
+2025-06-18 15:38:01,893 INFO u.s.a.ClassifierWorkerAgent [worker-2] We are in the ClassifyFiles behaviour of ClassifierWorkerAgent.
+2025-06-18 15:38:01,895 INFO u.s.a.ClassifierWorkerAgent [worker-3] File to classify: C:\Users\Asus\Desktop\test\received_422879007176562.jpg
+2025-06-18 15:38:01,895 INFO u.s.a.ClassifierWorkerAgent [worker-2] File to classify: C:\Users\Asus\Desktop\test\Referat_HaiostaMichelle.pdf
+2025-06-18 15:38:01,895 INFO u.s.a.ClassifierWorkerAgent [worker-1] File to classify: C:\Users\Asus\Desktop\test\denis.stanciu00.zip
+2025-06-18 15:38:01,895 INFO u.s.a.ClassifierWorkerAgent [worker-3] File to classify: C:\Users\Asus\Desktop\test\Screenshot 2023-12-04 104757.png
+2025-06-18 15:38:01,895 INFO u.s.a.ClassifierWorkerAgent [worker-2] File to classify: C:\Users\Asus\Desktop\test\folder\2025-Lab7_Modelare-Domeniu.pdf
+2025-06-18 15:38:01,895 INFO u.s.a.ClassifierWorkerAgent [worker-1] File to classify: C:\Users\Asus\Desktop\test\Proiect-Proiectarea-aplicatiilor-ce-vor-rula-in-cloud.pdf
+2025-06-18 15:38:01,896 INFO u.s.a.ClassifierWorkerAgent [worker-2] File to classify: C:\Users\Asus\Desktop\test\folder\lab2lab3
+2025-06-18 15:38:01,896 INFO u.s.a.ClassifierWorkerAgent [worker-1] File to classify: C:\Users\Asus\Desktop\test\folder\keyr1new.ppk
+2025-06-18 15:38:01,896 INFO u.s.a.ClassifierWorkerAgent [worker-2] Classifier Worker Agent worker-2 is shutting down.
+2025-06-18 15:38:01,896 INFO u.s.a.ClassifierWorkerAgent [worker-1] Classifier Worker Agent worker-1 is shutting down.
+2025-06-18 15:38:01,896 INFO u.s.a.ClassifierWorkerAgent [worker-3] Classifier Worker Agent worker-3 is shutting down.
+2025-06-18 15:39:18,557 INFO u.s.a.MonitorAgent [monitor] Monitor Agent monitor is starting up.
+2025-06-18 15:39:18,562 INFO u.s.a.ClassifierManager [manager] Classifier Manager Agent manager is starting up.
+2025-06-18 15:39:18,563 INFO u.s.a.MonitorAgent [monitor] Monitoring directory: C:\Users\Asus\Desktop\test
+2025-06-18 15:39:18,563 INFO u.s.a.MonitorAgent [monitor] Deep scan enabled: true
+2025-06-18 15:39:18,563 INFO u.s.a.ClassifierManager [manager] Registering service: manager-classification-coordinator
+2025-06-18 15:39:18,570 INFO u.s.a.MonitorAgent [monitor] [Deep scan] File detected: C:\Users\Asus\Desktop\test\denis.stanciu00.zip
+2025-06-18 15:39:18,571 INFO u.s.a.MonitorAgent [monitor] [Deep scan] File detected: C:\Users\Asus\Desktop\test\folder\2025-Lab7_Modelare-Domeniu.pdf
+2025-06-18 15:39:18,572 INFO u.s.a.MonitorAgent [monitor] [Deep scan] File detected: C:\Users\Asus\Desktop\test\folder\keyr1new.ppk
+2025-06-18 15:39:18,573 INFO u.s.a.MonitorAgent [monitor] [Deep scan] File detected: C:\Users\Asus\Desktop\test\folder\lab2lab3
+2025-06-18 15:39:18,574 INFO u.s.a.MonitorAgent [monitor] [Deep scan] File detected: C:\Users\Asus\Desktop\test\Proiect-Proiectarea-aplicatiilor-ce-vor-rula-in-cloud.pdf
+2025-06-18 15:39:18,574 INFO u.s.a.MonitorAgent [monitor] [Deep scan] File detected: C:\Users\Asus\Desktop\test\received_422879007176562.jpg
+2025-06-18 15:39:18,575 INFO u.s.a.MonitorAgent [monitor] [Deep scan] File detected: C:\Users\Asus\Desktop\test\Referat_HaiostaMichelle.pdf
+2025-06-18 15:39:18,575 INFO u.s.a.MonitorAgent [monitor] [Deep scan] File detected: C:\Users\Asus\Desktop\test\Screenshot 2023-12-04 104757.png
+2025-06-18 15:39:18,578 INFO u.s.a.ClassifierManager [manager] Service registered successfully.
+2025-06-18 15:39:20,578 INFO u.s.a.MonitorAgent [monitor] Found 1 classification coordinator(s). Sending file list.
+2025-06-18 15:39:20,579 INFO u.s.a.MonitorAgent [monitor] File list sent to: manager
+2025-06-18 15:39:20,579 INFO u.s.a.ClassifierManager [manager] Received scan request from monitor: C:\Users\Asus\Desktop\test\denis.stanciu00.zip,C:\Users\Asus\Desktop\test\Proiect-Proiectarea-aplicatiilor-ce-vor-rula-in-cloud.pdf,C:\Users\Asus\Desktop\test\folder\keyr1new.ppk,C:\Users\Asus\Desktop\test\Referat_HaiostaMichelle.pdf,C:\Users\Asus\Desktop\test\folder\2025-Lab7_Modelare-Domeniu.pdf,C:\Users\Asus\Desktop\test\folder\lab2lab3,C:\Users\Asus\Desktop\test\received_422879007176562.jpg,C:\Users\Asus\Desktop\test\Screenshot 2023-12-04 104757.png
+2025-06-18 15:39:20,580 INFO u.s.a.ClassifierManager [manager] Processed scan request. Current scanned files: 8
+2025-06-18 15:39:20,580 INFO u.s.a.ClassifierManager [manager] Creating 3 worker agents to process 8 files.
+2025-06-18 15:39:20,582 INFO u.s.a.ClassifierWorkerAgent [worker-1] Classifier Worker Agent worker-1 is starting up.
+2025-06-18 15:39:20,583 INFO u.s.a.ClassifierWorkerAgent [worker-1] Processed scan request. Current scanned files: 3
+2025-06-18 15:39:20,583 INFO u.s.a.ClassifierWorkerAgent [worker-1] Sucesfully processed scan request with 3 files.
+2025-06-18 15:39:20,584 INFO u.s.a.ClassifierWorkerAgent [worker-1] We are in the ClassifyFiles behaviour of ClassifierWorkerAgent.
+2025-06-18 15:39:20,583 INFO u.s.a.ClassifierWorkerAgent [worker-2] Classifier Worker Agent worker-2 is starting up.
+2025-06-18 15:39:20,584 INFO u.s.a.ClassifierWorkerAgent [worker-2] Processed scan request. Current scanned files: 3
+2025-06-18 15:39:20,584 INFO u.s.a.ClassifierWorkerAgent [worker-2] Sucesfully processed scan request with 3 files.
+2025-06-18 15:39:20,584 INFO u.s.a.ClassifierWorkerAgent [worker-3] Classifier Worker Agent worker-3 is starting up.
+2025-06-18 15:39:20,584 INFO u.s.a.ClassifierWorkerAgent [worker-2] We are in the ClassifyFiles behaviour of ClassifierWorkerAgent.
+2025-06-18 15:39:20,584 INFO u.s.a.ClassifierWorkerAgent [worker-3] Processed scan request. Current scanned files: 2
+2025-06-18 15:39:20,585 INFO u.s.a.ClassifierWorkerAgent [worker-3] Sucesfully processed scan request with 2 files.
+2025-06-18 15:39:20,585 INFO u.s.a.ClassifierWorkerAgent [worker-3] We are in the ClassifyFiles behaviour of ClassifierWorkerAgent.
+2025-06-18 15:39:20,585 INFO u.s.a.ClassifierWorkerAgent [worker-2] File to classify: C:\Users\Asus\Desktop\test\Referat_HaiostaMichelle.pdf
+2025-06-18 15:39:20,585 INFO u.s.a.ClassifierWorkerAgent [worker-3] File to classify: C:\Users\Asus\Desktop\test\received_422879007176562.jpg
+2025-06-18 15:39:20,585 INFO u.s.a.ClassifierWorkerAgent [worker-2] File to classify: C:\Users\Asus\Desktop\test\folder\2025-Lab7_Modelare-Domeniu.pdf
+2025-06-18 15:39:20,585 INFO u.s.a.ClassifierWorkerAgent [worker-1] File to classify: C:\Users\Asus\Desktop\test\denis.stanciu00.zip
+2025-06-18 15:39:20,585 INFO u.s.a.ClassifierWorkerAgent [worker-3] File to classify: C:\Users\Asus\Desktop\test\Screenshot 2023-12-04 104757.png
+2025-06-18 15:39:20,585 INFO u.s.a.ClassifierWorkerAgent [worker-2] File to classify: C:\Users\Asus\Desktop\test\folder\lab2lab3
+2025-06-18 15:39:20,585 INFO u.s.a.ClassifierWorkerAgent [worker-1] File to classify: C:\Users\Asus\Desktop\test\Proiect-Proiectarea-aplicatiilor-ce-vor-rula-in-cloud.pdf
+2025-06-18 15:39:20,585 INFO u.s.a.ClassifierWorkerAgent [worker-3] Classifier Worker Agent worker-3 is shutting down.
+2025-06-18 15:39:20,585 INFO u.s.a.ClassifierWorkerAgent [worker-2] Classifier Worker Agent worker-2 is shutting down.
+2025-06-18 15:39:20,585 INFO u.s.a.ClassifierWorkerAgent [worker-1] File to classify: C:\Users\Asus\Desktop\test\folder\keyr1new.ppk
+2025-06-18 15:39:20,586 INFO u.s.a.ClassifierWorkerAgent [worker-1] Classifier Worker Agent worker-1 is shutting down.
+2025-06-18 15:42:30,277 INFO u.s.a.ClassifierManager [manager] Received scan request from rma: C:\Users\Asus\Desktop\test\denis.stanciu00.zip,C:\Users\Asus\Desktop\test\Proiect-Proiectarea-aplicatiilor-ce-vor-rula-in-cloud.pdf,C:\Users\Asus\Desktop\test\folder\keyr1new.ppk
+2025-06-18 15:42:30,277 INFO u.s.a.ClassifierManager [manager] Processed scan request. Current scanned files: 3
+2025-06-18 15:42:30,277 INFO u.s.a.ClassifierManager [manager] Creating 1 worker agents to process 3 files.
+2025-06-18 15:42:30,277 INFO u.s.a.ClassifierWorkerAgent [worker-1] Classifier Worker Agent worker-1 is starting up.
+2025-06-18 15:42:30,277 INFO u.s.a.ClassifierWorkerAgent [worker-1] Processed scan request. Current scanned files: 3
+2025-06-18 15:42:30,277 INFO u.s.a.ClassifierWorkerAgent [worker-1] Sucesfully processed scan request with 3 files.
+2025-06-18 15:42:30,277 INFO u.s.a.ClassifierWorkerAgent [worker-1] We are in the ClassifyFiles behaviour of ClassifierWorkerAgent.
+2025-06-18 15:42:30,277 INFO u.s.a.ClassifierWorkerAgent [worker-1] File to classify: C:\Users\Asus\Desktop\test\denis.stanciu00.zip
+2025-06-18 15:42:30,277 INFO u.s.a.ClassifierWorkerAgent [worker-1] File to classify: C:\Users\Asus\Desktop\test\Proiect-Proiectarea-aplicatiilor-ce-vor-rula-in-cloud.pdf
+2025-06-18 15:42:30,277 INFO u.s.a.ClassifierWorkerAgent [worker-1] File to classify: C:\Users\Asus\Desktop\test\folder\keyr1new.ppk
+2025-06-18 15:42:30,277 INFO u.s.a.ClassifierWorkerAgent [worker-1] Classifier Worker Agent worker-1 is shutting down.
+2025-06-18 15:44:33,070 INFO u.s.a.ClassifierManager [manager] Classifier Manager Agent manager is starting up.
+2025-06-18 15:44:33,067 INFO u.s.a.MonitorAgent [monitor] Monitor Agent monitor is starting up.
+2025-06-18 15:44:33,071 INFO u.s.a.MonitorAgent [monitor] Monitoring directory: C:\Users\Asus\Desktop\test
+2025-06-18 15:44:33,072 INFO u.s.a.MonitorAgent [monitor] Deep scan enabled: true
+2025-06-18 15:44:33,072 INFO u.s.a.ClassifierManager [manager] Registering service: manager-classification-coordinator
+2025-06-18 15:44:33,078 INFO u.s.a.MonitorAgent [monitor] [Deep scan] File detected: C:\Users\Asus\Desktop\test\denis.stanciu00.zip
+2025-06-18 15:44:33,079 INFO u.s.a.MonitorAgent [monitor] [Deep scan] File detected: C:\Users\Asus\Desktop\test\folder\2025-Lab7_Modelare-Domeniu.pdf
+2025-06-18 15:44:33,080 INFO u.s.a.MonitorAgent [monitor] [Deep scan] File detected: C:\Users\Asus\Desktop\test\folder\keyr1new.ppk
+2025-06-18 15:44:33,080 INFO u.s.a.MonitorAgent [monitor] [Deep scan] File detected: C:\Users\Asus\Desktop\test\folder\lab2lab3
+2025-06-18 15:44:33,082 INFO u.s.a.MonitorAgent [monitor] [Deep scan] File detected: C:\Users\Asus\Desktop\test\Proiect-Proiectarea-aplicatiilor-ce-vor-rula-in-cloud.pdf
+2025-06-18 15:44:33,083 INFO u.s.a.MonitorAgent [monitor] [Deep scan] File detected: C:\Users\Asus\Desktop\test\received_422879007176562.jpg
+2025-06-18 15:44:33,084 INFO u.s.a.MonitorAgent [monitor] [Deep scan] File detected: C:\Users\Asus\Desktop\test\Referat_HaiostaMichelle.pdf
+2025-06-18 15:44:33,085 INFO u.s.a.ClassifierManager [manager] Service registered successfully.
+2025-06-18 15:44:33,085 INFO u.s.a.MonitorAgent [monitor] [Deep scan] File detected: C:\Users\Asus\Desktop\test\Screenshot 2023-12-04 104757.png
+2025-06-18 15:44:35,088 INFO u.s.a.MonitorAgent [monitor] Found 1 classification coordinator(s). Sending file list.
+2025-06-18 15:44:35,088 INFO u.s.a.MonitorAgent [monitor] File list sent to: manager
+2025-06-18 15:44:35,089 INFO u.s.a.ClassifierManager [manager] Received scan request from monitor: C:\Users\Asus\Desktop\test\denis.stanciu00.zip,C:\Users\Asus\Desktop\test\Proiect-Proiectarea-aplicatiilor-ce-vor-rula-in-cloud.pdf,C:\Users\Asus\Desktop\test\folder\keyr1new.ppk,C:\Users\Asus\Desktop\test\Referat_HaiostaMichelle.pdf,C:\Users\Asus\Desktop\test\folder\2025-Lab7_Modelare-Domeniu.pdf,C:\Users\Asus\Desktop\test\folder\lab2lab3,C:\Users\Asus\Desktop\test\received_422879007176562.jpg,C:\Users\Asus\Desktop\test\Screenshot 2023-12-04 104757.png
+2025-06-18 15:44:35,089 INFO u.s.a.ClassifierManager [manager] Processed scan request. Current scanned files: 8
+2025-06-18 15:44:35,089 INFO u.s.a.ClassifierManager [manager] Creating 3 worker agents to process 8 files.
+2025-06-18 15:44:35,096 INFO u.s.a.ClassifierWorkerAgent [worker-1] Classifier Worker Agent worker-1 is starting up.
+2025-06-18 15:44:35,098 INFO u.s.a.ClassifierWorkerAgent [worker-1] Processed scan request. Current scanned files: 3
+2025-06-18 15:44:35,098 INFO u.s.a.ClassifierWorkerAgent [worker-1] Sucesfully processed scan request with 3 files.
+2025-06-18 15:44:35,099 INFO u.s.a.ClassifierWorkerAgent [worker-1] We are in the ClassifyFiles behaviour of ClassifierWorkerAgent.
+2025-06-18 15:44:35,098 INFO u.s.a.ClassifierWorkerAgent [worker-2] Classifier Worker Agent worker-2 is starting up.
+2025-06-18 15:44:35,099 INFO u.s.a.ClassifierWorkerAgent [worker-2] Processed scan request. Current scanned files: 3
+2025-06-18 15:44:35,099 INFO u.s.a.ClassifierWorkerAgent [worker-2] Sucesfully processed scan request with 3 files.
+2025-06-18 15:44:35,099 INFO u.s.a.ClassifierWorkerAgent [worker-2] We are in the ClassifyFiles behaviour of ClassifierWorkerAgent.
+2025-06-18 15:44:35,100 INFO u.s.a.ClassifierWorkerAgent [worker-1] File to classify: C:\Users\Asus\Desktop\test\denis.stanciu00.zip
+2025-06-18 15:44:35,100 INFO u.s.a.ClassifierWorkerAgent [worker-1] File to classify: C:\Users\Asus\Desktop\test\Proiect-Proiectarea-aplicatiilor-ce-vor-rula-in-cloud.pdf
+2025-06-18 15:44:35,100 INFO u.s.a.ClassifierWorkerAgent [worker-1] File to classify: C:\Users\Asus\Desktop\test\folder\keyr1new.ppk
+2025-06-18 15:44:35,100 INFO u.s.a.ClassifierWorkerAgent [worker-3] Classifier Worker Agent worker-3 is starting up.
+2025-06-18 15:44:35,101 INFO u.s.a.ClassifierWorkerAgent [worker-2] File to classify: C:\Users\Asus\Desktop\test\Referat_HaiostaMichelle.pdf
+2025-06-18 15:44:35,101 INFO u.s.a.ClassifierWorkerAgent [worker-1] Classifier Worker Agent worker-1 is shutting down.
+2025-06-18 15:44:35,101 INFO u.s.a.ClassifierWorkerAgent [worker-2] File to classify: C:\Users\Asus\Desktop\test\folder\2025-Lab7_Modelare-Domeniu.pdf
+2025-06-18 15:44:35,101 INFO u.s.a.ClassifierWorkerAgent [worker-3] Processed scan request. Current scanned files: 2
+2025-06-18 15:44:35,101 INFO u.s.a.ClassifierWorkerAgent [worker-3] Sucesfully processed scan request with 2 files.
+2025-06-18 15:44:35,101 INFO u.s.a.ClassifierWorkerAgent [worker-2] File to classify: C:\Users\Asus\Desktop\test\folder\lab2lab3
+2025-06-18 15:44:35,101 INFO u.s.a.ClassifierWorkerAgent [worker-3] We are in the ClassifyFiles behaviour of ClassifierWorkerAgent.
+2025-06-18 15:44:35,101 INFO u.s.a.ClassifierWorkerAgent [worker-2] Classifier Worker Agent worker-2 is shutting down.
+2025-06-18 15:44:35,102 INFO u.s.a.ClassifierWorkerAgent [worker-3] File to classify: C:\Users\Asus\Desktop\test\received_422879007176562.jpg
+2025-06-18 15:44:35,102 INFO u.s.a.ClassifierWorkerAgent [worker-3] File to classify: C:\Users\Asus\Desktop\test\Screenshot 2023-12-04 104757.png
+2025-06-18 15:44:35,102 INFO u.s.a.ClassifierWorkerAgent [worker-3] Classifier Worker Agent worker-3 is shutting down.
