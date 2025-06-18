@@ -2,6 +2,7 @@ package uvt.sma.agents;
 
 import jade.core.Agent;
 import jade.core.behaviours.OneShotBehaviour;
+import jade.lang.acl.ACLMessage;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -35,7 +36,7 @@ public class ClassifierWorkerAgent extends Agent {
     protected void takeDown() {
         LOGGER.info("Classifier Worker Agent {} is shutting down.", getLocalName());
         // Cleanup code can be added here
-
+        notifyManger();
     }
 
     private class ClassifyFiles extends OneShotBehaviour {
@@ -49,6 +50,22 @@ public class ClassifierWorkerAgent extends Agent {
             myAgent.doDelete(); // shut down the agent as we don't need it anymore
         }
     }
+
+    private void notifyManger() {
+        try {
+            // Notify the manager that this worker has finished processing
+            ACLMessage msg = new ACLMessage(ACLMessage.INFORM);
+            msg.addReceiver(new jade.core.AID("manager", jade.core.AID.ISLOCALNAME));
+            msg.setConversationId("worker-finished-notice");
+            msg.setSender(getAID());
+            msg.setContent("Worker " + getLocalName() + " has finished processing files.");
+            send(msg);
+            LOGGER.info("Notification sent to manager about completion of work.");
+        } catch (Exception e) {
+            LOGGER.error("Failed to notify manager: {}", e.getMessage());
+        }
+    }
+
     private void processMessageContent(String content) {
         // check if content is null or empty
         if (content == null || content.isEmpty()) {

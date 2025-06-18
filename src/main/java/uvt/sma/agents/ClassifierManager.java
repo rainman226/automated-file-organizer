@@ -18,7 +18,7 @@ import java.util.Set;
 public class ClassifierManager extends Agent {
     private static final long serialVersionUID = 1L;
     private Set<String> scannedFiles = new java.util.HashSet<>();
-    private int maxFiles = 3; // maximum number of files allowed for each worker
+    private int maxFiles = 100; // maximum number of files allowed for each worker
     private static final Logger LOGGER = LogManager.getLogger(ClassifierManager.class);
     @Override
     protected void setup() {
@@ -26,7 +26,7 @@ public class ClassifierManager extends Agent {
 
         // add behaviours
         addBehaviour(new RegisterService());
-        addBehaviour(new AnswerScanRequest());
+        addBehaviour(new AnswerMessages());
     }
 
     @Override
@@ -61,7 +61,7 @@ public class ClassifierManager extends Agent {
         }
     }
 
-    private class AnswerScanRequest extends CyclicBehaviour {
+    private class AnswerMessages extends CyclicBehaviour {
         @Override
         public void action() {
             ACLMessage msg = receive();
@@ -78,6 +78,12 @@ public class ClassifierManager extends Agent {
 
                 //TODO answer back to the monitor
 
+            } else if (msg != null && msg.getConversationId().equals("worker-finished-notice")) {
+                String receiverName = msg.getSender().getLocalName();
+                String content = msg.getContent();
+                LOGGER.info("Received worker finished notice from {}: {}", receiverName, content);
+
+                // TODO: handle not correct termination notice
             } else {
                 block(); // Wait for the next message
             }
@@ -103,15 +109,17 @@ public class ClassifierManager extends Agent {
 
     private void createWorkers() {
         try {
-            ContainerController container = getContainerController();
+            ContainerController container = getContainerController(); // Get the container where this agent is running
 
-            int workerCount = (int) Math.ceil((double) scannedFiles.size() / maxFiles);
+            int workerCount = (int) Math.ceil((double) scannedFiles.size() / maxFiles); // based on the number of files and maxFiles
             LOGGER.info("Creating {} worker agents to process {} files.", workerCount, scannedFiles.size());
 
+            // iterate through the number of workers and create them
             for(int i = 0; i < workerCount; i++) {
                 StringBuilder filesForWorker = new StringBuilder();
                 int filesAdded = 0;
 
+                // add each file to the worker's list until maxFiles is reached
                 for (String file : scannedFiles) {
                     if (filesAdded < maxFiles) {
                         if (filesForWorker.length() > 0) {
@@ -123,10 +131,10 @@ public class ClassifierManager extends Agent {
                         break;
                     }
                 }
-                // Remove the files that were assigned to this worker from the scannedFiles set
+                // remove the files that were assigned to this worker from the scannedFiles set
                 scannedFiles.removeAll(Set.of(filesForWorker.toString().split(",")));
 
-                // Create the worker agent with the files assigned
+                // create the worker agent with the files assigned
                 Object[] args = new Object[]{filesForWorker.toString()};
                 AgentController workerAgent = container.createNewAgent("worker-" + (i + 1), ClassifierWorkerAgent.class.getName(), args);
                 workerAgent.start();
