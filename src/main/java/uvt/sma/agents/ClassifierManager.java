@@ -12,13 +12,16 @@ import jade.wrapper.AgentController;
 import jade.wrapper.ContainerController;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import uvt.sma.helpers.FileCategoryLoader;
 
+import java.util.HashMap;
 import java.util.Set;
 
 public class ClassifierManager extends Agent {
     private static final long serialVersionUID = 1L;
     private Set<String> scannedFiles = new java.util.HashSet<>();
     private int maxFiles = 100; // maximum number of files allowed for each worker
+    public static final HashMap<String, String> extensionMap = FileCategoryLoader.loadExtensionCategoryMap("src/main/resources/extensions.csv");
     private static final Logger LOGGER = LogManager.getLogger(ClassifierManager.class);
     @Override
     protected void setup() {
@@ -142,6 +145,10 @@ public class ClassifierManager extends Agent {
         } catch (Exception e) {
             LOGGER.error("Failed to create worker agents: {}", e.getMessage());
         }
+    }
+
+    public static String getCategoryForFile(String ext) {
+        return extensionMap.getOrDefault(ext.toLowerCase(), "Unknown");
     }
 
 }

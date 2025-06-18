@@ -2,17 +2,20 @@ package uvt.sma.agents;
 
 import jade.core.Agent;
 import jade.core.behaviours.OneShotBehaviour;
+import jade.domain.DFService;
+import jade.domain.FIPAAgentManagement.DFAgentDescription;
+import jade.domain.FIPAAgentManagement.ServiceDescription;
+import jade.domain.FIPAException;
 import jade.lang.acl.ACLMessage;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import java.util.Set;
+import java.util.*;
 
 public class ClassifierWorkerAgent extends Agent {
     private static final long serialVersionUID = 1L;
-
     private Set<String> scannedFiles = new java.util.HashSet<>();
-
+    private DFAgentDescription[] sorters; // list of sorting services
     private static final Logger LOGGER = LogManager.getLogger(ClassifierWorkerAgent.class);
     @Override
     protected void setup() {
@@ -39,14 +42,53 @@ public class ClassifierWorkerAgent extends Agent {
         notifyManger();
     }
 
+    private class SearchForSorters extends OneShotBehaviour {
+        @Override
+        public void action() {
+            ServiceDescription sd = new ServiceDescription();
+            sd.setType("sorting");
+
+            DFAgentDescription dfd = new DFAgentDescription();
+            dfd.addServices(sd);
+
+            try {
+                sorters = DFService.search(myAgent, dfd);
+
+                if(sorters.length > 0) {
+                    LOGGER.info("Found {} sorting services.", sorters.length);
+
+                } else {
+                    LOGGER.warn("No sorting services found.");
+                }
+            } catch (FIPAException e) {
+                LOGGER.error("Failed to search for sorting services: {}", e.getMessage());
+            }
+        }
+    }
+
+
     private class ClassifyFiles extends OneShotBehaviour {
         @Override
         public void action() {
-            // Logic for classifying files goes here
-            LOGGER.info("We are in the ClassifyFiles behaviour of ClassifierWorkerAgent.");
-            // For now, just log the files
-            scannedFiles.forEach(file -> LOGGER.info("File to classify: {}", file));
+            Map<String, List<String>> fileCategories = new HashMap<>();
 
+            for(String filePath : scannedFiles) {
+                String extension = filePath.substring(filePath.lastIndexOf('.')).toLowerCase();
+                String category = ClassifierManager.extensionMap.get(extension);
+
+                // Initialize the category list if not present
+                fileCategories.computeIfAbsent(category, k -> new ArrayList<>());
+
+                // Add the file to the appropriate category
+                fileCategories.get(category).add(filePath);
+            }
+            LOGGER.info("Classified {} files into {} categories.", scannedFiles.size(), fileCategories.size());
+            for(Map.Entry<String, List<String>> entry : fileCategories.entrySet()) {
+                String category = entry.getKey();
+                List<String> filesInCategory = entry.getValue();
+
+                LOGGER.info("Category: {}, Files: {}", category, filesInCategory.size());
+            }
             myAgent.doDelete(); // shut down the agent as we don't need it anymore
         }
     }
