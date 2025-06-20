@@ -13,11 +13,18 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.nio.file.StandardCopyOption;
 import java.util.List;
 import java.util.Map;
 
 public class SortingAgent extends Agent {
     private static final long serialVersionUID = 1L;
+    private String targetFolder = "C:\\Users\\Asus\\Desktop\\sorted"; //TODO take the path as argument from (future) UI agent
+    private Boolean moveFolders = false;
     private static final Logger LOGGER = LogManager.getLogger(SortingAgent.class);
     @Override
     protected void setup() {
@@ -68,12 +75,11 @@ public class SortingAgent extends Agent {
                             new TypeReference<Map<String, List<String>>>() {}
                     );
 
-                    fileMap.forEach((category, files) -> {
-                        System.out.println("Category: " + category);
-                        files.forEach(file -> LOGGER.info("File: {}", file));
+                    LOGGER.info("Received file sorting request with {} categories.", fileMap.size());
 
-                        // TODO: move/sort the file
-                    });
+                    sortFiles(fileMap);
+
+                    // TODO: notifi the ClassifierManager that the sorting is done
 
                 } catch (Exception e) {
                     e.printStackTrace();
@@ -83,5 +89,43 @@ public class SortingAgent extends Agent {
             }
             //,,,
         }
+    }
+
+    private void sortFiles(Map<String, List<String>> fileMap) {
+
+        LOGGER.info("Sorting files into categories...");
+        Path targetPath = Paths.get(targetFolder);
+
+        for (Map.Entry<String, List<String>> entry : fileMap.entrySet()) {
+            String category = entry.getKey();
+            List<String> files = entry.getValue();
+
+            Path categoryFolder = targetPath.resolve(category);
+
+            // create the category directory if it doesn't exist
+            try {
+                if (!Files.exists(categoryFolder)) {
+                    Files.createDirectories(categoryFolder);
+                }
+            } catch (IOException e) {
+                LOGGER.error("Failed to create directory for category {}: {}", category, e.getMessage());
+                continue;
+            }
+
+            // move each file into the category folder
+            for (String filePathStr : files) {
+                Path sourcePath = Paths.get(filePathStr);
+                Path targetFilePath = categoryFolder.resolve(sourcePath.getFileName());
+
+                try {
+                    Files.move(sourcePath, targetFilePath, StandardCopyOption.REPLACE_EXISTING);
+                    LOGGER.info("Moved file {} to category {}.", sourcePath, category);
+                } catch (IOException e) {
+                    LOGGER.error("Failed to move file {}: {}", sourcePath, e.getMessage());
+                }
+            }
+            //...
+        }
+
     }
 }

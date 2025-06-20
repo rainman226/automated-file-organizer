@@ -92,6 +92,7 @@ public class ClassifierWorkerAgent extends Agent {
         }
 
         private void sendClassifiedFilesToSorter(Map<String, List<String>> fileCategories) {
+            // TODO test when multiple workes send messages to the same sorter
             try {
                 ObjectMapper objectMapper = new ObjectMapper();
                 String jsonPayload = objectMapper.writeValueAsString(fileCategories);

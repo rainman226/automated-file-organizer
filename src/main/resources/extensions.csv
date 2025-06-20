@@ -1,0 +1,595 @@
+Category,Extension
+Documents,.docx
+Documents,.doc
+Documents,.odt
+Documents,.txt
+Documents,.rtf
+Documents,.pdf
+Documents,.xls
+Documents,.xlsx
+Documents,.ods
+Documents,.csv
+Documents,.epub
+Documents,.mobi
+Documents,.tex
+Documents,.md
+Documents,.json
+Documents,.yaml
+Documents,.ini
+Documents,.log
+Documents,.csv
+Documents,.bat
+Documents,.vbs
+Documents,.ps1
+Documents,.au3
+Documents,.sh
+Documents,.lua
+Documents,.php
+Documents,.jsp
+Documents,.asp
+Documents,.htm
+Documents,.rtf
+Documents,.pages
+Documents,.key
+Documents,.numbers
+Documents,.bib
+Images,.jpg
+Images,.jpeg
+Images,.png
+Images,.gif
+Images,.bmp
+Images,.tiff
+Images,.tif
+Images,.webp
+Images,.raw
+Images,.svg
+Images,.ico
+Images,.heif
+Images,.heic
+Images,.ai
+Images,.psd
+Images,.eps
+Images,.indd
+Images,.pdf
+Images,.dng
+Images,.cr2
+Images,.nef
+Images,.orf
+Images,.sr2
+Images,.3fr
+Images,.xpm
+Images,.wbmp
+Images,.icns
+Images,.exr
+Images,.pcx
+Images,.pbm
+Images,.ppm
+Images,.pgm
+Images,.xwd
+Images,.hdr
+Videos,.mp4
+Videos,.avi
+Videos,.mkv
+Videos,.mov
+Videos,.wmv
+Videos,.flv
+Videos,.webm
+Videos,.mpeg
+Videos,.mpg
+Videos,.3gp
+Videos,.m4v
+Videos,.ogv
+Videos,.rm
+Videos,.rmvb
+Videos,.f4v
+Videos,.ts
+Videos,.vob
+Videos,.dvr-ms
+Videos,.swf
+Videos,.h264
+Videos,.hevc
+Videos,.vp8
+Videos,.vp9
+Videos,.divx
+Videos,.xvid
+Videos,.iso
+Videos,.cue
+Videos,.bup
+Videos,.ts
+Videos,.vdr
+Audio,.mp3
+Audio,.wav
+Audio,.flac
+Audio,.aac
+Audio,.ogg
+Audio,.m4a
+Audio,.wma
+Audio,.alac
+Audio,.aiff
+Audio,.pcm
+Audio,.opus
+Audio,.spx
+Audio,.ape
+Audio,.midi
+Audio,.mid
+Audio,.wma
+Audio,.opus
+Audio,.aif
+Audio,.dsd
+Audio,.cda
+Audio,.dts
+Audio,.dsf
+Audio,.mpc
+Audio,.tta
+Audio,.wv
+Audio,.mka
+Audio,.f4a
+Audio,.amr
+Audio,.ra
+Audio,.vox
+Audio,.pcm
+Audio,.m3u
+Audio,.pls
+Audio,.cue
+Audio,.shn
+Audio,.wv
+Audio,.s3m
+Audio,.xm
+Audio,.it
+Audio,.mod
+Audio,.mtm
+Archives,.zip
+Archives,.rar
+Archives,.7z
+Archives,.tar
+Archives,.gz
+Archives,.bz2
+Archives,.xz
+Archives,.tgz
+Archives,.tbz
+Archives,.lz
+Archives,.lzma
+Archives,.z
+Archives,.cab
+Archives,.iso
+Archives,.img
+Archives,.dmg
+Archives,.jar
+Archives,.war
+Archives,.ear
+Archives,.arj
+Archives,.ace
+Archives,.uue
+Archives,.001
+Archives,.sit
+Archives,.sitx
+Archives,.nrg
+Archives,.cso
+Archives,.rpm
+Archives,.deb
+Archives,.apk
+Archives,.xpi
+Archives,.pak
+Executables,.exe
+Executables,.msi
+Executables,.bat
+Executables,.cmd
+Executables,.com
+Executables,.scr
+Executables,.ps1
+Executables,.vbs
+Executables,.app
+Executables,.apk
+Executables,.bin
+Executables,.run
+Executables,.sh
+Executables,.cgi
+Executables,.gadget
+Executables,.wsf
+Executables,.jar
+Executables,.elf
+Executables,.command
+Executables,.kext
+Scripts,.sh
+Scripts,.bash
+Scripts,.zsh
+Scripts,.ksh
+Scripts,.ps1
+Scripts,.bat
+Scripts,.cmd
+Scripts,.vbs
+Scripts,.js
+Scripts,.ts
+Scripts,.py
+Scripts,.rb
+Scripts,.pl
+Scripts,.php
+Scripts,.lua
+Scripts,.r
+Scripts,.groovy
+Scripts,.tcl
+Scripts,.swift
+Scripts,.scpt
+Scripts,.scptd
+Scripts,.psm1
+Scripts,.nsh
+Scripts,.ahk
+Scripts,.csh
+Scripts,.fish
+Spreadsheets,.xls
+Spreadsheets,.xlsx
+Spreadsheets,.xlsm
+Spreadsheets,.xlsb
+Spreadsheets,.ods
+Spreadsheets,.csv
+Spreadsheets,.tsv
+Spreadsheets,.sxc
+Spreadsheets,.numbers
+Spreadsheets,.dif
+Spreadsheets,.slk
+Presentations,.ppt
+Presentations,.pptx
+Presentations,.pps
+Presentations,.ppsx
+Presentations,.odp
+Presentations,.key
+Presentations,.sxi
+Presentations,.pot
+Presentations,.potx
+PDFs,.pdf
+E-books,.epub
+E-books,.mobi
+E-books,.azw
+E-books,.azw3
+E-books,.fb2
+E-books,.lit
+E-books,.djvu
+E-books,.ibooks
+E-books,.cbr
+E-books,.cbz
+E-books,.chm
+E-books,.prc
+E-books,.tr2
+E-books,.tr3
+E-books,.opf
+Fonts,.ttf
+Fonts,.otf
+Fonts,.woff
+Fonts,.woff2
+Fonts,.eot
+Fonts,.pfb
+Fonts,.afm
+Fonts,.fon
+Fonts,.fnt
+Fonts,.dfont
+Fonts,.suit
+System Files,.sys
+System Files,.dll
+System Files,.drv
+System Files,.efi
+System Files,.inf
+System Files,.vxd
+System Files,.bak
+System Files,.ini
+System Files,.cab
+System Files,.bin
+System Files,.dat
+System Files,.sav
+System Files,.reg
+System Files,.img
+System Files,.dmp
+System Files,.icns
+System Files,.cur
+System Files,.nt
+System Files,.scr
+System Files,.cpl
+System Files,.rll
+Temporary Files,.tmp
+Temporary Files,.temp
+Temporary Files,.swp
+Temporary Files,.swo
+Temporary Files,.~lock
+Temporary Files,.bak
+Temporary Files,.old
+Temporary Files,.gid
+Temporary Files,.chk
+Temporary Files,.dmp
+Temporary Files,.part
+Temporary Files,.crdownload
+Temporary Files,.~$
+Temporary Files,.cache
+Backups,.bak
+Backups,.backup
+Backups,.old
+Backups,.tmp
+Backups,.bkp
+Backups,.sav
+Backups,.copy
+Backups,.orig
+Backups,.~bk
+Backups,.ibak
+Configuration Files,.ini
+Configuration Files,.cfg
+Configuration Files,.conf
+Configuration Files,.config
+Configuration Files,.json
+Configuration Files,.yaml
+Configuration Files,.yml
+Configuration Files,.toml
+Configuration Files,.xml
+Configuration Files,.env
+Configuration Files,.rc
+Configuration Files,.properties
+Configuration Files,.prefs
+Configuration Files,.cnf
+Configuration Files,.inf
+Configuration Files,.desktop
+Configuration Files,.plist
+Configuration Files,.iml
+Configuration Files,.npmrc
+Configuration Files,.editorconfig
+Configuration Files,.gitconfig
+Logs,.log
+Logs,.out
+Logs,.err
+Logs,.trace
+Logs,.blg
+Logs,.txt
+Logs,.json
+Logs,.xml
+Databases,.db
+Databases,.sql
+Databases,.sqlite
+Databases,.sqlite3
+Databases,.db3
+Databases,.accdb
+Databases,.mdb
+Databases,.ndf
+Databases,.mdf
+Databases,.bak
+Databases,.frm
+Databases,.ibd
+Databases,.myd
+Databases,.myi
+Databases,.sqlite-shm
+Databases,.sqlite-wal
+Databases,.sdf
+Databases,.fdb
+Databases,.gdb
+Databases,.ora
+Databases,.dmp
+Databases,.log
+Databases,.ncf
+Source Code,.c
+Source Code,.cpp
+Source Code,.h
+Source Code,.hpp
+Source Code,.cs
+Source Code,.java
+Source Code,.kt
+Source Code,.kts
+Source Code,.py
+Source Code,.js
+Source Code,.ts
+Source Code,.tsx
+Source Code,.jsx
+Source Code,.php
+Source Code,.rb
+Source Code,.go
+Source Code,.rs
+Source Code,.swift
+Source Code,.m
+Source Code,.mm
+Source Code,.dart
+Source Code,.scala
+Source Code,.groovy
+Source Code,.pl
+Source Code,.pm
+Source Code,.r
+Source Code,.jl
+Source Code,.lua
+Source Code,.sh
+Source Code,.bash
+Source Code,.zsh
+Source Code,.bat
+Source Code,.ps1
+Source Code,.asm
+Source Code,.s
+Source Code,.vb
+Source Code,.vbs
+Source Code,.sql
+Source Code,.html
+Source Code,.htm
+Source Code,.css
+Source Code,.scss
+Source Code,.less
+Source Code,.xml
+Source Code,.json
+Source Code,.yml
+Source Code,.yaml
+Source Code,.md
+Source Code,.tsx
+Source Code,.vue
+Source Code,.mjml
+Virtual Machines / Disk Images,.vdi
+Virtual Machines / Disk Images,.vmdk
+Virtual Machines / Disk Images,.vhd
+Virtual Machines / Disk Images,.vhdx
+Virtual Machines / Disk Images,.img
+Virtual Machines / Disk Images,.iso
+Virtual Machines / Disk Images,.qcow
+Virtual Machines / Disk Images,.qcow2
+Virtual Machines / Disk Images,.raw
+Virtual Machines / Disk Images,.ova
+Virtual Machines / Disk Images,.ovf
+Virtual Machines / Disk Images,.dmg
+Virtual Machines / Disk Images,.parallels
+Virtual Machines / Disk Images,.hdd
+3D Models,.obj
+3D Models,.fbx
+3D Models,.stl
+3D Models,.3ds
+3D Models,.blend
+3D Models,.dae
+3D Models,.gltf
+3D Models,.glb
+3D Models,.ply
+3D Models,.x3d
+3D Models,.3mf
+3D Models,.wrl
+3D Models,.zpr
+3D Models,.ma
+3D Models,.mb
+3D Models,.c4d
+CAD Files,.dwg
+CAD Files,.dxf
+CAD Files,.dwt
+CAD Files,.ipt
+CAD Files,.iam
+CAD Files,.idw
+CAD Files,.stp
+CAD Files,.step
+CAD Files,.sldprt
+CAD Files,.sldasm
+CAD Files,.slddrw
+CAD Files,.catpart
+CAD Files,.catproduct
+CAD Files,.prt
+CAD Files,.asm
+CAD Files,.igs
+CAD Files,.iges
+CAD Files,.cgr
+Design Files,.psd
+Design Files,.ai
+Design Files,.indd
+Design Files,.xd
+Design Files,.sketch
+Design Files,.fig
+Design Files,.cdr
+Design Files,.afdesign
+Design Files,.afphoto
+Design Files,.afpub
+Design Files,.eps
+Design Files,.svg
+Design Files,.xcf
+Design Files,.raw
+Web Files,.html
+Web Files,.htm
+Web Files,.css
+Web Files,.scss
+Web Files,.js
+Web Files,.ts
+Web Files,.php
+Web Files,.asp
+Web Files,.aspx
+Web Files,.jsp
+Web Files,.vue
+Web Files,.jsx
+Web Files,.tsx
+Web Files,.json
+Web Files,.xml
+Web Files,.yaml
+Web Files,.yml
+Web Files,.map
+Web Files,.md
+Web Files,.htaccess
+Web Files,.cgi
+Web Files,.tpl
+Web Files,.ejs
+Web Files,.liquid
+Certificates / Keys,.crt
+Certificates / Keys,.pem
+Certificates / Keys,.cer
+Certificates / Keys,.key
+Certificates / Keys,.der
+Certificates / Keys,.pfx
+Certificates / Keys,.p12
+Certificates / Keys,.jks
+Certificates / Keys,.keystore
+Certificates / Keys,.csr
+Certificates / Keys,.asc
+Certificates / Keys,.gpg
+Certificates / Keys,.pgp
+Certificates / Keys,.ovpn
+Game Files,.sav
+Game Files,.pak
+Game Files,.wad
+Game Files,.rom
+Game Files,.iso
+Game Files,.bin
+Game Files,.nes
+Game Files,.gba
+Game Files,.nds
+Game Files,.uasset
+Game Files,.umap
+Game Files,.rpf
+Game Files,.vpk
+Game Files,.dat
+Game Files,.xp3
+Game Files,.big
+Game Files,.scs
+Game Files,.bsa
+Android Packages,.apk
+Android Packages,.xapk
+Android Packages,.obb
+Android Packages,.aab
+Android Packages,.dex
+iOS Packages,.ipa
+iOS Packages,.mobileconfig
+iOS Packages,.app
+iOS Packages,.deb
+Firmware,.bin
+Firmware,.img
+Firmware,.fw
+Firmware,.upd
+Firmware,.hex
+Firmware,.dfu
+Firmware,.sb
+Firmware,.fwu
+Firmware,.blf
+Media Playlists,.m3u
+Media Playlists,.m3u8
+Media Playlists,.pls
+Media Playlists,.xspf
+Media Playlists,.asx
+Media Playlists,.wpl
+Subtitles,.srt
+Subtitles,.sub
+Subtitles,.ass
+Subtitles,.ssa
+Subtitles,.vtt
+Subtitles,.sbv
+Subtitles,.idx
+Subtitles,.txt
+Scientific Data,.mat
+Scientific Data,.nc
+Scientific Data,.cdf
+Scientific Data,.h5
+Scientific Data,.hdf5
+Scientific Data,.grib
+Scientific Data,.netcdf
+Scientific Data,.fcs
+Scientific Data,.bam
+Scientific Data,.sam
+Scientific Data,.vcf
+Scientific Data,.ab1
+Scientific Data,.cel
+Scientific Data,.wig
+Scientific Data,.bed
+GIS / Mapping Data,.shp
+GIS / Mapping Data,.dbf
+GIS / Mapping Data,.shx
+GIS / Mapping Data,.geojson
+GIS / Mapping Data,.kml
+GIS / Mapping Data,.kmz
+GIS / Mapping Data,.gpx
+GIS / Mapping Data,.osm
+GIS / Mapping Data,.mif
+GIS / Mapping Data,.tab
+GIS / Mapping Data,.gml
+GIS / Mapping Data,.vrt
+GIS / Mapping Data,.tif
+GIS / Mapping Data,.tiff
+GIS / Mapping Data,.asc
+GIS / Mapping Data,.prj
+GIS / Mapping Data,.sld
