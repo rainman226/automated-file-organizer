@@ -11,6 +11,7 @@ import jade.lang.acl.ACLMessage;
 import jade.wrapper.ControllerException;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import uvt.sma.helpers.MessageTemplate;
 
 import java.util.*;
 
@@ -101,7 +102,7 @@ public class ClassifierWorkerAgent extends Agent {
             }
             LOGGER.info("Classified {} files into {} categories.", scannedFiles.size(), fileCategories.size());
 
-            // TODO search the service directory for specified classifierss
+            searchForSpecializedClassifiers(fileCategories);
             sendClassifiedFilesToSorter(fileCategories);
             myAgent.doDelete(); // shut down the agent as we don't need it anymore
         }
@@ -122,6 +123,54 @@ public class ClassifierWorkerAgent extends Agent {
             } catch (Exception e) {
                 LOGGER.warn("Failed to send classified files to sorter: {}", e.getMessage());
             }
+        }
+
+        /*
+            * Searches for specialized classifiers in the Directory Facilitator (DF) based on file categories.
+            * For each category, it looks for classifiers of type "classifier-category" and sends the file list to them.
+            * This allows for specialized processing of files based on their category.
+         */
+        private void searchForSpecializedClassifiers(Map<String, List<String>> fileCategories) {
+            DFAgentDescription[] specializedClassifiers;
+
+            for(String category : fileCategories.keySet()) {
+                ServiceDescription sd = new ServiceDescription();
+                sd.setType("classifier-" + category.toLowerCase());
+                sd.setName(category);
+
+                DFAgentDescription dfd = new DFAgentDescription();
+                dfd.addServices(sd);
+
+                try {
+                    specializedClassifiers = DFService.search(myAgent, dfd);
+                    if(specializedClassifiers.length > 0) {
+                        LOGGER.info("Found {} specialized classifiers for category: {}", specializedClassifiers.length, category);
+                        try {
+                            ObjectMapper objectMapper = new ObjectMapper();
+                            String jsonPayload = objectMapper.writeValueAsString(fileCategories.get(category));
+
+                            MessageTemplate.sendMessage(
+                                    myAgent,
+                                    specializedClassifiers[0].getName(),
+                                    ACLMessage.REQUEST,
+                                    "file-list",
+                                    "file-list",
+                                    jsonPayload
+                            );
+
+                            fileCategories.remove(category); // Remove category after sending to specialized classifier
+                        } catch (Exception e) {
+                            LOGGER.error("Failed to convert file list to JSON: {}", e.getMessage());
+                        }
+
+                    } else {
+                        LOGGER.warn("No specialized classifiers found for category: {}", category);
+                    }
+                } catch (FIPAException e) {
+                    LOGGER.error("Failed to search for specialized classifiers: {}", e.getMessage());
+                }
+            }
+
         }
     }
 
