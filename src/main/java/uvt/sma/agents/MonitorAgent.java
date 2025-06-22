@@ -1,5 +1,6 @@
 package uvt.sma.agents;
 
+import jade.core.behaviours.CyclicBehaviour;
 import jade.domain.DFService;
 import jade.domain.FIPAAgentManagement.DFAgentDescription;
 import jade.domain.FIPAAgentManagement.ServiceDescription;
@@ -33,12 +34,14 @@ public class MonitorAgent extends Agent {
                 deepScan = Boolean.parseBoolean((String) args[1]);
             }
         }
-        LOGGER.info("Monitoring directory: {}", directory);
-        LOGGER.info("Deep scan enabled: {}", deepScan);
+//        LOGGER.info("Monitoring directory: {}", directory);
+//        LOGGER.info("Deep scan enabled: {}", deepScan);
 
         // behaviour list
-        addBehaviour(new ScanFolder());
-        addBehaviour(new SendFileList());
+        addBehaviour(new RegisterService());  // register service
+        addBehaviour(new MessageListener());
+        //addBehaviour(new ScanFolder());     // MAKE TRIGGER
+        //addBehaviour(new SendFileList());   // MAKE TRIGGER
     }
 
     @Override
@@ -47,6 +50,53 @@ public class MonitorAgent extends Agent {
         // Cleanup code can be added here
     }
 
+    private class RegisterService extends OneShotBehaviour {
+        @Override
+        public void action() {
+            DFAgentDescription dfd = new DFAgentDescription();
+            dfd.setName(getAID());
+            ServiceDescription sd = new ServiceDescription();
+
+            sd.setType("monitor");
+            sd.setName(getLocalName()+ "-monitor-agent");
+
+            dfd.addServices(sd);
+            LOGGER.info("Registering service: {}", sd.getName());
+            try{
+                DFService.register(myAgent, dfd);
+                LOGGER.info("Service registered successfully.");
+            } catch (FIPAException e) {
+                LOGGER.error("Failed to register service: {}", e.getMessage());
+            }
+        }
+    }
+
+    private class MessageListener extends CyclicBehaviour {
+        @Override
+        public void action() {
+            ACLMessage msg = myAgent.receive();
+
+            if (msg != null && msg.getConversationId().equals("set-folder")) {
+                String content = msg.getContent();
+                LOGGER.info("Received folder setting request: {}", content);
+
+                // Process the message content
+                String[] parts = content.split(",");
+                if (parts.length >= 1) {
+                    directory = parts[0];
+                    deepScan = parts.length > 1 && Boolean.parseBoolean(parts[1]);
+                    LOGGER.info("Directory set to: {}", directory);
+                    LOGGER.info("Deep scan enabled: {}", deepScan);
+
+                } else {
+                    LOGGER.warn("Invalid folder setting request format.");
+                }
+            } else {
+                block(); // No message received, block until next message
+            }
+        }
+
+    }
     private class ScanFolder extends OneShotBehaviour {
         @Override
         public void action() {

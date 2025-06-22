@@ -76,7 +76,7 @@ public class ClassifierWorkerAgent extends Agent {
 
             for(String filePath : scannedFiles) {
                 String extension = filePath.substring(filePath.lastIndexOf('.')).toLowerCase();
-                String category = ClassifierManager.extensionMap.get(extension);
+                String category = ClassifierManager.getCategoryForFile(extension);
 
                 // Initialize the category list if not present
                 fileCategories.computeIfAbsent(category, k -> new ArrayList<>());
@@ -88,11 +88,10 @@ public class ClassifierWorkerAgent extends Agent {
 
             // TODO search the service directory for specified classifierss
             sendClassifiedFilesToSorter(fileCategories);
-            //myAgent.doDelete(); // shut down the agent as we don't need it anymore
+            myAgent.doDelete(); // shut down the agent as we don't need it anymore
         }
 
         private void sendClassifiedFilesToSorter(Map<String, List<String>> fileCategories) {
-            // TODO test when multiple workes send messages to the same sorter
             try {
                 ObjectMapper objectMapper = new ObjectMapper();
                 String jsonPayload = objectMapper.writeValueAsString(fileCategories);

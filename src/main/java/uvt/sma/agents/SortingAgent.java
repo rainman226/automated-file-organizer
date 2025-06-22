@@ -65,6 +65,17 @@ public class SortingAgent extends Agent {
         @Override
         public void action() {
             ACLMessage msg = myAgent.receive();
+
+            if(msg != null && msg.getConversationId().equals("set-folder")) {
+                String content = msg.getContent();
+                if (content != null && !content.isEmpty()) {
+                    targetFolder = content;
+                    LOGGER.info("Target folder set to: {}", targetFolder);
+                } else {
+                    LOGGER.warn("Received empty folder path. Using default: {}", targetFolder);
+                }
+            }
+
             if (msg != null && msg.getConversationId().equals("file-sorting-request")) {
                 try {
                     ObjectMapper objectMapper = new ObjectMapper();

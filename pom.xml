@@ -22,10 +22,22 @@
     </repositories>
 
     <dependencies>
+
         <dependency>
             <groupId>com.gitlab.jade-project</groupId>
             <artifactId>jade</artifactId>
-            <version>master-SNAPSHOT</version>
+            <version>m4.5.3</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.openjfx</groupId>
+            <artifactId>javafx-controls</artifactId>
+            <version>17.0.15</version>
+        </dependency>
+        <dependency>
+            <groupId>org.openjfx</groupId>
+            <artifactId>javafx-fxml</artifactId>
+            <version>17.0.15</version>
         </dependency>
 
         <dependency>
@@ -60,5 +72,23 @@
         </dependency>
 
     </dependencies>
+
+    <build>
+        <plugins>
+            <!-- JavaFX Maven Plugin -->
+            <plugin>
+                <groupId>org.openjfx</groupId>
+                <artifactId>javafx-maven-plugin</artifactId>
+                <version>0.0.8</version>
+                <configuration>
+                    <mainClass>uvt.sma.Main</mainClass>
+                    <options>
+                        <option>--add-opens=javafx.fxml/javafx.fxml=ALL-UNNAMED</option>
+                        <option>--ignore-module-path-exceptions</option>
+                    </options>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
 </project>

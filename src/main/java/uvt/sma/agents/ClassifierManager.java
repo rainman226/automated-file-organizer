@@ -29,7 +29,7 @@ public class ClassifierManager extends Agent {
 
         // add behaviours
         addBehaviour(new RegisterService());
-        addBehaviour(new AnswerMessages());
+        addBehaviour(new MessageListener());
     }
 
     @Override
@@ -64,7 +64,7 @@ public class ClassifierManager extends Agent {
         }
     }
 
-    private class AnswerMessages extends CyclicBehaviour {
+    private class MessageListener extends CyclicBehaviour {
         @Override
         public void action() {
             ACLMessage msg = receive();
@@ -112,6 +112,7 @@ public class ClassifierManager extends Agent {
 
     private void createWorkers() {
         try {
+            // TODO make it so it get the Wokers Container!
             ContainerController container = getContainerController(); // Get the container where this agent is running
 
             int workerCount = (int) Math.ceil((double) scannedFiles.size() / maxFiles); // based on the number of files and maxFiles
