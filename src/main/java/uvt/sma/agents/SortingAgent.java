@@ -158,7 +158,6 @@ public class SortingAgent extends Agent {
         * @param fileMap A map where keys are category names and values are lists of file paths.
      */
     private void sortFiles(Map<String, List<String>> fileMap) {
-
         LOGGER.info("Sorting files into categories...");
         Path targetPath = Paths.get(targetFolder);
 
@@ -166,15 +165,19 @@ public class SortingAgent extends Agent {
             String category = entry.getKey();
             List<String> files = entry.getValue();
 
-            Path categoryFolder = targetPath.resolve(category);
+            // Sanitize category name before using it in a path
+            String safeCategoryName = sanitizeCategoryName(category);
+            Path categoryFolder;
 
-            // create the category directory if it doesn't exist
             try {
+                categoryFolder = targetPath.resolve(safeCategoryName);
+
+                // create the category directory if it doesn't exist
                 if (!Files.exists(categoryFolder)) {
                     Files.createDirectories(categoryFolder);
                 }
-            } catch (IOException e) {
-                LOGGER.error("Failed to create directory for category {}: {}", category, e.getMessage());
+            } catch (Exception e) {
+                LOGGER.error("Error creating directory for category '{}', sanitized as '{}'. Exception: {}", category, safeCategoryName, e.toString());
                 continue;
             }
 
@@ -185,14 +188,18 @@ public class SortingAgent extends Agent {
 
                 try {
                     Files.move(sourcePath, targetFilePath, StandardCopyOption.REPLACE_EXISTING);
-                    LOGGER.info("Moved file {} to category {}.", sourcePath, category);
+                    LOGGER.info("Moved file '{}' to category '{}'.", sourcePath, category);
                 } catch (IOException e) {
-                    LOGGER.error("Failed to move file {}: {}", sourcePath, e.getMessage());
+                    LOGGER.error("Failed to move file '{}' to '{}': {}", sourcePath, targetFilePath, e.toString());
                 }
             }
-            //...
         }
+            //...
+    }
 
+    private String sanitizeCategoryName(String category) {
+        return category.replaceAll("[\\\\/:*?\"<>|]", "_").trim();
     }
 
 }
+
