@@ -18,7 +18,7 @@ import java.nio.file.Paths;
 import java.util.Set;
 
 public class MonitorAgent extends Agent {
-    private Set<String> scannedFiles = new java.util.HashSet<>();
+    private final Set<String> scannedFiles = new java.util.HashSet<>();
     private String directory;
     private Boolean deepScan;   // true for recursive scan, false for top-level only
     private DFAgentDescription[] managers;    // list of services
@@ -153,6 +153,7 @@ public class MonitorAgent extends Agent {
 
             try {
                 managers = DFService.search(myAgent, dfd);
+                searchGUIService();
 
                 if(managers.length > 0) {
                     LOGGER.info("Found {} classification coordinator(s). Sending file list.", managers.length);
@@ -161,7 +162,7 @@ public class MonitorAgent extends Agent {
                         LOGGER.warn("No files to send. The scannedFiles set is empty.");
                          MessageTemplate.sendMessage(
                                 myAgent,
-                                managers[0].getName(),
+                                GUIs[0].getName(),
                                 ACLMessage.INFORM,
                                 "file-list",
                                 "file-list",

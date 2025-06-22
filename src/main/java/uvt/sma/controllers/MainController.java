@@ -3,7 +3,6 @@ package uvt.sma.controllers;
 import javafx.application.Platform;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
-import javafx.scene.control.CheckBox;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.scene.text.Text;
@@ -21,10 +20,6 @@ import java.nio.charset.StandardCharsets;
 public class MainController {
     private static final Logger LOGGER = LogManager.getLogger(MainController.class);
     @FXML
-    private Button sourceSelectButton;
-    @FXML
-    private Button targetSelectButton;
-    @FXML
     private Button deepScanButton;
     @FXML
     private TextField sourceTextField;
@@ -32,8 +27,6 @@ public class MainController {
     private TextField targetTextField;
     @FXML
     private Text infoText;
-    @FXML
-    private Text categoriesText;
     @FXML
     private TextArea textArea;
 
@@ -134,7 +127,7 @@ public class MainController {
 
     public void startSorting() {
         if (sourcePath == null || targetPath == null) {
-            infoText.setText("Please select both source and target folders.");
+            System.out.println("Please select both source and target folders before starting.");
             return;
         }
 

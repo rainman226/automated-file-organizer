@@ -19,13 +19,8 @@ public class StartPlatform {
         StartPlatform.deepScan = deepScan;
     }
 
-    public StartPlatform() {
-
-    }
-
     public static void startPlatform() {
-        // Additional initialization logic can be added here
-        //
+        // === Initialize JADE Runtime ===
         jade.core.Runtime rt = jade.core.Runtime.instance();
 
         // === Main Container ===

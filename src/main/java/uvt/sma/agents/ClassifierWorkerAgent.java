@@ -20,7 +20,7 @@ import java.util.*;
 
 public class ClassifierWorkerAgent extends Agent {
     private static final long serialVersionUID = 1L;
-    private Set<String> scannedFiles = new java.util.HashSet<>();
+    private final Set<String> scannedFiles = new java.util.HashSet<>();
     private DFAgentDescription[] sorters; // list of sorting services
     private static final Logger LOGGER = LogManager.getLogger(ClassifierWorkerAgent.class);
     @Override
@@ -36,7 +36,7 @@ public class ClassifierWorkerAgent extends Agent {
             String files = (String) args[0];
             processMessageContent(files);
 
-            LOGGER.info("Sucesfully processed scan request with {} files.", scannedFiles.size());
+            LOGGER.info("Successfully processed scan request with {} files.", scannedFiles.size());
 
             addBehaviour(new SearchForSorters());
             addBehaviour(new ClassifyFiles());

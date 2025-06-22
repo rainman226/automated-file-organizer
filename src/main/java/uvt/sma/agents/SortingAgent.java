@@ -117,12 +117,12 @@ public class SortingAgent extends Agent {
                             ACLMessage.CONFIRM,
                             "files-sorted",
                             "confirm",
-                            "Sucesfully sorted files into categories: " + fileMap.keySet().toString()
+                            "Successfully sorted files into categories: " + fileMap.keySet().toString()
                     );
 
 
                 } catch (Exception e) {
-                    e.printStackTrace();
+                    LOGGER.warn("Failed to process file sorting request: {}", e.getMessage());
                 }
             } else {
                 block(); // Block until a new message arrives
