@@ -3232,3 +3232,524 @@
 2025-06-22 18:50:32,297 INFO u.s.a.GUIAgent [gui] Received confirmation message from sorter1: Sucesfully sorted files into categories: [Unknown, PDFs, Subtitles, Images, Documents, Executables, Archives, Videos]
 2025-06-22 18:50:32,299 INFO u.s.a.SortingAgent [sorter1] Received file sorting request with 12 categories.
 2025-06-22 18:50:32,299 INFO u.s.a.SortingAgent [sorter1] Sorting files into categories...
+2025-06-22 18:55:04,817 INFO u.s.c.MainController [JavaFX Application Thread] MainController initialized.
+2025-06-22 18:55:04,822 INFO u.s.c.MainController [JavaFX Application Thread] Redirected System.out to TextArea
+2025-06-22 18:55:15,717 INFO u.s.a.MonitorAgent [monitor] Monitor Agent monitor is starting up.
+2025-06-22 18:55:15,717 INFO u.s.a.ClassifierManager [manager] Classifier Manager Agent manager is starting up.
+2025-06-22 18:55:15,719 INFO u.s.a.ClassifierManager [manager] Registering service: manager-classification-coordinator
+2025-06-22 18:55:15,721 INFO u.s.a.MonitorAgent [monitor] Registering service: monitor-monitor-agent
+2025-06-22 18:55:15,734 INFO u.s.a.ClassifierManager [manager] Service registered successfully.
+2025-06-22 18:55:15,737 INFO u.s.a.MonitorAgent [monitor] Service registered successfully.
+2025-06-22 18:55:15,799 INFO u.s.a.SortingAgent [sorter1] Sorting Agent sorter1 is starting up.
+2025-06-22 18:55:15,806 INFO u.s.a.GUIAgent [gui] GUI Agent gui is starting up.
+2025-06-22 18:55:15,807 INFO u.s.a.GUIAgent [gui] Source folder: C:\Users\Asus\Downloads
+2025-06-22 18:55:15,807 INFO u.s.a.GUIAgent [gui] Target folder: C:\Users\Asus\Desktop\sorted
+2025-06-22 18:55:15,809 INFO u.s.a.GUIAgent [gui] Deep scan option: false
+2025-06-22 18:55:15,810 INFO u.s.a.GUIAgent [gui] Registering service: gui-gui-boss
+2025-06-22 18:55:15,811 INFO u.s.a.SortingAgent [sorter1] Registering service: sorter1-sorting-agent
+2025-06-22 18:55:15,817 INFO u.s.a.SortingAgent [sorter1] Service registered successfully.
+2025-06-22 18:55:15,821 INFO u.s.a.GUIAgent [gui] Service registered successfully.
+2025-06-22 18:55:15,821 INFO u.s.a.GUIAgent [gui] Providing source folder: C:\Users\Asus\Downloads and target folder: C:\Users\Asus\Desktop\sorted
+2025-06-22 18:55:15,835 INFO u.s.a.GUIAgent [gui] Found 1 sorting agents and 1 monitor agents.
+2025-06-22 18:55:15,840 INFO u.s.a.GUIAgent [gui] Sent target folder to sorter: ( agent-identifier :name sorter1@192.168.142.64:1099/JADE  :addresses (sequence http://DESKTOP-VJD2UDM:7778/acc ))
+2025-06-22 18:55:15,840 INFO u.s.a.SortingAgent [sorter1] Target folder set to: C:\Users\Asus\Desktop\sorted
+2025-06-22 18:55:15,843 INFO u.s.a.MonitorAgent [monitor] Received folder setting request: C:\Users\Asus\Downloads,false
+2025-06-22 18:55:15,843 INFO u.s.a.GUIAgent [gui] Received confirmation message from sorter1: Directory set to: C:\Users\Asus\Desktop\sorted
+2025-06-22 18:55:15,844 INFO u.s.a.MonitorAgent [monitor] Directory set to: C:\Users\Asus\Downloads
+2025-06-22 18:55:15,844 INFO u.s.a.MonitorAgent [monitor] Deep scan enabled: false
+2025-06-22 18:55:15,847 INFO u.s.a.GUIAgent [gui] Received confirmation message from monitor: Directory set to: C:\Users\Asus\Downloads, Deep scan: false
+2025-06-22 18:55:15,853 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Downloads\07a037c8250a7ae46033c1f758eb40a51c68fc51.dlc
+2025-06-22 18:55:15,856 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Downloads\089f909e37b3ef0c4d90687f7e22b68f-simon-r18-0.sanitized.cnf.xz
+2025-06-22 18:55:15,857 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Downloads\08ccc34df5d8eb9e9d45278af3dc093d-simon-r16-1.sanitized.cnf.xz
+2025-06-22 18:55:15,858 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Downloads\2025-Lab7_Modelare-Domeniu-1.pdf
+2025-06-22 18:55:15,858 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Downloads\2025_curs4-class-diagram-1.pdf
+2025-06-22 18:55:15,859 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Downloads\2025_curs4-class-diagram.pdf
+2025-06-22 18:55:15,859 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Downloads\2fcd8533eba981967292f1b6e41f7433-simon-r20-0.sanitized.cnf.xz
+2025-06-22 18:55:15,859 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Downloads\3129198788f182ce6955b18aa3c7e61e-simon-r24-1.sanitized.cnf.xz
+2025-06-22 18:55:15,859 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Downloads\5ee7de2bd112aa39485e79c9d487bf8f-simon-r23-1.sanitized.cnf.xz
+2025-06-22 18:55:15,859 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Downloads\7cbc3ce2052ba7c5b501f75af58ab3c4-simon-r22-1.sanitized.cnf.xz
+2025-06-22 18:55:15,860 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Downloads\7e1d279559b202016e5797901e731a39-simon-r25-0.sanitized.cnf.xz
+2025-06-22 18:55:15,860 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Downloads\9qBdZJbz.htm
+2025-06-22 18:55:15,861 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Downloads\ab705e122d282f8a5d0649042c1d8d5b.csv
+2025-06-22 18:55:15,862 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Downloads\apache-maven-3.9.5-bin.zip
+2025-06-22 18:55:15,863 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Downloads\apache-maven-3.9.5-src.zip
+2025-06-22 18:55:15,863 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Downloads\apache-tomcat-11.0.0.zip
+2025-06-22 18:55:15,864 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Downloads\archive(2).zip
+2025-06-22 18:55:15,864 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Downloads\archive.zip
+2025-06-22 18:55:15,865 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Downloads\arrhythmia.arff
+2025-06-22 18:55:15,865 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Downloads\autoPrice.arff
+2025-06-22 18:55:15,867 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Downloads\Autoruns.zip
+2025-06-22 18:55:15,868 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Downloads\autos(1).arff
+2025-06-22 18:55:15,869 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Downloads\autos.arff
+2025-06-22 18:55:15,870 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Downloads\baidu-antivirus-5-4-3-147185-multi-win.exe
+2025-06-22 18:55:15,871 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Downloads\BavPro_Setup_Mini_C1.exe
+2025-06-22 18:55:15,873 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Downloads\Bookish - prezentare.pptx
+2025-06-22 18:55:15,874 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Downloads\bookish(1).zip
+2025-06-22 18:55:15,874 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Downloads\bookish.zip
+2025-06-22 18:55:15,876 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Downloads\bootracer_free(1).zip
+2025-06-22 18:55:15,876 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Downloads\CarBoardApp.rar
+2025-06-22 18:55:15,876 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Downloads\connect_device_package.zip
+2025-06-22 18:55:15,877 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Downloads\CrystalMarkRetro1_0_2.exe
+2025-06-22 18:55:15,877 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Downloads\CrystalMarkRetro1_0_2Aoi.zip
+2025-06-22 18:55:15,878 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Downloads\dbeaver-ce-23.2.3-x86_64-setup.exe
+2025-06-22 18:55:15,878 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Downloads\designpatternstest.zip
+2025-06-22 18:55:15,878 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Downloads\desktop.ini
+2025-06-22 18:55:15,878 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Downloads\DM2025_Lab4.ipynb
+2025-06-22 18:55:15,878 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Downloads\DM2025_Lab7_EnsembleMethods.ipynb
+2025-06-22 18:55:15,878 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Downloads\DM2025_Lab7_Timeseries.ipynb
+2025-06-22 18:55:15,878 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Downloads\Document 12.05.2025.pdf
+2025-06-22 18:55:15,878 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Downloads\drive-download-20240103T152548Z-001.zip
+2025-06-22 18:55:15,878 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Downloads\drive-download-20241009T150454Z-001.zip
+2025-06-22 18:55:15,878 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Downloads\farkas flavius-1.pdf
+2025-06-22 18:55:15,878 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Downloads\farkas flavius.pdf
+2025-06-22 18:55:15,878 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Downloads\FeatureDiscretization.zip
+2025-06-22 18:55:15,878 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Downloads\FileZilla_3.68.1_win64_sponsored2-setup.exe
+2025-06-22 18:55:15,880 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Downloads\Foaie de calcul fără titlu.xlsx
+2025-06-22 18:55:15,881 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Downloads\Full_Webpack-1328-DJ2050_J510_Full_Webpack.exe
+2025-06-22 18:55:15,881 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Downloads\Git-2.42.0.2-64-bit.exe
+2025-06-22 18:55:15,881 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Downloads\Hotel Reservations.csv
+2025-06-22 18:55:15,881 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Downloads\IS_clase.pdf
+2025-06-22 18:55:15,882 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Downloads\jade-4.5.0.pom
+2025-06-22 18:55:15,882 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Downloads\JADE-all-4.6.0.zip
+2025-06-22 18:55:15,882 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Downloads\JADE-bin-4.6.0.zip
+2025-06-22 18:55:15,882 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Downloads\japanese.tex
+2025-06-22 18:55:15,883 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Downloads\jogoat.jpeg
+2025-06-22 18:55:15,883 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Downloads\jogoat.jpg
+2025-06-22 18:55:15,883 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Downloads\jogoat.png
+2025-06-22 18:55:15,883 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Downloads\Lab3.pdf
+2025-06-22 18:55:15,883 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Downloads\lab4&5.pdf
+2025-06-22 18:55:15,883 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Downloads\LaTeX_Template_Ro.pdf
+2025-06-22 18:55:15,883 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Downloads\Lethal.Company.v40.torrent
+2025-06-22 18:55:15,883 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Downloads\Lethal.Company.v40.zip
+2025-06-22 18:55:15,885 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Downloads\Model2.pdf
+2025-06-22 18:55:15,885 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Downloads\movies.csv
+2025-06-22 18:55:15,885 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Downloads\MSTeamsSetup.exe
+2025-06-22 18:55:15,885 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Downloads\node-v20.10.0-x64.msi
+2025-06-22 18:55:15,886 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Downloads\npp.8.7.Installer.x64.exe
+2025-06-22 18:55:15,886 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Downloads\NUME_Prenume_PMIS2(1).docx
+2025-06-22 18:55:15,886 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Downloads\OBS-Studio-30.1.2-Full-Installer-x64.exe
+2025-06-22 18:55:15,886 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Downloads\openjfx-17.0.15_windows-x64_bin-sdk.zip
+2025-06-22 18:55:15,886 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Downloads\players.csv
+2025-06-22 18:55:15,887 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Downloads\PopoviciAdrianRobertV6.r
+2025-06-22 18:55:15,887 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Downloads\PopoviciAdrian_Ia.pdf
+2025-06-22 18:55:15,888 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Downloads\POPOVICI_Adrian_PMIS2(1).docx
+2025-06-22 18:55:15,888 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Downloads\POPOVICI_Adrian_PMIS2.pdf
+2025-06-22 18:55:15,888 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Downloads\Postman-win64-Setup.exe
+2025-06-22 18:55:15,888 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Downloads\Prezentare fără titlu.pptx
+2025-06-22 18:55:15,889 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Downloads\Procesarea Imaginilor Color.pdf
+2025-06-22 18:55:15,889 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Downloads\ProcessExplorer.zip
+2025-06-22 18:55:15,889 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Downloads\putty.exe
+2025-06-22 18:55:15,889 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Downloads\rz59Rbp2.htm
+2025-06-22 18:55:15,889 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Downloads\sablon_licenta_tex.tex
+2025-06-22 18:55:15,890 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Downloads\sqlite-tools-win-x64-3490100.zip
+2025-06-22 18:55:15,890 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Downloads\Teme disertație propuse 2024-2025.pdf
+2025-06-22 18:55:15,890 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Downloads\TemplateBachelorMasterPresentation.zip
+2025-06-22 18:55:15,890 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Downloads\Test IS.pdf
+2025-06-22 18:55:15,890 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Downloads\testKey.pem
+2025-06-22 18:55:15,890 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Downloads\TestSpLab-main.zip
+2025-06-22 18:55:15,891 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Downloads\TinyWall-v3-Installer.msi
+2025-06-22 18:55:15,891 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Downloads\vlc-3.0.19-win64.exe
+2025-06-22 18:55:15,891 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Downloads\VSCodeUserSetup-x64-1.84.1.exe
+2025-06-22 18:55:15,891 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Downloads\wget-1.11.4-1-setup.exe
+2025-06-22 18:55:15,891 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Downloads\wine.zip
+2025-06-22 18:55:15,892 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Downloads\winrar-x64-701.exe
+2025-06-22 18:55:15,892 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Downloads\wp12988877-blade-runner-pc-wallpapers.png
+2025-06-22 18:55:15,892 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Downloads\wp12988886-blade-runner-pc-wallpapers.png
+2025-06-22 18:55:15,892 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Downloads\xampp-cli-master.zip
+2025-06-22 18:55:15,892 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Downloads\ZoneAlarmNGSetup_ZANG_FW_FR_AR8ZNP(1).exe
+2025-06-22 18:55:15,893 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Downloads\ZoneAlarmNGSetup_ZANG_FW_FR_AR8ZNP.exe
+2025-06-22 18:55:17,902 INFO u.s.a.MonitorAgent [monitor] Found 1 classification coordinator(s). Sending file list.
+2025-06-22 18:55:17,907 INFO u.s.a.MonitorAgent [monitor] File list sent to: manager
+2025-06-22 18:55:17,917 INFO u.s.a.ClassifierManager [manager] Received scan request from monitor: C:\Users\Asus\Downloads\07a037c8250a7ae46033c1f758eb40a51c68fc51.dlc,C:\Users\Asus\Downloads\JADE-bin-4.6.0.zip,C:\Users\Asus\Downloads\jogoat.png,C:\Users\Asus\Downloads\IS_clase.pdf,C:\Users\Asus\Downloads\7cbc3ce2052ba7c5b501f75af58ab3c4-simon-r22-1.sanitized.cnf.xz,C:\Users\Asus\Downloads\lab4&5.pdf,C:\Users\Asus\Downloads\wget-1.11.4-1-setup.exe,C:\Users\Asus\Downloads\wine.zip,C:\Users\Asus\Downloads\bootracer_free(1).zip,C:\Users\Asus\Downloads\archive(2).zip,C:\Users\Asus\Downloads\farkas flavius.pdf,C:\Users\Asus\Downloads\7e1d279559b202016e5797901e731a39-simon-r25-0.sanitized.cnf.xz,C:\Users\Asus\Downloads\OBS-Studio-30.1.2-Full-Installer-x64.exe,C:\Users\Asus\Downloads\NUME_Prenume_PMIS2(1).docx,C:\Users\Asus\Downloads\autoPrice.arff,C:\Users\Asus\Downloads\node-v20.10.0-x64.msi,C:\Users\Asus\Downloads\sqlite-tools-win-x64-3490100.zip,C:\Users\Asus\Downloads\2025_curs4-class-diagram.pdf,C:\Users\Asus\Downloads\Lab3.pdf,C:\Users\Asus\Downloads\winrar-x64-701.exe,C:\Users\Asus\Downloads\dbeaver-ce-23.2.3-x86_64-setup.exe,C:\Users\Asus\Downloads\FeatureDiscretization.zip,C:\Users\Asus\Downloads\Autoruns.zip,C:\Users\Asus\Downloads\BavPro_Setup_Mini_C1.exe,C:\Users\Asus\Downloads\FileZilla_3.68.1_win64_sponsored2-setup.exe,C:\Users\Asus\Downloads\Git-2.42.0.2-64-bit.exe,C:\Users\Asus\Downloads\LaTeX_Template_Ro.pdf,C:\Users\Asus\Downloads\drive-download-20240103T152548Z-001.zip,C:\Users\Asus\Downloads\TestSpLab-main.zip,C:\Users\Asus\Downloads\npp.8.7.Installer.x64.exe,C:\Users\Asus\Downloads\apache-maven-3.9.5-bin.zip,C:\Users\Asus\Downloads\jade-4.5.0.pom,C:\Users\Asus\Downloads\Test IS.pdf,C:\Users\Asus\Downloads\Procesarea Imaginilor Color.pdf,C:\Users\Asus\Downloads\CrystalMarkRetro1_0_2.exe,C:\Users\Asus\Downloads\POPOVICI_Adrian_PMIS2(1).docx,C:\Users\Asus\Downloads\DM2025_Lab7_Timeseries.ipynb,C:\Users\Asus\Downloads\VSCodeUserSetup-x64-1.84.1.exe,C:\Users\Asus\Downloads\MSTeamsSetup.exe,C:\Users\Asus\Downloads\putty.exe,C:\Users\Asus\Downloads\Lethal.Company.v40.zip,C:\Users\Asus\Downloads\arrhythmia.arff,C:\Users\Asus\Downloads\PopoviciAdrian_Ia.pdf,C:\Users\Asus\Downloads\vlc-3.0.19-win64.exe,C:\Users\Asus\Downloads\Postman-win64-Setup.exe,C:\Users\Asus\Downloads\ProcessExplorer.zip,C:\Users\Asus\Downloads\wp12988877-blade-runner-pc-wallpapers.png,C:\Users\Asus\Downloads\Lethal.Company.v40.torrent,C:\Users\Asus\Downloads\TemplateBachelorMasterPresentation.zip,C:\Users\Asus\Downloads\japanese.tex,C:\Users\Asus\Downloads\JADE-all-4.6.0.zip,C:\Users\Asus\Downloads\movies.csv,C:\Users\Asus\Downloads\Hotel Reservations.csv,C:\Users\Asus\Downloads\ZoneAlarmNGSetup_ZANG_FW_FR_AR8ZNP(1).exe,C:\Users\Asus\Downloads\Bookish - prezentare.pptx,C:\Users\Asus\Downloads\9qBdZJbz.htm,C:\Users\Asus\Downloads\CrystalMarkRetro1_0_2Aoi.zip,C:\Users\Asus\Downloads\sablon_licenta_tex.tex,C:\Users\Asus\Downloads\2025_curs4-class-diagram-1.pdf,C:\Users\Asus\Downloads\089f909e37b3ef0c4d90687f7e22b68f-simon-r18-0.sanitized.cnf.xz,C:\Users\Asus\Downloads\farkas flavius-1.pdf,C:\Users\Asus\Downloads\bookish.zip,C:\Users\Asus\Downloads\CarBoardApp.rar,C:\Users\Asus\Downloads\jogoat.jpeg,C:\Users\Asus\Downloads\wp12988886-blade-runner-pc-wallpapers.png,C:\Users\Asus\Downloads\08ccc34df5d8eb9e9d45278af3dc093d-simon-r16-1.sanitized.cnf.xz,C:\Users\Asus\Downloads\autos.arff,C:\Users\Asus\Downloads\DM2025_Lab4.ipynb,C:\Users\Asus\Downloads\Foaie de calcul fără titlu.xlsx,C:\Users\Asus\Downloads\desktop.ini,C:\Users\Asus\Downloads\POPOVICI_Adrian_PMIS2.pdf,C:\Users\Asus\Downloads\3129198788f182ce6955b18aa3c7e61e-simon-r24-1.sanitized.cnf.xz,C:\Users\Asus\Downloads\Prezentare fără titlu.pptx,C:\Users\Asus\Downloads\ZoneAlarmNGSetup_ZANG_FW_FR_AR8ZNP.exe,C:\Users\Asus\Downloads\apache-tomcat-11.0.0.zip,C:\Users\Asus\Downloads\5ee7de2bd112aa39485e79c9d487bf8f-simon-r23-1.sanitized.cnf.xz,C:\Users\Asus\Downloads\bookish(1).zip,C:\Users\Asus\Downloads\Model2.pdf,C:\Users\Asus\Downloads\TinyWall-v3-Installer.msi,C:\Users\Asus\Downloads\ab705e122d282f8a5d0649042c1d8d5b.csv,C:\Users\Asus\Downloads\autos(1).arff,C:\Users\Asus\Downloads\PopoviciAdrianRobertV6.r,C:\Users\Asus\Downloads\drive-download-20241009T150454Z-001.zip,C:\Users\Asus\Downloads\2fcd8533eba981967292f1b6e41f7433-simon-r20-0.sanitized.cnf.xz,C:\Users\Asus\Downloads\Document 12.05.2025.pdf,C:\Users\Asus\Downloads\baidu-antivirus-5-4-3-147185-multi-win.exe,C:\Users\Asus\Downloads\2025-Lab7_Modelare-Domeniu-1.pdf,C:\Users\Asus\Downloads\DM2025_Lab7_EnsembleMethods.ipynb,C:\Users\Asus\Downloads\Teme disertație propuse 2024-2025.pdf,C:\Users\Asus\Downloads\testKey.pem,C:\Users\Asus\Downloads\rz59Rbp2.htm,C:\Users\Asus\Downloads\jogoat.jpg,C:\Users\Asus\Downloads\apache-maven-3.9.5-src.zip,C:\Users\Asus\Downloads\designpatternstest.zip,C:\Users\Asus\Downloads\Full_Webpack-1328-DJ2050_J510_Full_Webpack.exe,C:\Users\Asus\Downloads\openjfx-17.0.15_windows-x64_bin-sdk.zip,C:\Users\Asus\Downloads\connect_device_package.zip,C:\Users\Asus\Downloads\players.csv,C:\Users\Asus\Downloads\archive.zip,C:\Users\Asus\Downloads\xampp-cli-master.zip
+2025-06-22 18:55:17,918 INFO u.s.a.ClassifierManager [manager] Processed scan request. Current scanned files: 100
+2025-06-22 18:55:17,921 INFO u.s.a.ClassifierManager [manager] Creating 1 worker agents to process 100 files.
+2025-06-22 18:55:17,924 INFO u.s.a.MonitorAgent [monitor] Received CONFIRM message from manager: Scan request processed. Number of files to classify: 100
+2025-06-22 18:55:17,928 INFO u.s.a.ClassifierWorkerAgent [worker-1] Classifier Worker Agent worker-1 is starting up in container ClassifierContainer.
+2025-06-22 18:55:17,930 INFO u.s.a.ClassifierWorkerAgent [worker-1] Processed scan request. Current scanned files: 100
+2025-06-22 18:55:17,930 INFO u.s.a.ClassifierWorkerAgent [worker-1] Sucesfully processed scan request with 100 files.
+2025-06-22 18:55:17,939 INFO u.s.a.ClassifierWorkerAgent [worker-1] Found 1 sorting services.
+2025-06-22 18:55:17,948 INFO u.s.a.ClassifierWorkerAgent [worker-1] Classified 100 files into 12 categories.
+2025-06-22 18:55:17,958 WARN u.s.a.ClassifierWorkerAgent [worker-1] No specialized classifiers found for category: Certificates / Keys
+2025-06-22 18:55:17,965 WARN u.s.a.ClassifierWorkerAgent [worker-1] No specialized classifiers found for category: Source Code
+2025-06-22 18:55:17,978 WARN u.s.a.ClassifierWorkerAgent [worker-1] No specialized classifiers found for category: PDFs
+2025-06-22 18:55:17,994 WARN u.s.a.ClassifierWorkerAgent [worker-1] No specialized classifiers found for category: Unknown
+2025-06-22 18:55:18,002 WARN u.s.a.ClassifierWorkerAgent [worker-1] No specialized classifiers found for category: Spreadsheets
+2025-06-22 18:55:18,013 WARN u.s.a.ClassifierWorkerAgent [worker-1] No specialized classifiers found for category: Documents
+2025-06-22 18:55:18,022 WARN u.s.a.ClassifierWorkerAgent [worker-1] No specialized classifiers found for category: Images
+2025-06-22 18:55:18,031 WARN u.s.a.ClassifierWorkerAgent [worker-1] No specialized classifiers found for category: Configuration Files
+2025-06-22 18:55:18,038 WARN u.s.a.ClassifierWorkerAgent [worker-1] No specialized classifiers found for category: Web Files
+2025-06-22 18:55:18,050 WARN u.s.a.ClassifierWorkerAgent [worker-1] No specialized classifiers found for category: Executables
+2025-06-22 18:55:18,057 WARN u.s.a.ClassifierWorkerAgent [worker-1] No specialized classifiers found for category: Archives
+2025-06-22 18:55:18,069 WARN u.s.a.ClassifierWorkerAgent [worker-1] No specialized classifiers found for category: Presentations
+2025-06-22 18:55:18,302 INFO u.s.a.ClassifierWorkerAgent [worker-1] Classifier Worker Agent worker-1 is shutting down.
+2025-06-22 18:55:18,303 INFO u.s.a.ClassifierWorkerAgent [worker-1] Notification sent to manager about completion of work.
+2025-06-22 18:55:18,306 INFO u.s.a.ClassifierManager [manager] Received worker finished notice from worker-1: Worker worker-1 has finished processing files.
+2025-06-22 18:55:18,342 INFO u.s.a.SortingAgent [sorter1] Received file sorting request with 12 categories.
+2025-06-22 18:55:18,342 INFO u.s.a.SortingAgent [sorter1] Sorting files into categories...
+2025-06-22 18:55:18,352 INFO u.s.a.SortingAgent [sorter1] Moved file 'C:\Users\Asus\Downloads\testKey.pem' to category 'Certificates / Keys'.
+2025-06-22 18:55:18,356 INFO u.s.a.SortingAgent [sorter1] Moved file 'C:\Users\Asus\Downloads\PopoviciAdrianRobertV6.r' to category 'Source Code'.
+2025-06-22 18:55:18,358 INFO u.s.a.SortingAgent [sorter1] Moved file 'C:\Users\Asus\Downloads\IS_clase.pdf' to category 'PDFs'.
+2025-06-22 18:55:18,361 INFO u.s.a.SortingAgent [sorter1] Moved file 'C:\Users\Asus\Downloads\lab4&5.pdf' to category 'PDFs'.
+2025-06-22 18:55:18,365 INFO u.s.a.SortingAgent [sorter1] Moved file 'C:\Users\Asus\Downloads\farkas flavius.pdf' to category 'PDFs'.
+2025-06-22 18:55:18,368 INFO u.s.a.SortingAgent [sorter1] Moved file 'C:\Users\Asus\Downloads\2025_curs4-class-diagram.pdf' to category 'PDFs'.
+2025-06-22 18:55:18,371 INFO u.s.a.SortingAgent [sorter1] Moved file 'C:\Users\Asus\Downloads\Lab3.pdf' to category 'PDFs'.
+2025-06-22 18:55:18,374 INFO u.s.a.SortingAgent [sorter1] Moved file 'C:\Users\Asus\Downloads\LaTeX_Template_Ro.pdf' to category 'PDFs'.
+2025-06-22 18:55:18,377 INFO u.s.a.SortingAgent [sorter1] Moved file 'C:\Users\Asus\Downloads\Test IS.pdf' to category 'PDFs'.
+2025-06-22 18:55:18,380 INFO u.s.a.SortingAgent [sorter1] Moved file 'C:\Users\Asus\Downloads\Procesarea Imaginilor Color.pdf' to category 'PDFs'.
+2025-06-22 18:55:18,383 INFO u.s.a.SortingAgent [sorter1] Moved file 'C:\Users\Asus\Downloads\PopoviciAdrian_Ia.pdf' to category 'PDFs'.
+2025-06-22 18:55:18,385 INFO u.s.a.SortingAgent [sorter1] Moved file 'C:\Users\Asus\Downloads\2025_curs4-class-diagram-1.pdf' to category 'PDFs'.
+2025-06-22 18:55:18,388 INFO u.s.a.SortingAgent [sorter1] Moved file 'C:\Users\Asus\Downloads\farkas flavius-1.pdf' to category 'PDFs'.
+2025-06-22 18:55:18,390 INFO u.s.a.SortingAgent [sorter1] Moved file 'C:\Users\Asus\Downloads\POPOVICI_Adrian_PMIS2.pdf' to category 'PDFs'.
+2025-06-22 18:55:18,393 INFO u.s.a.SortingAgent [sorter1] Moved file 'C:\Users\Asus\Downloads\Model2.pdf' to category 'PDFs'.
+2025-06-22 18:55:18,395 INFO u.s.a.SortingAgent [sorter1] Moved file 'C:\Users\Asus\Downloads\Document 12.05.2025.pdf' to category 'PDFs'.
+2025-06-22 18:55:18,398 INFO u.s.a.SortingAgent [sorter1] Moved file 'C:\Users\Asus\Downloads\2025-Lab7_Modelare-Domeniu-1.pdf' to category 'PDFs'.
+2025-06-22 18:55:18,401 INFO u.s.a.SortingAgent [sorter1] Moved file 'C:\Users\Asus\Downloads\Teme disertație propuse 2024-2025.pdf' to category 'PDFs'.
+2025-06-22 18:55:18,404 INFO u.s.a.SortingAgent [sorter1] Moved file 'C:\Users\Asus\Downloads\07a037c8250a7ae46033c1f758eb40a51c68fc51.dlc' to category 'Unknown'.
+2025-06-22 18:55:18,406 INFO u.s.a.SortingAgent [sorter1] Moved file 'C:\Users\Asus\Downloads\autoPrice.arff' to category 'Unknown'.
+2025-06-22 18:55:18,408 INFO u.s.a.SortingAgent [sorter1] Moved file 'C:\Users\Asus\Downloads\jade-4.5.0.pom' to category 'Unknown'.
+2025-06-22 18:55:18,411 INFO u.s.a.SortingAgent [sorter1] Moved file 'C:\Users\Asus\Downloads\DM2025_Lab7_Timeseries.ipynb' to category 'Unknown'.
+2025-06-22 18:55:18,415 INFO u.s.a.SortingAgent [sorter1] Moved file 'C:\Users\Asus\Downloads\arrhythmia.arff' to category 'Unknown'.
+2025-06-22 18:55:18,417 INFO u.s.a.SortingAgent [sorter1] Moved file 'C:\Users\Asus\Downloads\Lethal.Company.v40.torrent' to category 'Unknown'.
+2025-06-22 18:55:18,420 INFO u.s.a.SortingAgent [sorter1] Moved file 'C:\Users\Asus\Downloads\autos.arff' to category 'Unknown'.
+2025-06-22 18:55:18,421 INFO u.s.a.SortingAgent [sorter1] Moved file 'C:\Users\Asus\Downloads\DM2025_Lab4.ipynb' to category 'Unknown'.
+2025-06-22 18:55:18,423 INFO u.s.a.SortingAgent [sorter1] Moved file 'C:\Users\Asus\Downloads\autos(1).arff' to category 'Unknown'.
+2025-06-22 18:55:18,426 INFO u.s.a.SortingAgent [sorter1] Moved file 'C:\Users\Asus\Downloads\DM2025_Lab7_EnsembleMethods.ipynb' to category 'Unknown'.
+2025-06-22 18:55:18,428 INFO u.s.a.SortingAgent [sorter1] Moved file 'C:\Users\Asus\Downloads\movies.csv' to category 'Spreadsheets'.
+2025-06-22 18:55:18,431 INFO u.s.a.SortingAgent [sorter1] Moved file 'C:\Users\Asus\Downloads\Hotel Reservations.csv' to category 'Spreadsheets'.
+2025-06-22 18:55:18,434 INFO u.s.a.SortingAgent [sorter1] Moved file 'C:\Users\Asus\Downloads\Foaie de calcul fără titlu.xlsx' to category 'Spreadsheets'.
+2025-06-22 18:55:18,436 INFO u.s.a.SortingAgent [sorter1] Moved file 'C:\Users\Asus\Downloads\ab705e122d282f8a5d0649042c1d8d5b.csv' to category 'Spreadsheets'.
+2025-06-22 18:55:18,438 INFO u.s.a.SortingAgent [sorter1] Moved file 'C:\Users\Asus\Downloads\players.csv' to category 'Spreadsheets'.
+2025-06-22 18:55:18,440 INFO u.s.a.SortingAgent [sorter1] Moved file 'C:\Users\Asus\Downloads\NUME_Prenume_PMIS2(1).docx' to category 'Documents'.
+2025-06-22 18:55:18,442 INFO u.s.a.SortingAgent [sorter1] Moved file 'C:\Users\Asus\Downloads\POPOVICI_Adrian_PMIS2(1).docx' to category 'Documents'.
+2025-06-22 18:55:18,444 INFO u.s.a.SortingAgent [sorter1] Moved file 'C:\Users\Asus\Downloads\japanese.tex' to category 'Documents'.
+2025-06-22 18:55:18,446 INFO u.s.a.SortingAgent [sorter1] Moved file 'C:\Users\Asus\Downloads\sablon_licenta_tex.tex' to category 'Documents'.
+2025-06-22 18:55:18,448 INFO u.s.a.SortingAgent [sorter1] Moved file 'C:\Users\Asus\Downloads\jogoat.png' to category 'Images'.
+2025-06-22 18:55:18,450 INFO u.s.a.SortingAgent [sorter1] Moved file 'C:\Users\Asus\Downloads\wp12988877-blade-runner-pc-wallpapers.png' to category 'Images'.
+2025-06-22 18:55:18,452 INFO u.s.a.SortingAgent [sorter1] Moved file 'C:\Users\Asus\Downloads\jogoat.jpeg' to category 'Images'.
+2025-06-22 18:55:18,455 INFO u.s.a.SortingAgent [sorter1] Moved file 'C:\Users\Asus\Downloads\wp12988886-blade-runner-pc-wallpapers.png' to category 'Images'.
+2025-06-22 18:55:18,458 INFO u.s.a.SortingAgent [sorter1] Moved file 'C:\Users\Asus\Downloads\jogoat.jpg' to category 'Images'.
+2025-06-22 18:55:18,460 INFO u.s.a.SortingAgent [sorter1] Moved file 'C:\Users\Asus\Downloads\desktop.ini' to category 'Configuration Files'.
+2025-06-22 18:55:18,463 INFO u.s.a.SortingAgent [sorter1] Moved file 'C:\Users\Asus\Downloads\9qBdZJbz.htm' to category 'Web Files'.
+2025-06-22 18:55:18,466 INFO u.s.a.SortingAgent [sorter1] Moved file 'C:\Users\Asus\Downloads\rz59Rbp2.htm' to category 'Web Files'.
+2025-06-22 18:55:18,469 INFO u.s.a.SortingAgent [sorter1] Moved file 'C:\Users\Asus\Downloads\wget-1.11.4-1-setup.exe' to category 'Executables'.
+2025-06-22 18:55:18,471 INFO u.s.a.SortingAgent [sorter1] Moved file 'C:\Users\Asus\Downloads\OBS-Studio-30.1.2-Full-Installer-x64.exe' to category 'Executables'.
+2025-06-22 18:55:18,474 INFO u.s.a.SortingAgent [sorter1] Moved file 'C:\Users\Asus\Downloads\node-v20.10.0-x64.msi' to category 'Executables'.
+2025-06-22 18:55:18,476 INFO u.s.a.SortingAgent [sorter1] Moved file 'C:\Users\Asus\Downloads\winrar-x64-701.exe' to category 'Executables'.
+2025-06-22 18:55:18,480 INFO u.s.a.SortingAgent [sorter1] Moved file 'C:\Users\Asus\Downloads\dbeaver-ce-23.2.3-x86_64-setup.exe' to category 'Executables'.
+2025-06-22 18:55:18,484 INFO u.s.a.SortingAgent [sorter1] Moved file 'C:\Users\Asus\Downloads\BavPro_Setup_Mini_C1.exe' to category 'Executables'.
+2025-06-22 18:55:18,489 INFO u.s.a.SortingAgent [sorter1] Moved file 'C:\Users\Asus\Downloads\FileZilla_3.68.1_win64_sponsored2-setup.exe' to category 'Executables'.
+2025-06-22 18:55:18,494 INFO u.s.a.SortingAgent [sorter1] Moved file 'C:\Users\Asus\Downloads\Git-2.42.0.2-64-bit.exe' to category 'Executables'.
+2025-06-22 18:55:18,496 INFO u.s.a.SortingAgent [sorter1] Moved file 'C:\Users\Asus\Downloads\npp.8.7.Installer.x64.exe' to category 'Executables'.
+2025-06-22 18:55:18,497 INFO u.s.a.SortingAgent [sorter1] Moved file 'C:\Users\Asus\Downloads\CrystalMarkRetro1_0_2.exe' to category 'Executables'.
+2025-06-22 18:55:18,499 INFO u.s.a.SortingAgent [sorter1] Moved file 'C:\Users\Asus\Downloads\VSCodeUserSetup-x64-1.84.1.exe' to category 'Executables'.
+2025-06-22 18:55:18,501 INFO u.s.a.SortingAgent [sorter1] Moved file 'C:\Users\Asus\Downloads\MSTeamsSetup.exe' to category 'Executables'.
+2025-06-22 18:55:18,504 INFO u.s.a.SortingAgent [sorter1] Moved file 'C:\Users\Asus\Downloads\putty.exe' to category 'Executables'.
+2025-06-22 18:55:18,506 INFO u.s.a.SortingAgent [sorter1] Moved file 'C:\Users\Asus\Downloads\vlc-3.0.19-win64.exe' to category 'Executables'.
+2025-06-22 18:55:18,508 INFO u.s.a.SortingAgent [sorter1] Moved file 'C:\Users\Asus\Downloads\Postman-win64-Setup.exe' to category 'Executables'.
+2025-06-22 18:55:18,511 INFO u.s.a.SortingAgent [sorter1] Moved file 'C:\Users\Asus\Downloads\ZoneAlarmNGSetup_ZANG_FW_FR_AR8ZNP(1).exe' to category 'Executables'.
+2025-06-22 18:55:18,514 INFO u.s.a.SortingAgent [sorter1] Moved file 'C:\Users\Asus\Downloads\ZoneAlarmNGSetup_ZANG_FW_FR_AR8ZNP.exe' to category 'Executables'.
+2025-06-22 18:55:18,516 INFO u.s.a.SortingAgent [sorter1] Moved file 'C:\Users\Asus\Downloads\TinyWall-v3-Installer.msi' to category 'Executables'.
+2025-06-22 18:55:18,520 INFO u.s.a.SortingAgent [sorter1] Moved file 'C:\Users\Asus\Downloads\baidu-antivirus-5-4-3-147185-multi-win.exe' to category 'Executables'.
+2025-06-22 18:55:18,522 INFO u.s.a.SortingAgent [sorter1] Moved file 'C:\Users\Asus\Downloads\Full_Webpack-1328-DJ2050_J510_Full_Webpack.exe' to category 'Executables'.
+2025-06-22 18:55:18,525 INFO u.s.a.SortingAgent [sorter1] Moved file 'C:\Users\Asus\Downloads\JADE-bin-4.6.0.zip' to category 'Archives'.
+2025-06-22 18:55:18,527 INFO u.s.a.SortingAgent [sorter1] Moved file 'C:\Users\Asus\Downloads\7cbc3ce2052ba7c5b501f75af58ab3c4-simon-r22-1.sanitized.cnf.xz' to category 'Archives'.
+2025-06-22 18:55:18,529 INFO u.s.a.SortingAgent [sorter1] Moved file 'C:\Users\Asus\Downloads\wine.zip' to category 'Archives'.
+2025-06-22 18:55:18,531 INFO u.s.a.SortingAgent [sorter1] Moved file 'C:\Users\Asus\Downloads\bootracer_free(1).zip' to category 'Archives'.
+2025-06-22 18:55:18,534 INFO u.s.a.SortingAgent [sorter1] Moved file 'C:\Users\Asus\Downloads\archive(2).zip' to category 'Archives'.
+2025-06-22 18:55:18,538 INFO u.s.a.SortingAgent [sorter1] Moved file 'C:\Users\Asus\Downloads\7e1d279559b202016e5797901e731a39-simon-r25-0.sanitized.cnf.xz' to category 'Archives'.
+2025-06-22 18:55:18,543 INFO u.s.a.SortingAgent [sorter1] Moved file 'C:\Users\Asus\Downloads\sqlite-tools-win-x64-3490100.zip' to category 'Archives'.
+2025-06-22 18:55:18,545 INFO u.s.a.SortingAgent [sorter1] Moved file 'C:\Users\Asus\Downloads\FeatureDiscretization.zip' to category 'Archives'.
+2025-06-22 18:55:18,548 INFO u.s.a.SortingAgent [sorter1] Moved file 'C:\Users\Asus\Downloads\Autoruns.zip' to category 'Archives'.
+2025-06-22 18:55:18,551 INFO u.s.a.SortingAgent [sorter1] Moved file 'C:\Users\Asus\Downloads\drive-download-20240103T152548Z-001.zip' to category 'Archives'.
+2025-06-22 18:55:18,555 INFO u.s.a.SortingAgent [sorter1] Moved file 'C:\Users\Asus\Downloads\TestSpLab-main.zip' to category 'Archives'.
+2025-06-22 18:55:18,559 INFO u.s.a.SortingAgent [sorter1] Moved file 'C:\Users\Asus\Downloads\apache-maven-3.9.5-bin.zip' to category 'Archives'.
+2025-06-22 18:55:18,562 INFO u.s.a.SortingAgent [sorter1] Moved file 'C:\Users\Asus\Downloads\Lethal.Company.v40.zip' to category 'Archives'.
+2025-06-22 18:55:18,565 INFO u.s.a.SortingAgent [sorter1] Moved file 'C:\Users\Asus\Downloads\ProcessExplorer.zip' to category 'Archives'.
+2025-06-22 18:55:18,569 INFO u.s.a.SortingAgent [sorter1] Moved file 'C:\Users\Asus\Downloads\TemplateBachelorMasterPresentation.zip' to category 'Archives'.
+2025-06-22 18:55:18,572 INFO u.s.a.SortingAgent [sorter1] Moved file 'C:\Users\Asus\Downloads\JADE-all-4.6.0.zip' to category 'Archives'.
+2025-06-22 18:55:18,576 INFO u.s.a.SortingAgent [sorter1] Moved file 'C:\Users\Asus\Downloads\CrystalMarkRetro1_0_2Aoi.zip' to category 'Archives'.
+2025-06-22 18:55:18,579 INFO u.s.a.SortingAgent [sorter1] Moved file 'C:\Users\Asus\Downloads\089f909e37b3ef0c4d90687f7e22b68f-simon-r18-0.sanitized.cnf.xz' to category 'Archives'.
+2025-06-22 18:55:18,582 INFO u.s.a.SortingAgent [sorter1] Moved file 'C:\Users\Asus\Downloads\bookish.zip' to category 'Archives'.
+2025-06-22 18:55:18,584 INFO u.s.a.SortingAgent [sorter1] Moved file 'C:\Users\Asus\Downloads\CarBoardApp.rar' to category 'Archives'.
+2025-06-22 18:55:18,587 INFO u.s.a.SortingAgent [sorter1] Moved file 'C:\Users\Asus\Downloads\08ccc34df5d8eb9e9d45278af3dc093d-simon-r16-1.sanitized.cnf.xz' to category 'Archives'.
+2025-06-22 18:55:18,590 INFO u.s.a.SortingAgent [sorter1] Moved file 'C:\Users\Asus\Downloads\3129198788f182ce6955b18aa3c7e61e-simon-r24-1.sanitized.cnf.xz' to category 'Archives'.
+2025-06-22 18:55:18,593 INFO u.s.a.SortingAgent [sorter1] Moved file 'C:\Users\Asus\Downloads\apache-tomcat-11.0.0.zip' to category 'Archives'.
+2025-06-22 18:55:18,596 INFO u.s.a.SortingAgent [sorter1] Moved file 'C:\Users\Asus\Downloads\5ee7de2bd112aa39485e79c9d487bf8f-simon-r23-1.sanitized.cnf.xz' to category 'Archives'.
+2025-06-22 18:55:18,599 INFO u.s.a.SortingAgent [sorter1] Moved file 'C:\Users\Asus\Downloads\bookish(1).zip' to category 'Archives'.
+2025-06-22 18:55:18,601 INFO u.s.a.SortingAgent [sorter1] Moved file 'C:\Users\Asus\Downloads\drive-download-20241009T150454Z-001.zip' to category 'Archives'.
+2025-06-22 18:55:18,605 INFO u.s.a.SortingAgent [sorter1] Moved file 'C:\Users\Asus\Downloads\2fcd8533eba981967292f1b6e41f7433-simon-r20-0.sanitized.cnf.xz' to category 'Archives'.
+2025-06-22 18:55:18,608 INFO u.s.a.SortingAgent [sorter1] Moved file 'C:\Users\Asus\Downloads\apache-maven-3.9.5-src.zip' to category 'Archives'.
+2025-06-22 18:55:18,611 INFO u.s.a.SortingAgent [sorter1] Moved file 'C:\Users\Asus\Downloads\designpatternstest.zip' to category 'Archives'.
+2025-06-22 18:55:18,615 INFO u.s.a.SortingAgent [sorter1] Moved file 'C:\Users\Asus\Downloads\openjfx-17.0.15_windows-x64_bin-sdk.zip' to category 'Archives'.
+2025-06-22 18:55:18,618 INFO u.s.a.SortingAgent [sorter1] Moved file 'C:\Users\Asus\Downloads\connect_device_package.zip' to category 'Archives'.
+2025-06-22 18:55:18,621 INFO u.s.a.SortingAgent [sorter1] Moved file 'C:\Users\Asus\Downloads\archive.zip' to category 'Archives'.
+2025-06-22 18:55:18,623 INFO u.s.a.SortingAgent [sorter1] Moved file 'C:\Users\Asus\Downloads\xampp-cli-master.zip' to category 'Archives'.
+2025-06-22 18:55:18,625 INFO u.s.a.SortingAgent [sorter1] Moved file 'C:\Users\Asus\Downloads\Bookish - prezentare.pptx' to category 'Presentations'.
+2025-06-22 18:55:18,629 INFO u.s.a.SortingAgent [sorter1] Moved file 'C:\Users\Asus\Downloads\Prezentare fără titlu.pptx' to category 'Presentations'.
+2025-06-22 18:55:18,637 INFO u.s.a.SortingAgent [sorter1] Found 1 GUI services.
+2025-06-22 18:55:18,641 INFO u.s.a.GUIAgent [gui] Received confirmation message from sorter1: Sucesfully sorted files into categories: [Certificates / Keys, Source Code, PDFs, Unknown, Spreadsheets, Documents, Images, Configuration Files, Web Files, Executables, Archives, Presentations]
+2025-06-22 19:01:56,587 INFO u.s.c.MainController [JavaFX Application Thread] MainController initialized.
+2025-06-22 19:01:56,593 INFO u.s.c.MainController [JavaFX Application Thread] Redirected System.out to TextArea
+2025-06-22 19:02:24,415 INFO u.s.a.MonitorAgent [monitor] Monitor Agent monitor is starting up.
+2025-06-22 19:02:24,417 INFO u.s.a.ClassifierManager [manager] Classifier Manager Agent manager is starting up.
+2025-06-22 19:02:24,419 INFO u.s.a.ClassifierManager [manager] Registering service: manager-classification-coordinator
+2025-06-22 19:02:24,419 INFO u.s.a.MonitorAgent [monitor] Registering service: monitor-monitor-agent
+2025-06-22 19:02:24,428 INFO u.s.a.ClassifierManager [manager] Service registered successfully.
+2025-06-22 19:02:24,430 INFO u.s.a.MonitorAgent [monitor] Service registered successfully.
+2025-06-22 19:02:24,440 INFO u.s.a.SortingAgent [sorter1] Sorting Agent sorter1 is starting up.
+2025-06-22 19:02:24,444 INFO u.s.a.SortingAgent [sorter1] Registering service: sorter1-sorting-agent
+2025-06-22 19:02:24,445 INFO u.s.a.GUIAgent [gui] GUI Agent gui is starting up.
+2025-06-22 19:02:24,446 INFO u.s.a.GUIAgent [gui] Source folder: C:\Users\Asus\Desktop\test
+2025-06-22 19:02:24,447 INFO u.s.a.GUIAgent [gui] Target folder: C:\Users\Asus\Desktop\sorted
+2025-06-22 19:02:24,447 INFO u.s.a.GUIAgent [gui] Deep scan option: false
+2025-06-22 19:02:24,447 INFO u.s.a.SortingAgent [sorter1] Service registered successfully.
+2025-06-22 19:02:24,448 INFO u.s.a.GUIAgent [gui] Registering service: gui-gui-boss
+2025-06-22 19:02:24,451 INFO u.s.a.GUIAgent [gui] Service registered successfully.
+2025-06-22 19:02:24,452 INFO u.s.a.GUIAgent [gui] Providing source folder: C:\Users\Asus\Desktop\test and target folder: C:\Users\Asus\Desktop\sorted
+2025-06-22 19:02:24,459 INFO u.s.a.GUIAgent [gui] Found 1 sorting agents and 1 monitor agents.
+2025-06-22 19:02:24,460 INFO u.s.a.GUIAgent [gui] Sent target folder to sorter: ( agent-identifier :name sorter1@192.168.142.64:1099/JADE  :addresses (sequence http://DESKTOP-VJD2UDM:7778/acc ))
+2025-06-22 19:02:24,461 INFO u.s.a.SortingAgent [sorter1] Target folder set to: C:\Users\Asus\Desktop\sorted
+2025-06-22 19:02:24,462 INFO u.s.a.GUIAgent [gui] Received confirmation message from sorter1: Directory set to: C:\Users\Asus\Desktop\sorted
+2025-06-22 19:02:24,462 INFO u.s.a.MonitorAgent [monitor] Received folder setting request: C:\Users\Asus\Desktop\test,false
+2025-06-22 19:02:24,462 INFO u.s.a.MonitorAgent [monitor] Directory set to: C:\Users\Asus\Desktop\test
+2025-06-22 19:02:24,462 INFO u.s.a.MonitorAgent [monitor] Deep scan enabled: false
+2025-06-22 19:02:24,465 INFO u.s.a.GUIAgent [gui] Received confirmation message from monitor: Directory set to: C:\Users\Asus\Desktop\test, Deep scan: false
+2025-06-22 19:02:26,478 INFO u.s.a.MonitorAgent [monitor] Found 1 classification coordinator(s). Sending file list.
+2025-06-22 19:02:26,479 INFO u.s.a.MonitorAgent [monitor] File list sent to: manager
+2025-06-22 19:02:26,481 INFO u.s.a.ClassifierManager [manager] Received scan request from monitor: 
+2025-06-22 19:02:26,482 INFO u.s.a.ClassifierManager [manager] Creating 0 worker agents to process 0 files.
+2025-06-22 19:02:26,485 INFO u.s.a.MonitorAgent [monitor] Received CONFIRM message from manager: Scan request processed. Number of files to classify: 0
+2025-06-22 19:02:41,025 INFO u.s.c.MainController [JavaFX Application Thread] MainController initialized.
+2025-06-22 19:02:41,028 INFO u.s.c.MainController [JavaFX Application Thread] Redirected System.out to TextArea
+2025-06-22 19:03:01,604 INFO u.s.a.MonitorAgent [monitor] Monitor Agent monitor is starting up.
+2025-06-22 19:03:01,605 INFO u.s.a.ClassifierManager [manager] Classifier Manager Agent manager is starting up.
+2025-06-22 19:03:01,607 INFO u.s.a.ClassifierManager [manager] Registering service: manager-classification-coordinator
+2025-06-22 19:03:01,607 INFO u.s.a.MonitorAgent [monitor] Registering service: monitor-monitor-agent
+2025-06-22 19:03:01,607 INFO u.s.a.SortingAgent [sorter1] Sorting Agent sorter1 is starting up.
+2025-06-22 19:03:01,609 INFO u.s.a.SortingAgent [sorter1] Registering service: sorter1-sorting-agent
+2025-06-22 19:03:01,611 INFO u.s.a.GUIAgent [gui] GUI Agent gui is starting up.
+2025-06-22 19:03:01,612 INFO u.s.a.GUIAgent [gui] Source folder: C:\Users\Asus\Desktop\test
+2025-06-22 19:03:01,612 INFO u.s.a.GUIAgent [gui] Target folder: C:\Users\Asus\Desktop\sorted
+2025-06-22 19:03:01,612 INFO u.s.a.GUIAgent [gui] Deep scan option: false
+2025-06-22 19:03:01,613 INFO u.s.a.GUIAgent [gui] Registering service: gui-gui-boss
+2025-06-22 19:03:01,623 INFO u.s.a.ClassifierManager [manager] Service registered successfully.
+2025-06-22 19:03:01,625 INFO u.s.a.SortingAgent [sorter1] Service registered successfully.
+2025-06-22 19:03:01,626 INFO u.s.a.GUIAgent [gui] Service registered successfully.
+2025-06-22 19:03:01,627 INFO u.s.a.GUIAgent [gui] Providing source folder: C:\Users\Asus\Desktop\test and target folder: C:\Users\Asus\Desktop\sorted
+2025-06-22 19:03:01,628 INFO u.s.a.MonitorAgent [monitor] Service registered successfully.
+2025-06-22 19:03:01,633 INFO u.s.a.GUIAgent [gui] Found 1 sorting agents and 1 monitor agents.
+2025-06-22 19:03:01,636 INFO u.s.a.GUIAgent [gui] Sent target folder to sorter: ( agent-identifier :name sorter1@192.168.142.64:1099/JADE  :addresses (sequence http://DESKTOP-VJD2UDM:7778/acc ))
+2025-06-22 19:03:01,636 INFO u.s.a.SortingAgent [sorter1] Target folder set to: C:\Users\Asus\Desktop\sorted
+2025-06-22 19:03:01,637 INFO u.s.a.GUIAgent [gui] Received confirmation message from sorter1: Directory set to: C:\Users\Asus\Desktop\sorted
+2025-06-22 19:03:01,637 INFO u.s.a.MonitorAgent [monitor] Received folder setting request: C:\Users\Asus\Desktop\test,false
+2025-06-22 19:03:01,638 INFO u.s.a.MonitorAgent [monitor] Directory set to: C:\Users\Asus\Desktop\test
+2025-06-22 19:03:01,638 INFO u.s.a.MonitorAgent [monitor] Deep scan enabled: false
+2025-06-22 19:03:01,639 INFO u.s.a.GUIAgent [gui] Received confirmation message from monitor: Directory set to: C:\Users\Asus\Desktop\test, Deep scan: false
+2025-06-22 19:03:03,649 INFO u.s.a.MonitorAgent [monitor] Found 1 classification coordinator(s). Sending file list.
+2025-06-22 19:03:03,651 INFO u.s.a.MonitorAgent [monitor] File list sent to: manager
+2025-06-22 19:03:03,653 INFO u.s.a.ClassifierManager [manager] Received scan request from monitor: 
+2025-06-22 19:03:03,654 INFO u.s.a.ClassifierManager [manager] Creating 0 worker agents to process 0 files.
+2025-06-22 19:03:03,657 INFO u.s.a.MonitorAgent [monitor] Received CONFIRM message from manager: Scan request processed. Number of files to classify: 0
+2025-06-22 19:03:28,082 INFO u.s.c.MainController [JavaFX Application Thread] MainController initialized.
+2025-06-22 19:03:28,084 INFO u.s.c.MainController [JavaFX Application Thread] Redirected System.out to TextArea
+2025-06-22 19:03:38,223 INFO u.s.a.MonitorAgent [monitor] Monitor Agent monitor is starting up.
+2025-06-22 19:03:38,226 INFO u.s.a.MonitorAgent [monitor] Registering service: monitor-monitor-agent
+2025-06-22 19:03:38,226 INFO u.s.a.ClassifierManager [manager] Classifier Manager Agent manager is starting up.
+2025-06-22 19:03:38,226 INFO u.s.a.SortingAgent [sorter1] Sorting Agent sorter1 is starting up.
+2025-06-22 19:03:38,227 INFO u.s.a.ClassifierManager [manager] Registering service: manager-classification-coordinator
+2025-06-22 19:03:38,229 INFO u.s.a.SortingAgent [sorter1] Registering service: sorter1-sorting-agent
+2025-06-22 19:03:38,229 INFO u.s.a.GUIAgent [gui] GUI Agent gui is starting up.
+2025-06-22 19:03:38,230 INFO u.s.a.GUIAgent [gui] Source folder: C:\Users\Asus\Desktop\test
+2025-06-22 19:03:38,230 INFO u.s.a.GUIAgent [gui] Target folder: C:\Users\Asus\Desktop\sorted
+2025-06-22 19:03:38,230 INFO u.s.a.GUIAgent [gui] Deep scan option: false
+2025-06-22 19:03:38,231 INFO u.s.a.GUIAgent [gui] Registering service: gui-gui-boss
+2025-06-22 19:03:38,241 INFO u.s.a.ClassifierManager [manager] Service registered successfully.
+2025-06-22 19:03:38,244 INFO u.s.a.MonitorAgent [monitor] Service registered successfully.
+2025-06-22 19:03:38,246 INFO u.s.a.SortingAgent [sorter1] Service registered successfully.
+2025-06-22 19:03:38,247 INFO u.s.a.GUIAgent [gui] Service registered successfully.
+2025-06-22 19:03:38,249 INFO u.s.a.GUIAgent [gui] Providing source folder: C:\Users\Asus\Desktop\test and target folder: C:\Users\Asus\Desktop\sorted
+2025-06-22 19:03:38,256 INFO u.s.a.GUIAgent [gui] Found 1 sorting agents and 1 monitor agents.
+2025-06-22 19:03:38,257 INFO u.s.a.GUIAgent [gui] Sent target folder to sorter: ( agent-identifier :name sorter1@192.168.142.64:1099/JADE  :addresses (sequence http://DESKTOP-VJD2UDM:7778/acc ))
+2025-06-22 19:03:38,258 INFO u.s.a.SortingAgent [sorter1] Target folder set to: C:\Users\Asus\Desktop\sorted
+2025-06-22 19:03:38,258 INFO u.s.a.MonitorAgent [monitor] Received folder setting request: C:\Users\Asus\Desktop\test,false
+2025-06-22 19:03:38,258 INFO u.s.a.GUIAgent [gui] Received confirmation message from sorter1: Directory set to: C:\Users\Asus\Desktop\sorted
+2025-06-22 19:03:38,259 INFO u.s.a.MonitorAgent [monitor] Directory set to: C:\Users\Asus\Desktop\test
+2025-06-22 19:03:38,260 INFO u.s.a.MonitorAgent [monitor] Deep scan enabled: false
+2025-06-22 19:03:38,261 INFO u.s.a.GUIAgent [gui] Received confirmation message from monitor: Directory set to: C:\Users\Asus\Desktop\test, Deep scan: false
+2025-06-22 19:03:38,262 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Desktop\test\denis.stanciu00.zip
+2025-06-22 19:03:38,263 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Desktop\test\Proiect-Proiectarea-aplicatiilor-ce-vor-rula-in-cloud.pdf
+2025-06-22 19:03:38,263 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Desktop\test\received_422879007176562.jpg
+2025-06-22 19:03:38,263 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Desktop\test\Referat_HaiostaMichelle.pdf
+2025-06-22 19:03:38,263 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Desktop\test\Screenshot 2023-12-04 104757.png
+2025-06-22 19:03:40,272 INFO u.s.a.MonitorAgent [monitor] Found 1 classification coordinator(s). Sending file list.
+2025-06-22 19:03:40,274 INFO u.s.a.MonitorAgent [monitor] File list sent to: manager
+2025-06-22 19:03:40,278 INFO u.s.a.ClassifierManager [manager] Received scan request from monitor: C:\Users\Asus\Desktop\test\denis.stanciu00.zip,C:\Users\Asus\Desktop\test\Proiect-Proiectarea-aplicatiilor-ce-vor-rula-in-cloud.pdf,C:\Users\Asus\Desktop\test\Referat_HaiostaMichelle.pdf,C:\Users\Asus\Desktop\test\received_422879007176562.jpg,C:\Users\Asus\Desktop\test\Screenshot 2023-12-04 104757.png
+2025-06-22 19:03:40,278 INFO u.s.a.ClassifierManager [manager] Processed scan request. Current scanned files: 5
+2025-06-22 19:03:40,280 INFO u.s.a.ClassifierManager [manager] Creating 1 worker agents to process 5 files.
+2025-06-22 19:03:40,281 INFO u.s.a.MonitorAgent [monitor] Received CONFIRM message from manager: Scan request processed. Number of files to classify: 5
+2025-06-22 19:03:40,288 INFO u.s.a.ClassifierWorkerAgent [worker-1] Classifier Worker Agent worker-1 is starting up in container ClassifierContainer.
+2025-06-22 19:03:40,290 INFO u.s.a.ClassifierWorkerAgent [worker-1] Processed scan request. Current scanned files: 5
+2025-06-22 19:03:40,290 INFO u.s.a.ClassifierWorkerAgent [worker-1] Sucesfully processed scan request with 5 files.
+2025-06-22 19:03:40,297 INFO u.s.a.ClassifierWorkerAgent [worker-1] Found 1 sorting services.
+2025-06-22 19:03:40,299 INFO u.s.a.ClassifierWorkerAgent [worker-1] Classified 5 files into 3 categories.
+2025-06-22 19:03:40,310 WARN u.s.a.ClassifierWorkerAgent [worker-1] No specialized classifiers found for category: PDFs
+2025-06-22 19:03:40,320 WARN u.s.a.ClassifierWorkerAgent [worker-1] No specialized classifiers found for category: Images
+2025-06-22 19:03:40,332 WARN u.s.a.ClassifierWorkerAgent [worker-1] No specialized classifiers found for category: Archives
+2025-06-22 19:03:40,594 INFO u.s.a.ClassifierWorkerAgent [worker-1] Classifier Worker Agent worker-1 is shutting down.
+2025-06-22 19:03:40,594 INFO u.s.a.ClassifierWorkerAgent [worker-1] Notification sent to manager about completion of work.
+2025-06-22 19:03:40,596 INFO u.s.a.ClassifierManager [manager] Received worker finished notice from worker-1: Worker worker-1 has finished processing files.
+2025-06-22 19:03:40,630 INFO u.s.a.SortingAgent [sorter1] Received file sorting request with 3 categories.
+2025-06-22 19:03:40,631 INFO u.s.a.SortingAgent [sorter1] Sorting files into categories...
+2025-06-22 19:03:40,636 INFO u.s.a.SortingAgent [sorter1] Moved file 'C:\Users\Asus\Desktop\test\Proiect-Proiectarea-aplicatiilor-ce-vor-rula-in-cloud.pdf' to category 'PDFs'.
+2025-06-22 19:03:40,640 INFO u.s.a.SortingAgent [sorter1] Moved file 'C:\Users\Asus\Desktop\test\Referat_HaiostaMichelle.pdf' to category 'PDFs'.
+2025-06-22 19:03:40,644 INFO u.s.a.SortingAgent [sorter1] Moved file 'C:\Users\Asus\Desktop\test\received_422879007176562.jpg' to category 'Images'.
+2025-06-22 19:03:40,647 INFO u.s.a.SortingAgent [sorter1] Moved file 'C:\Users\Asus\Desktop\test\Screenshot 2023-12-04 104757.png' to category 'Images'.
+2025-06-22 19:03:40,653 INFO u.s.a.SortingAgent [sorter1] Moved file 'C:\Users\Asus\Desktop\test\denis.stanciu00.zip' to category 'Archives'.
+2025-06-22 19:03:40,663 INFO u.s.a.SortingAgent [sorter1] Found 1 GUI services.
+2025-06-22 19:03:40,667 INFO u.s.a.GUIAgent [gui] Received confirmation message from sorter1: Sucesfully sorted files into categories: [PDFs, Images, Archives]
+2025-06-22 19:10:56,866 INFO u.s.c.MainController [JavaFX Application Thread] MainController initialized.
+2025-06-22 19:10:56,869 INFO u.s.c.MainController [JavaFX Application Thread] Redirected System.out to TextArea
+2025-06-22 19:11:20,524 INFO u.s.a.MonitorAgent [monitor] Monitor Agent monitor is starting up.
+2025-06-22 19:11:20,526 INFO u.s.a.ClassifierManager [manager] Classifier Manager Agent manager is starting up.
+2025-06-22 19:11:20,527 INFO u.s.a.MonitorAgent [monitor] Registering service: monitor-monitor-agent
+2025-06-22 19:11:20,527 INFO u.s.a.SortingAgent [sorter1] Sorting Agent sorter1 is starting up.
+2025-06-22 19:11:20,528 INFO u.s.a.ClassifierManager [manager] Registering service: manager-classification-coordinator
+2025-06-22 19:11:20,530 INFO u.s.a.SortingAgent [sorter1] Registering service: sorter1-sorting-agent
+2025-06-22 19:11:20,532 INFO u.s.a.GUIAgent [gui] GUI Agent gui is starting up.
+2025-06-22 19:11:20,533 INFO u.s.a.GUIAgent [gui] Source folder: C:\Users\Asus\Desktop\test
+2025-06-22 19:11:20,533 INFO u.s.a.GUIAgent [gui] Target folder: C:\Users\Asus\Desktop\sorted
+2025-06-22 19:11:20,533 INFO u.s.a.GUIAgent [gui] Deep scan option: false
+2025-06-22 19:11:20,534 INFO u.s.a.GUIAgent [gui] Registering service: gui-gui-boss
+2025-06-22 19:11:20,541 INFO u.s.a.ClassifierManager [manager] Service registered successfully.
+2025-06-22 19:11:20,542 INFO u.s.a.SortingAgent [sorter1] Service registered successfully.
+2025-06-22 19:11:20,543 INFO u.s.a.MonitorAgent [monitor] Service registered successfully.
+2025-06-22 19:11:20,544 INFO u.s.a.GUIAgent [gui] Service registered successfully.
+2025-06-22 19:11:20,545 INFO u.s.a.GUIAgent [gui] Providing source folder: C:\Users\Asus\Desktop\test and target folder: C:\Users\Asus\Desktop\sorted
+2025-06-22 19:11:20,551 INFO u.s.a.GUIAgent [gui] Found 1 sorting agents and 1 monitor agents.
+2025-06-22 19:11:20,553 INFO u.s.a.GUIAgent [gui] Sent target folder to sorter: ( agent-identifier :name sorter1@192.168.142.64:1099/JADE  :addresses (sequence http://DESKTOP-VJD2UDM:7778/acc ))
+2025-06-22 19:11:20,553 INFO u.s.a.SortingAgent [sorter1] Target folder set to: C:\Users\Asus\Desktop\sorted
+2025-06-22 19:11:20,554 INFO u.s.a.MonitorAgent [monitor] Received folder setting request: C:\Users\Asus\Desktop\test,false
+2025-06-22 19:11:20,554 INFO u.s.a.GUIAgent [gui] Received confirmation message from sorter1: Directory set to: C:\Users\Asus\Desktop\sorted
+2025-06-22 19:11:20,555 INFO u.s.a.MonitorAgent [monitor] Directory set to: C:\Users\Asus\Desktop\test
+2025-06-22 19:11:20,555 INFO u.s.a.MonitorAgent [monitor] Deep scan enabled: false
+2025-06-22 19:11:20,557 INFO u.s.a.GUIAgent [gui] Received confirmation message from monitor: Directory set to: C:\Users\Asus\Desktop\test, Deep scan: false
+2025-06-22 19:11:20,559 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Desktop\test\denis.stanciu00.zip
+2025-06-22 19:11:20,560 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Desktop\test\Proiect-Proiectarea-aplicatiilor-ce-vor-rula-in-cloud.pdf
+2025-06-22 19:11:20,560 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Desktop\test\received_422879007176562.jpg
+2025-06-22 19:11:20,560 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Desktop\test\Referat_HaiostaMichelle.pdf
+2025-06-22 19:11:20,561 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Desktop\test\Screenshot 2023-12-04 104757.png
+2025-06-22 19:11:22,570 INFO u.s.a.MonitorAgent [monitor] Found 1 classification coordinator(s). Sending file list.
+2025-06-22 19:11:22,571 INFO u.s.a.MonitorAgent [monitor] File list sent to: manager
+2025-06-22 19:11:22,573 INFO u.s.a.ClassifierManager [manager] Received scan request from monitor: C:\Users\Asus\Desktop\test\denis.stanciu00.zip,C:\Users\Asus\Desktop\test\Proiect-Proiectarea-aplicatiilor-ce-vor-rula-in-cloud.pdf,C:\Users\Asus\Desktop\test\Referat_HaiostaMichelle.pdf,C:\Users\Asus\Desktop\test\received_422879007176562.jpg,C:\Users\Asus\Desktop\test\Screenshot 2023-12-04 104757.png
+2025-06-22 19:11:22,574 INFO u.s.a.ClassifierManager [manager] Processed scan request. Current scanned files: 5
+2025-06-22 19:11:22,575 INFO u.s.a.ClassifierManager [manager] Creating 1 worker agents to process 5 files.
+2025-06-22 19:11:22,576 INFO u.s.a.MonitorAgent [monitor] Received CONFIRM message from manager: Scan request processed. Number of files to classify: 5
+2025-06-22 19:11:22,581 INFO u.s.a.ClassifierWorkerAgent [worker-1] Classifier Worker Agent worker-1 is starting up in container ClassifierContainer.
+2025-06-22 19:11:22,582 INFO u.s.a.ClassifierWorkerAgent [worker-1] Processed scan request. Current scanned files: 5
+2025-06-22 19:11:22,583 INFO u.s.a.ClassifierWorkerAgent [worker-1] Sucesfully processed scan request with 5 files.
+2025-06-22 19:11:22,590 INFO u.s.a.ClassifierWorkerAgent [worker-1] Found 1 sorting services.
+2025-06-22 19:11:22,593 INFO u.s.a.ClassifierWorkerAgent [worker-1] Classified 5 files into 3 categories.
+2025-06-22 19:11:22,600 WARN u.s.a.ClassifierWorkerAgent [worker-1] No specialized classifiers found for category: PDFs
+2025-06-22 19:11:22,613 WARN u.s.a.ClassifierWorkerAgent [worker-1] No specialized classifiers found for category: Images
+2025-06-22 19:11:22,627 WARN u.s.a.ClassifierWorkerAgent [worker-1] No specialized classifiers found for category: Archives
+2025-06-22 19:11:22,832 INFO u.s.a.ClassifierWorkerAgent [worker-1] Classifier Worker Agent worker-1 is shutting down.
+2025-06-22 19:11:22,833 INFO u.s.a.ClassifierWorkerAgent [worker-1] Notification sent to manager about completion of work.
+2025-06-22 19:11:22,835 INFO u.s.a.ClassifierManager [manager] Received worker finished notice from worker-1: Worker worker-1 has finished processing files.
+2025-06-22 19:11:22,872 INFO u.s.a.SortingAgent [sorter1] Received file sorting request with 3 categories.
+2025-06-22 19:11:22,873 INFO u.s.a.SortingAgent [sorter1] Sorting files into categories...
+2025-06-22 19:11:22,880 INFO u.s.a.SortingAgent [sorter1] Moved file 'C:\Users\Asus\Desktop\test\Proiect-Proiectarea-aplicatiilor-ce-vor-rula-in-cloud.pdf' to category 'PDFs'.
+2025-06-22 19:11:22,885 INFO u.s.a.SortingAgent [sorter1] Moved file 'C:\Users\Asus\Desktop\test\Referat_HaiostaMichelle.pdf' to category 'PDFs'.
+2025-06-22 19:11:22,893 INFO u.s.a.SortingAgent [sorter1] Moved file 'C:\Users\Asus\Desktop\test\received_422879007176562.jpg' to category 'Images'.
+2025-06-22 19:11:22,897 INFO u.s.a.SortingAgent [sorter1] Moved file 'C:\Users\Asus\Desktop\test\Screenshot 2023-12-04 104757.png' to category 'Images'.
+2025-06-22 19:11:22,903 INFO u.s.a.SortingAgent [sorter1] Moved file 'C:\Users\Asus\Desktop\test\denis.stanciu00.zip' to category 'Archives'.
+2025-06-22 19:11:22,913 INFO u.s.a.SortingAgent [sorter1] Found 1 GUI services.
+2025-06-22 19:11:22,916 INFO u.s.a.GUIAgent [gui] Received confirmation message from sorter1: Sucesfully sorted files into categories: [PDFs, Images, Archives]
+2025-06-22 19:11:27,840 INFO u.s.a.GUIAgent [gui] GUI Agent gui is shutting down.
+2025-06-22 19:11:28,342 INFO u.s.a.GUIAgent [gui] GUI Agent gui is starting up.
+2025-06-22 19:11:28,342 INFO u.s.a.GUIAgent [gui] Source folder: C:\Users\Asus\Desktop\test
+2025-06-22 19:11:28,343 INFO u.s.a.GUIAgent [gui] Target folder: C:\Users\Asus\Desktop\sorted
+2025-06-22 19:11:28,343 INFO u.s.a.GUIAgent [gui] Deep scan option: false
+2025-06-22 19:11:28,343 INFO u.s.a.GUIAgent [gui] Registering service: gui-gui-boss
+2025-06-22 19:11:28,351 ERROR u.s.a.GUIAgent [gui] Failed to register service: ((action ( agent-identifier :name df@192.168.142.64:1099/JADE  :addresses (sequence http://DESKTOP-VJD2UDM:7778/acc )) (register (df-agent-description :name ( agent-identifier :name gui@192.168.142.64:1099/JADE  :addresses (sequence http://DESKTOP-VJD2UDM:7778/acc )) :services (set (service-description :name gui-gui-boss :type gui-boss))))) already-registered)
+2025-06-22 19:11:28,351 INFO u.s.a.GUIAgent [gui] Providing source folder: C:\Users\Asus\Desktop\test and target folder: C:\Users\Asus\Desktop\sorted
+2025-06-22 19:11:28,364 INFO u.s.a.GUIAgent [gui] Found 1 sorting agents and 1 monitor agents.
+2025-06-22 19:11:28,365 INFO u.s.a.GUIAgent [gui] Sent target folder to sorter: ( agent-identifier :name sorter1@192.168.142.64:1099/JADE  :addresses (sequence http://DESKTOP-VJD2UDM:7778/acc ))
+2025-06-22 19:11:28,367 INFO u.s.a.SortingAgent [sorter1] Target folder set to: C:\Users\Asus\Desktop\sorted
+2025-06-22 19:11:28,368 INFO u.s.a.MonitorAgent [monitor] Received folder setting request: C:\Users\Asus\Desktop\test,false
+2025-06-22 19:11:28,369 INFO u.s.a.MonitorAgent [monitor] Directory set to: C:\Users\Asus\Desktop\test
+2025-06-22 19:11:28,369 INFO u.s.a.MonitorAgent [monitor] Deep scan enabled: false
+2025-06-22 19:11:28,370 INFO u.s.a.GUIAgent [gui] Received confirmation message from sorter1: Directory set to: C:\Users\Asus\Desktop\sorted
+2025-06-22 19:11:28,371 INFO u.s.a.GUIAgent [gui] Received confirmation message from monitor: Directory set to: C:\Users\Asus\Desktop\test, Deep scan: false
+2025-06-22 19:11:30,378 INFO u.s.a.MonitorAgent [monitor] Found 1 classification coordinator(s). Sending file list.
+2025-06-22 19:11:30,380 INFO u.s.a.MonitorAgent [monitor] File list sent to: manager
+2025-06-22 19:11:30,382 INFO u.s.a.ClassifierManager [manager] Received scan request from monitor: C:\Users\Asus\Desktop\test\denis.stanciu00.zip,C:\Users\Asus\Desktop\test\Proiect-Proiectarea-aplicatiilor-ce-vor-rula-in-cloud.pdf,C:\Users\Asus\Desktop\test\Referat_HaiostaMichelle.pdf,C:\Users\Asus\Desktop\test\received_422879007176562.jpg,C:\Users\Asus\Desktop\test\Screenshot 2023-12-04 104757.png
+2025-06-22 19:11:30,382 INFO u.s.a.ClassifierManager [manager] Processed scan request. Current scanned files: 5
+2025-06-22 19:11:30,382 INFO u.s.a.ClassifierManager [manager] Creating 1 worker agents to process 5 files.
+2025-06-22 19:11:30,384 INFO u.s.a.MonitorAgent [monitor] Received CONFIRM message from manager: Scan request processed. Number of files to classify: 5
+2025-06-22 19:11:30,385 INFO u.s.a.ClassifierWorkerAgent [worker-1] Classifier Worker Agent worker-1 is starting up in container ClassifierContainer.
+2025-06-22 19:11:30,387 INFO u.s.a.ClassifierWorkerAgent [worker-1] Processed scan request. Current scanned files: 5
+2025-06-22 19:11:30,388 INFO u.s.a.ClassifierWorkerAgent [worker-1] Sucesfully processed scan request with 5 files.
+2025-06-22 19:11:30,391 INFO u.s.a.ClassifierWorkerAgent [worker-1] Found 1 sorting services.
+2025-06-22 19:11:30,393 INFO u.s.a.ClassifierWorkerAgent [worker-1] Classified 5 files into 3 categories.
+2025-06-22 19:11:30,399 WARN u.s.a.ClassifierWorkerAgent [worker-1] No specialized classifiers found for category: PDFs
+2025-06-22 19:11:30,403 WARN u.s.a.ClassifierWorkerAgent [worker-1] No specialized classifiers found for category: Images
+2025-06-22 19:11:30,407 WARN u.s.a.ClassifierWorkerAgent [worker-1] No specialized classifiers found for category: Archives
+2025-06-22 19:11:30,410 INFO u.s.a.ClassifierWorkerAgent [worker-1] Classifier Worker Agent worker-1 is shutting down.
+2025-06-22 19:11:30,411 INFO u.s.a.ClassifierWorkerAgent [worker-1] Notification sent to manager about completion of work.
+2025-06-22 19:11:30,414 INFO u.s.a.ClassifierManager [manager] Received worker finished notice from worker-1: Worker worker-1 has finished processing files.
+2025-06-22 19:11:30,414 INFO u.s.a.SortingAgent [sorter1] Received file sorting request with 3 categories.
+2025-06-22 19:11:30,415 INFO u.s.a.SortingAgent [sorter1] Sorting files into categories...
+2025-06-22 19:11:30,419 ERROR u.s.a.SortingAgent [sorter1] Failed to move file 'C:\Users\Asus\Desktop\test\Proiect-Proiectarea-aplicatiilor-ce-vor-rula-in-cloud.pdf' to 'C:\Users\Asus\Desktop\sorted\PDFs\Proiect-Proiectarea-aplicatiilor-ce-vor-rula-in-cloud.pdf': java.nio.file.NoSuchFileException: C:\Users\Asus\Desktop\test\Proiect-Proiectarea-aplicatiilor-ce-vor-rula-in-cloud.pdf
+2025-06-22 19:11:30,421 ERROR u.s.a.SortingAgent [sorter1] Failed to move file 'C:\Users\Asus\Desktop\test\Referat_HaiostaMichelle.pdf' to 'C:\Users\Asus\Desktop\sorted\PDFs\Referat_HaiostaMichelle.pdf': java.nio.file.NoSuchFileException: C:\Users\Asus\Desktop\test\Referat_HaiostaMichelle.pdf
+2025-06-22 19:11:30,423 ERROR u.s.a.SortingAgent [sorter1] Failed to move file 'C:\Users\Asus\Desktop\test\received_422879007176562.jpg' to 'C:\Users\Asus\Desktop\sorted\Images\received_422879007176562.jpg': java.nio.file.NoSuchFileException: C:\Users\Asus\Desktop\test\received_422879007176562.jpg
+2025-06-22 19:11:30,432 INFO u.s.a.SortingAgent [sorter1] Moved file 'C:\Users\Asus\Desktop\test\Screenshot 2023-12-04 104757.png' to category 'Images'.
+2025-06-22 19:11:30,433 ERROR u.s.a.SortingAgent [sorter1] Failed to move file 'C:\Users\Asus\Desktop\test\denis.stanciu00.zip' to 'C:\Users\Asus\Desktop\sorted\Archives\denis.stanciu00.zip': java.nio.file.NoSuchFileException: C:\Users\Asus\Desktop\test\denis.stanciu00.zip
+2025-06-22 19:11:30,444 INFO u.s.a.SortingAgent [sorter1] Found 1 GUI services.
+2025-06-22 19:11:30,446 INFO u.s.a.GUIAgent [gui] Received confirmation message from sorter1: Sucesfully sorted files into categories: [PDFs, Images, Archives]
+2025-06-22 19:12:04,252 INFO u.s.a.GUIAgent [gui] GUI Agent gui is shutting down.
+2025-06-22 19:12:04,755 INFO u.s.a.GUIAgent [gui] GUI Agent gui is starting up.
+2025-06-22 19:12:04,756 INFO u.s.a.GUIAgent [gui] Source folder: C:\Users\Asus\Desktop\test
+2025-06-22 19:12:04,756 INFO u.s.a.GUIAgent [gui] Target folder: C:\Users\Asus\Desktop\sorted
+2025-06-22 19:12:04,756 INFO u.s.a.GUIAgent [gui] Deep scan option: false
+2025-06-22 19:12:04,756 INFO u.s.a.GUIAgent [gui] Registering service: gui-gui-boss
+2025-06-22 19:12:04,764 ERROR u.s.a.GUIAgent [gui] Failed to register service: ((action ( agent-identifier :name df@192.168.142.64:1099/JADE  :addresses (sequence http://DESKTOP-VJD2UDM:7778/acc )) (register (df-agent-description :name ( agent-identifier :name gui@192.168.142.64:1099/JADE  :addresses (sequence http://DESKTOP-VJD2UDM:7778/acc )) :services (set (service-description :name gui-gui-boss :type gui-boss))))) already-registered)
+2025-06-22 19:12:04,765 INFO u.s.a.GUIAgent [gui] Providing source folder: C:\Users\Asus\Desktop\test and target folder: C:\Users\Asus\Desktop\sorted
+2025-06-22 19:12:04,779 INFO u.s.a.GUIAgent [gui] Found 1 sorting agents and 1 monitor agents.
+2025-06-22 19:12:04,780 INFO u.s.a.GUIAgent [gui] Sent target folder to sorter: ( agent-identifier :name sorter1@192.168.142.64:1099/JADE  :addresses (sequence http://DESKTOP-VJD2UDM:7778/acc ))
+2025-06-22 19:12:04,782 INFO u.s.a.SortingAgent [sorter1] Target folder set to: C:\Users\Asus\Desktop\sorted
+2025-06-22 19:12:04,784 INFO u.s.a.MonitorAgent [monitor] Received folder setting request: C:\Users\Asus\Desktop\test,false
+2025-06-22 19:12:04,784 INFO u.s.a.GUIAgent [gui] Received confirmation message from sorter1: Directory set to: C:\Users\Asus\Desktop\sorted
+2025-06-22 19:12:04,784 INFO u.s.a.MonitorAgent [monitor] Directory set to: C:\Users\Asus\Desktop\test
+2025-06-22 19:12:04,784 INFO u.s.a.MonitorAgent [monitor] Deep scan enabled: false
+2025-06-22 19:12:04,786 INFO u.s.a.GUIAgent [gui] Received confirmation message from monitor: Directory set to: C:\Users\Asus\Desktop\test, Deep scan: false
+2025-06-22 19:12:04,788 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Desktop\test\POPOVICI_Adrian_PMIS2(1).docx
+2025-06-22 19:12:04,788 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Desktop\test\POPOVICI_Adrian_PMIS2.docx
+2025-06-22 19:12:06,794 INFO u.s.a.MonitorAgent [monitor] Found 1 classification coordinator(s). Sending file list.
+2025-06-22 19:12:06,795 INFO u.s.a.MonitorAgent [monitor] File list sent to: manager
+2025-06-22 19:12:06,796 INFO u.s.a.ClassifierManager [manager] Received scan request from monitor: C:\Users\Asus\Desktop\test\denis.stanciu00.zip,C:\Users\Asus\Desktop\test\Proiect-Proiectarea-aplicatiilor-ce-vor-rula-in-cloud.pdf,C:\Users\Asus\Desktop\test\POPOVICI_Adrian_PMIS2.docx,C:\Users\Asus\Desktop\test\Referat_HaiostaMichelle.pdf,C:\Users\Asus\Desktop\test\received_422879007176562.jpg,C:\Users\Asus\Desktop\test\POPOVICI_Adrian_PMIS2(1).docx,C:\Users\Asus\Desktop\test\Screenshot 2023-12-04 104757.png
+2025-06-22 19:12:06,797 INFO u.s.a.ClassifierManager [manager] Processed scan request. Current scanned files: 7
+2025-06-22 19:12:06,797 INFO u.s.a.ClassifierManager [manager] Creating 1 worker agents to process 7 files.
+2025-06-22 19:12:06,798 INFO u.s.a.MonitorAgent [monitor] Received CONFIRM message from manager: Scan request processed. Number of files to classify: 7
+2025-06-22 19:12:06,799 INFO u.s.a.ClassifierWorkerAgent [worker-1] Classifier Worker Agent worker-1 is starting up in container ClassifierContainer.
+2025-06-22 19:12:06,800 INFO u.s.a.ClassifierWorkerAgent [worker-1] Processed scan request. Current scanned files: 7
+2025-06-22 19:12:06,800 INFO u.s.a.ClassifierWorkerAgent [worker-1] Sucesfully processed scan request with 7 files.
+2025-06-22 19:12:06,803 INFO u.s.a.ClassifierWorkerAgent [worker-1] Found 1 sorting services.
+2025-06-22 19:12:06,804 INFO u.s.a.ClassifierWorkerAgent [worker-1] Classified 7 files into 4 categories.
+2025-06-22 19:12:06,807 WARN u.s.a.ClassifierWorkerAgent [worker-1] No specialized classifiers found for category: PDFs
+2025-06-22 19:12:06,810 WARN u.s.a.ClassifierWorkerAgent [worker-1] No specialized classifiers found for category: Images
+2025-06-22 19:12:06,815 WARN u.s.a.ClassifierWorkerAgent [worker-1] No specialized classifiers found for category: Documents
+2025-06-22 19:12:06,820 WARN u.s.a.ClassifierWorkerAgent [worker-1] No specialized classifiers found for category: Archives
+2025-06-22 19:12:06,821 INFO u.s.a.ClassifierWorkerAgent [worker-1] Classifier Worker Agent worker-1 is shutting down.
+2025-06-22 19:12:06,822 INFO u.s.a.ClassifierWorkerAgent [worker-1] Notification sent to manager about completion of work.
+2025-06-22 19:12:06,824 INFO u.s.a.ClassifierManager [manager] Received worker finished notice from worker-1: Worker worker-1 has finished processing files.
+2025-06-22 19:12:06,825 INFO u.s.a.SortingAgent [sorter1] Received file sorting request with 4 categories.
+2025-06-22 19:12:06,826 INFO u.s.a.SortingAgent [sorter1] Sorting files into categories...
+2025-06-22 19:12:06,828 ERROR u.s.a.SortingAgent [sorter1] Failed to move file 'C:\Users\Asus\Desktop\test\Proiect-Proiectarea-aplicatiilor-ce-vor-rula-in-cloud.pdf' to 'C:\Users\Asus\Desktop\sorted\PDFs\Proiect-Proiectarea-aplicatiilor-ce-vor-rula-in-cloud.pdf': java.nio.file.NoSuchFileException: C:\Users\Asus\Desktop\test\Proiect-Proiectarea-aplicatiilor-ce-vor-rula-in-cloud.pdf
+2025-06-22 19:12:06,829 ERROR u.s.a.SortingAgent [sorter1] Failed to move file 'C:\Users\Asus\Desktop\test\Referat_HaiostaMichelle.pdf' to 'C:\Users\Asus\Desktop\sorted\PDFs\Referat_HaiostaMichelle.pdf': java.nio.file.NoSuchFileException: C:\Users\Asus\Desktop\test\Referat_HaiostaMichelle.pdf
+2025-06-22 19:12:06,831 ERROR u.s.a.SortingAgent [sorter1] Failed to move file 'C:\Users\Asus\Desktop\test\received_422879007176562.jpg' to 'C:\Users\Asus\Desktop\sorted\Images\received_422879007176562.jpg': java.nio.file.NoSuchFileException: C:\Users\Asus\Desktop\test\received_422879007176562.jpg
+2025-06-22 19:12:06,833 ERROR u.s.a.SortingAgent [sorter1] Failed to move file 'C:\Users\Asus\Desktop\test\Screenshot 2023-12-04 104757.png' to 'C:\Users\Asus\Desktop\sorted\Images\Screenshot 2023-12-04 104757.png': java.nio.file.NoSuchFileException: C:\Users\Asus\Desktop\test\Screenshot 2023-12-04 104757.png
+2025-06-22 19:12:06,843 INFO u.s.a.SortingAgent [sorter1] Moved file 'C:\Users\Asus\Desktop\test\POPOVICI_Adrian_PMIS2.docx' to category 'Documents'.
+2025-06-22 19:12:06,846 INFO u.s.a.SortingAgent [sorter1] Moved file 'C:\Users\Asus\Desktop\test\POPOVICI_Adrian_PMIS2(1).docx' to category 'Documents'.
+2025-06-22 19:12:06,847 ERROR u.s.a.SortingAgent [sorter1] Failed to move file 'C:\Users\Asus\Desktop\test\denis.stanciu00.zip' to 'C:\Users\Asus\Desktop\sorted\Archives\denis.stanciu00.zip': java.nio.file.NoSuchFileException: C:\Users\Asus\Desktop\test\denis.stanciu00.zip
+2025-06-22 19:12:06,852 INFO u.s.a.SortingAgent [sorter1] Found 1 GUI services.
+2025-06-22 19:12:06,853 INFO u.s.a.GUIAgent [gui] Received confirmation message from sorter1: Sucesfully sorted files into categories: [PDFs, Images, Documents, Archives]
