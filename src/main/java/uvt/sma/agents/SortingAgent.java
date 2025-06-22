@@ -24,8 +24,8 @@ import java.util.Map;
 
 public class SortingAgent extends Agent {
     private static final long serialVersionUID = 1L;
-    private String targetFolder = "C:\\Users\\Asus\\Desktop\\sorted"; //TODO take the path as argument from (future) UI agent
-    private Boolean moveFolders = false;
+    private String targetFolder;
+    //private Boolean moveFolders;
     private static final Logger LOGGER = LogManager.getLogger(SortingAgent.class);
     @Override
     protected void setup() {
@@ -84,7 +84,7 @@ public class SortingAgent extends Agent {
                     );
 
                 } else {
-                    LOGGER.warn("Received empty folder path. Using default: {}", targetFolder);
+                    LOGGER.warn("Received empty folder path.");
                 }
             }
 
@@ -103,7 +103,16 @@ public class SortingAgent extends Agent {
 
                     sortFiles(fileMap);
 
-                    // TODO: notifi the ClassifierManager that the sorting is done
+                    MessageTemplate.sendMessage(
+                            myAgent,
+                            msg.getSender(),
+                            ACLMessage.CONFIRM,
+                            "files-sorted",
+                            "confirm",
+                            "Files sorted successfully."
+                    );
+
+                    // TODO notify the GUI agent also
 
                 } catch (Exception e) {
                     e.printStackTrace();

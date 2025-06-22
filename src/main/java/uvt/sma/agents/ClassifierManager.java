@@ -13,6 +13,7 @@ import jade.wrapper.ContainerController;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import uvt.sma.helpers.FileCategoryLoader;
+import uvt.sma.helpers.MessageTemplate;
 
 import java.util.HashMap;
 import java.util.Set;
@@ -69,6 +70,7 @@ public class ClassifierManager extends Agent {
         public void action() {
             ACLMessage msg = receive();
 
+            // CASE 1: get the file list from the monitor
             if (msg != null && msg.getConversationId().equals("file-list")) {
                 // process the message
                 String content = msg.getContent();
@@ -77,17 +79,27 @@ public class ClassifierManager extends Agent {
                 // process the message content and adds the files to scannedFiles set
                 processMessageContent(content);
 
+                // confirm back to monitor
+                MessageTemplate.sendMessage(
+                        myAgent,
+                        msg.getSender(),
+                        ACLMessage.CONFIRM,
+                        "scan-request-processed",
+                        "confirm",
+                        "Scan request processed. Number of files to classify: " + scannedFiles.size()
+                );
                 createWorkers();
 
-                //TODO answer back to the monitor
 
-            } else if (msg != null && msg.getConversationId().equals("worker-finished-notice")) {
+            } else if (msg != null && msg.getConversationId().equals("worker-finished-notice")) {   // CASE 2: worker finished notice
                 String receiverName = msg.getSender().getLocalName();
                 String content = msg.getContent();
                 LOGGER.info("Received worker finished notice from {}: {}", receiverName, content);
 
                 // TODO: handle not correct termination notice
-            } else {
+            } else if(msg != null && msg.getPerformative() == ACLMessage.CONFIRM) {     // CASE 3: confirmation message
+                LOGGER.info("Received CONFIRM message from {}: {}", msg.getSender().getLocalName(), msg.getContent());
+            } else {// CASE 3: confirmation message
                 block(); // Wait for the next message
             }
         }

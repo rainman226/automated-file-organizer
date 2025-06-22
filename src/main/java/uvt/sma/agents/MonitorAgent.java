@@ -28,16 +28,6 @@ public class MonitorAgent extends Agent {
     protected void setup() {
         LOGGER.info("Monitor Agent " + getLocalName() + " is starting up.");
 
-        Object[] args = getArguments();
-        if (args != null && args.length > 0) {
-            directory = (String) args[0];
-            if (args.length > 1) {
-                deepScan = Boolean.parseBoolean((String) args[1]);
-            }
-        }
-//        LOGGER.info("Monitoring directory: {}", directory);
-//        LOGGER.info("Deep scan enabled: {}", deepScan);
-
         // behaviour list
         addBehaviour(new RegisterService());  // register service
         addBehaviour(new MessageListener());
@@ -77,6 +67,7 @@ public class MonitorAgent extends Agent {
         public void action() {
             ACLMessage msg = myAgent.receive();
 
+            // CASE 1: get the folder to monitor
             if (msg != null && msg.getConversationId().equals("set-folder")) {
                 String content = msg.getContent();
                 LOGGER.info("Received folder setting request: {}", content);
@@ -98,9 +89,13 @@ public class MonitorAgent extends Agent {
                             "Directory set to: " + directory + ", Deep scan: " + deepScan
                     );
 
+                    addBehaviour(new ScanFolder()); // Start scanning folder
+                    addBehaviour(new SendFileList()); // Send file list after scanning
                 } else {
                     LOGGER.warn("Invalid folder setting request format.");
                 }
+            } else if (msg != null && msg.getPerformative() == ACLMessage.CONFIRM) {    // CASE 2: confirmation message
+                LOGGER.info("Received CONFIRM message from {}: {}", msg.getSender().getLocalName(), msg.getContent());
             } else {
                 block(); // No message received, block until next message
             }
@@ -160,12 +155,22 @@ public class MonitorAgent extends Agent {
                 if(result.length > 0) {
                     LOGGER.info("Found {} classification coordinator(s). Sending file list.", result.length);
 
-                    ACLMessage msg = new ACLMessage(ACLMessage.INFORM);
-                    msg.setConversationId("file-list");
-                    msg.setContent(String.join(",", scannedFiles));
-                    msg.addReceiver(result[0].getName());
+//                    ACLMessage msg = new ACLMessage(ACLMessage.INFORM);
+//                    msg.setConversationId("file-list");
+//                    msg.setContent(String.join(",", scannedFiles));
+//                    msg.addReceiver(result[0].getName());
+//
+//                    myAgent.send(msg);
 
-                    myAgent.send(msg);
+                    MessageTemplate.sendMessage(
+                            myAgent,
+                            result[0].getName(),
+                            ACLMessage.INFORM,
+                            "file-list",
+                            "file-list",
+                            String.join(",", scannedFiles)
+                    );
+
                     LOGGER.info("File list sent to: {}", result[0].getName().getLocalName());
                 } else {
                     LOGGER.warn("No classification coordinator found.");

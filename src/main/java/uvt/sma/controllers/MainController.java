@@ -86,6 +86,11 @@ public class MainController {
 
         @FXML
         public void initialize() {
-            StartPlatform.startPlatform();
+            // not the best way but it works so who cares
+            StartPlatform platform = new StartPlatform("C:\\Users\\Asus\\Desktop\\test",
+                    "C:\\Users\\Asus\\Desktop\\sorted",
+                    false);
+
+            platform.startPlatform();
         }
 }

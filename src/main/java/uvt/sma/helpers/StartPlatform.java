@@ -6,8 +6,17 @@ import jade.wrapper.AgentContainer;
 import jade.wrapper.StaleProxyException;
 
 public class StartPlatform {
+    private static String sourceFolder;
+    private static String targetFolder;
+    private Boolean deepScan;
 
-    public static void startPlatform() {     // TODO add config params
+    public StartPlatform(String sourceFolder, String targetFolder, Boolean deepScan) {
+        StartPlatform.sourceFolder = sourceFolder;
+        StartPlatform.targetFolder = targetFolder;
+        this.deepScan = deepScan;
+    }
+
+    public static void startPlatform() {
         // Additional initialization logic can be added here
         //
         jade.core.Runtime rt = jade.core.Runtime.instance();
@@ -49,7 +58,7 @@ public class StartPlatform {
 
             // GUI + ClassifierManager
             // GUI should get the file path from the user
-            Object[] argsGui = new Object[]{"C:\\Users\\Asus\\Desktop\\test", "C:\\Users\\Asus\\Desktop\\sorted"};
+            Object[] argsGui = new Object[]{sourceFolder, targetFolder};
             mainContainer.createNewAgent("gui", "uvt.sma.agents.GUIAgent", argsGui).start();
 
             // Tools
@@ -60,4 +69,5 @@ public class StartPlatform {
             e.printStackTrace();
         }
     }
+
 }
