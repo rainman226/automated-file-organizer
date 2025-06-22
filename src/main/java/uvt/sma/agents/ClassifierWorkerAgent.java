@@ -7,9 +7,11 @@ import jade.domain.FIPAAgentManagement.DFAgentDescription;
 import jade.domain.FIPAAgentManagement.ServiceDescription;
 import jade.domain.FIPAException;
 import jade.lang.acl.ACLMessage;
+import jade.wrapper.ControllerException;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import uvt.sma.helpers.MessageTemplate;
 
 import java.util.*;
 
@@ -21,7 +23,11 @@ public class ClassifierWorkerAgent extends Agent {
     @Override
     protected void setup() {
         // Initialization code for the Classifier Worker Agent
-        LOGGER.info("Classifier Worker Agent {} is starting up.", getLocalName());
+        try {
+            LOGGER.info("Classifier Worker Agent {} is starting up in container {}.", getLocalName(), getContainerController().getContainerName());
+        } catch (ControllerException e) {
+            throw new RuntimeException(e);
+        }
         Object[] args = getArguments();
         if (args != null && args.length > 0) {
             String files = (String) args[0];
@@ -105,7 +111,7 @@ public class ClassifierWorkerAgent extends Agent {
                 send(msg);
 
             } catch (Exception e) {
-                e.printStackTrace();
+                LOGGER.warn("Failed to send classified files to sorter: {}", e.getMessage());
             }
         }
     }

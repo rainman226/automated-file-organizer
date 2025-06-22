@@ -76,8 +76,9 @@ public class GUIAgent extends Agent {
         public void action() {
             ACLMessage msg = myAgent.receive();
 
-            if(msg != null && msg.getConversationId().equals("confirm"))  {
+            if(msg != null && msg.getPerformative() == ACLMessage.CONFIRM) {
                 LOGGER.info("Received confirmation message from {}: {}", msg.getSender().getLocalName(), msg.getContent());
+                System.out.println("Received confirmation message from " + msg.getSender().getLocalName() + ": " + msg.getContent());
             } else {
                 block();
             }

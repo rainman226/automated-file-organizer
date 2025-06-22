@@ -14,6 +14,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import uvt.sma.helpers.FileCategoryLoader;
 import uvt.sma.helpers.MessageTemplate;
+import jade.wrapper.AgentContainer;
 
 import java.util.HashMap;
 import java.util.Set;
@@ -21,12 +22,23 @@ import java.util.Set;
 public class ClassifierManager extends Agent {
     private static final long serialVersionUID = 1L;
     private Set<String> scannedFiles = new java.util.HashSet<>();
-    private int maxFiles = 100; // maximum number of files allowed for each worker
+    private final int maxFiles = 100; // maximum number of files allowed for each worker
     public static final HashMap<String, String> extensionMap = FileCategoryLoader.loadExtensionCategoryMap("src/main/resources/extensions.csv");
+    private AgentContainer classifierContainer;
     private static final Logger LOGGER = LogManager.getLogger(ClassifierManager.class);
     @Override
     protected void setup() {
         LOGGER.info("Classifier Manager Agent {} is starting up.", getLocalName());
+
+        // Get the classifier container from the arguments
+        Object[] args = getArguments();
+        if (args != null && args.length > 0 && args[0] instanceof AgentContainer) {
+            classifierContainer = (AgentContainer) args[0];
+        } else {
+            System.err.println("ClassifierContainer not provided to ClassifierManager");
+            doDelete(); // Terminate the agent if no container is provided
+            return;
+        }
 
         // add behaviours
         addBehaviour(new RegisterService());
@@ -124,8 +136,6 @@ public class ClassifierManager extends Agent {
 
     private void createWorkers() {
         try {
-            // TODO make it so it get the Wokers Container!
-            ContainerController container = getContainerController(); // Get the container where this agent is running
 
             int workerCount = (int) Math.ceil((double) scannedFiles.size() / maxFiles); // based on the number of files and maxFiles
             LOGGER.info("Creating {} worker agents to process {} files.", workerCount, scannedFiles.size());
@@ -152,7 +162,7 @@ public class ClassifierManager extends Agent {
 
                 // create the worker agent with the files assigned
                 Object[] args = new Object[]{filesForWorker.toString()};
-                AgentController workerAgent = container.createNewAgent("worker-" + (i + 1), ClassifierWorkerAgent.class.getName(), args);
+                AgentController workerAgent = classifierContainer.createNewAgent("worker-" + (i + 1), ClassifierWorkerAgent.class.getName(), args);
                 workerAgent.start();
             }
         } catch (Exception e) {

@@ -25,7 +25,8 @@ import java.util.Map;
 public class SortingAgent extends Agent {
     private static final long serialVersionUID = 1L;
     private String targetFolder;
-    //private Boolean moveFolders;
+    private DFAgentDescription[] guiBosses; // list of sorting services
+
     private static final Logger LOGGER = LogManager.getLogger(SortingAgent.class);
     @Override
     protected void setup() {
@@ -103,16 +104,17 @@ public class SortingAgent extends Agent {
 
                     sortFiles(fileMap);
 
+                    searchForGUIService();
+
                     MessageTemplate.sendMessage(
                             myAgent,
-                            msg.getSender(),
+                            guiBosses[0].getName(),
                             ACLMessage.CONFIRM,
                             "files-sorted",
                             "confirm",
-                            "Files sorted successfully."
+                            "Sucesfully sorted files into categories: " + fileMap.keySet().toString()
                     );
 
-                    // TODO notify the GUI agent also
 
                 } catch (Exception e) {
                     e.printStackTrace();
@@ -120,7 +122,28 @@ public class SortingAgent extends Agent {
             } else {
                 block(); // Block until a new message arrives
             }
-            //,,,
+
+        }
+
+        private void searchForGUIService() {
+            ServiceDescription sd = new ServiceDescription();
+            sd.setType("gui-boss");
+
+            DFAgentDescription dfd = new DFAgentDescription();
+            dfd.addServices(sd);
+
+            try {
+                guiBosses = DFService.search(myAgent, dfd);
+
+                if (guiBosses.length > 0) {
+                    LOGGER.info("Found {} GUI services.", guiBosses.length);
+
+                } else {
+                    LOGGER.warn("No GUI services found.");
+                }
+            } catch (FIPAException e) {
+                LOGGER.error("Failed to search for GUI services: {}", e.getMessage());
+            }
         }
     }
 
@@ -161,4 +184,5 @@ public class SortingAgent extends Agent {
         }
 
     }
+
 }

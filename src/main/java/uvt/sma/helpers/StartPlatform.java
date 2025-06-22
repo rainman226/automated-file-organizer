@@ -45,8 +45,16 @@ public class StartPlatform {
         // === Deploy Agents ===
         try {
 
+            // Tools
+            mainContainer.createNewAgent("rma", "jade.tools.rma.rma", null).start();
+            // Start Sniffer with agent names to monitor
+            Object[] snifferArgs = new Object[]{"*"}; // Wildcard to monitor all agents
+            mainContainer.createNewAgent("sniffer", "jade.tools.sniffer.Sniffer", snifferArgs).start();
+
+
             // should get the container for the classifier workers
-            mainContainer.createNewAgent("manager", "uvt.sma.agents.ClassifierManager", null).start();
+            Object[] managerArgs = new Object[]{classifierContainer};
+            mainContainer.createNewAgent("manager", "uvt.sma.agents.ClassifierManager", managerArgs).start();
 
             // MonitorAgent
             Object[] argsMonitor = new Object[]{"C:\\Users\\Asus\\Desktop\\test", "false"};
@@ -61,9 +69,6 @@ public class StartPlatform {
             Object[] argsGui = new Object[]{sourceFolder, targetFolder};
             mainContainer.createNewAgent("gui", "uvt.sma.agents.GUIAgent", argsGui).start();
 
-            // Tools
-            mainContainer.createNewAgent("rma", "jade.tools.rma.rma", null).start();
-            mainContainer.createNewAgent("sniffer", "jade.tools.sniffer.Sniffer", null).start();
 
         } catch (StaleProxyException e) {
             e.printStackTrace();

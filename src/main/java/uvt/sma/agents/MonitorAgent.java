@@ -147,8 +147,6 @@ public class MonitorAgent extends Agent {
             sd.setType("classification-coordinator");
             dfd.addServices(sd);
 
-            // TODO handle case when no service is available
-
             try {
                 result = DFService.search(myAgent, dfd);
 

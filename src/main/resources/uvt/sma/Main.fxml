@@ -9,11 +9,11 @@
 <AnchorPane prefHeight="576.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="uvt.sma.controllers.MainController">
    <children>
       <TextArea fx:id="textArea" layoutX="43.0" layoutY="306.0" prefHeight="235.0" prefWidth="951.0" />
-      <TextField fx:id="sourceTextField" editable="false" layoutX="139.0" layoutY="69.0" prefWidth="235.0" />
+      <TextField fx:id="sourceTextField" editable="false" layoutX="139.0" layoutY="69.0"  prefWidth="235.0" />
       <TextField fx:id="targetTextField" editable="false" layoutX="139.0" layoutY="123.0" prefHeight="26.0" prefWidth="235.0" />
-      <Button fx:id="sourceSelectButton" layoutX="60.0" layoutY="69.0" mnemonicParsing="false" text="Soruce" />
-      <Button fx:id="targetSelectButton" layoutX="60.0" layoutY="124.0" mnemonicParsing="false" text="Target" />
-      <Button fx:id="sortButton" layoutX="55.0" layoutY="206.0" mnemonicParsing="false" prefHeight="81.0" prefWidth="166.0" text="Sort" />
+      <Button fx:id="sourceSelectButton" layoutX="60.0" layoutY="69.0" mnemonicParsing="false" onAction="#getSourceFolder" text="Soruce" />
+      <Button fx:id="targetSelectButton" layoutX="60.0" layoutY="124.0" mnemonicParsing="false" onAction="#getTargetFolder" text="Target" />
+      <Button fx:id="sortButton" layoutX="55.0" layoutY="206.0" mnemonicParsing="false" prefHeight="81.0" prefWidth="166.0" onAction="#startSorting" text="Sort" />
       <Text fx:id="infoText" layoutX="290.0" layoutY="219.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Info" wrappingWidth="150.13671875" />
       <Text fx:id="categoriesText" layoutX="290.0" layoutY="247.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Flo" wrappingWidth="166.40000000000003" />
    </children>
