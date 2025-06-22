@@ -52,11 +52,11 @@ public class StartPlatform {
         // === Deploy Agents ===
         try {
 
-            // Tools
-            mainContainer.createNewAgent("rma", "jade.tools.rma.rma", null).start();
-            // Start Sniffer with agent names to monitor
-            Object[] snifferArgs = new Object[]{"*"}; // Wildcard to monitor all agents
-            mainContainer.createNewAgent("sniffer", "jade.tools.sniffer.Sniffer", snifferArgs).start();
+//            // Tools
+//            mainContainer.createNewAgent("rma", "jade.tools.rma.rma", null).start();
+//            // Start Sniffer with agent names to monitor
+//            Object[] snifferArgs = new Object[]{"*"}; // Wildcard to monitor all agents
+//            mainContainer.createNewAgent("sniffer", "jade.tools.sniffer.Sniffer", snifferArgs).start();
 
 
             // should get the container for the classifier workers
@@ -87,10 +87,10 @@ public class StartPlatform {
             jade.wrapper.AgentController existingGui = mainContainer.getAgent(GUI_AGENT_NAME);
             if (existingGui != null) {
                 existingGui.kill();
-                Thread.sleep(500); // Wait a bit to ensure it's fully terminated
+                Thread.sleep(500); // wait a bit to ensure it's fully terminated
             }
 
-            // Create a new GUI agent with updated arguments
+            // create a new GUI agent with updated arguments
             Object[] argsGui = new Object[]{sourceFolder, targetFolder, deepScan.toString()};
             mainContainer.createNewAgent(GUI_AGENT_NAME, "uvt.sma.agents.GUIAgent", argsGui).start();
 

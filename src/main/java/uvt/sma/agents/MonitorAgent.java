@@ -21,7 +21,8 @@ public class MonitorAgent extends Agent {
     private Set<String> scannedFiles = new java.util.HashSet<>();
     private String directory;
     private Boolean deepScan;   // true for recursive scan, false for top-level only
-    private DFAgentDescription[] result;    // list of services
+    private DFAgentDescription[] managers;    // list of services
+    private DFAgentDescription[] GUIs; // list of services
     private static final Logger LOGGER = LogManager.getLogger(MonitorAgent.class);
 
     @Override
@@ -151,21 +152,33 @@ public class MonitorAgent extends Agent {
             dfd.addServices(sd);
 
             try {
-                result = DFService.search(myAgent, dfd);
+                managers = DFService.search(myAgent, dfd);
 
-                if(result.length > 0) {
-                    LOGGER.info("Found {} classification coordinator(s). Sending file list.", result.length);
+                if(managers.length > 0) {
+                    LOGGER.info("Found {} classification coordinator(s). Sending file list.", managers.length);
 
+                    if (scannedFiles.isEmpty()) {
+                        LOGGER.warn("No files to send. The scannedFiles set is empty.");
+                         MessageTemplate.sendMessage(
+                                myAgent,
+                                managers[0].getName(),
+                                ACLMessage.INFORM,
+                                "file-list",
+                                "file-list",
+                                "No files found in the specified directory."
+                         );
+                        return;
+                    }
                     MessageTemplate.sendMessage(
                             myAgent,
-                            result[0].getName(),
+                            managers[0].getName(),
                             ACLMessage.INFORM,
                             "file-list",
                             "file-list",
                             String.join(",", scannedFiles)
                     );
 
-                    LOGGER.info("File list sent to: {}", result[0].getName().getLocalName());
+                    LOGGER.info("File list sent to: {}", managers[0].getName().getLocalName());
                 } else {
                     LOGGER.warn("No classification coordinator found.");
                 }
@@ -173,6 +186,24 @@ public class MonitorAgent extends Agent {
                 LOGGER.error("Failed to send file list: {}", e.getMessage());
             }
 
+        }
+
+        public void searchGUIService() {
+            DFAgentDescription dfd = new DFAgentDescription();
+            ServiceDescription sd = new ServiceDescription();
+            sd.setType("gui-boss");
+            dfd.addServices(sd);
+
+            try {
+                GUIs = DFService.search(myAgent, dfd);
+                if (GUIs.length > 0) {
+                    LOGGER.info("Found {} GUI service(s).", GUIs.length);
+                } else {
+                    LOGGER.warn("No GUI service found.");
+                }
+            } catch (FIPAException e) {
+                LOGGER.error("Failed to search for GUI service: {}", e.getMessage());
+            }
         }
     }
 }

@@ -3753,3 +3753,219 @@
 2025-06-22 19:12:06,847 ERROR u.s.a.SortingAgent [sorter1] Failed to move file 'C:\Users\Asus\Desktop\test\denis.stanciu00.zip' to 'C:\Users\Asus\Desktop\sorted\Archives\denis.stanciu00.zip': java.nio.file.NoSuchFileException: C:\Users\Asus\Desktop\test\denis.stanciu00.zip
 2025-06-22 19:12:06,852 INFO u.s.a.SortingAgent [sorter1] Found 1 GUI services.
 2025-06-22 19:12:06,853 INFO u.s.a.GUIAgent [gui] Received confirmation message from sorter1: Sucesfully sorted files into categories: [PDFs, Images, Documents, Archives]
+2025-06-22 19:23:49,512 INFO u.s.c.MainController [JavaFX Application Thread] MainController initialized.
+2025-06-22 19:23:49,516 INFO u.s.c.MainController [JavaFX Application Thread] Redirected System.out to TextArea
+2025-06-22 19:24:06,647 INFO u.s.a.MonitorAgent [monitor] Monitor Agent monitor is starting up.
+2025-06-22 19:24:06,647 INFO u.s.a.ClassifierManager [manager] Classifier Manager Agent manager is starting up.
+2025-06-22 19:24:06,648 INFO u.s.a.ClassifierManager [manager] Registering service: manager-classification-coordinator
+2025-06-22 19:24:06,650 INFO u.s.a.MonitorAgent [monitor] Registering service: monitor-monitor-agent
+2025-06-22 19:24:06,651 INFO u.s.a.SortingAgent [sorter1] Sorting Agent sorter1 is starting up.
+2025-06-22 19:24:06,654 INFO u.s.a.SortingAgent [sorter1] Registering service: sorter1-sorting-agent
+2025-06-22 19:24:06,656 INFO u.s.a.GUIAgent [gui] GUI Agent gui is starting up.
+2025-06-22 19:24:06,657 INFO u.s.a.GUIAgent [gui] Source folder: C:\Users\Asus\Desktop\test
+2025-06-22 19:24:06,657 INFO u.s.a.GUIAgent [gui] Target folder: C:\Users\Asus\Desktop\sorted
+2025-06-22 19:24:06,657 INFO u.s.a.GUIAgent [gui] Deep scan option: false
+2025-06-22 19:24:06,657 INFO u.s.a.GUIAgent [gui] Registering service: gui-gui-boss
+2025-06-22 19:24:06,659 INFO u.s.a.ClassifierManager [manager] Service registered successfully.
+2025-06-22 19:24:06,661 INFO u.s.a.MonitorAgent [monitor] Service registered successfully.
+2025-06-22 19:24:06,663 INFO u.s.a.SortingAgent [sorter1] Service registered successfully.
+2025-06-22 19:24:06,664 INFO u.s.a.GUIAgent [gui] Service registered successfully.
+2025-06-22 19:24:06,664 INFO u.s.a.GUIAgent [gui] Providing source folder: C:\Users\Asus\Desktop\test and target folder: C:\Users\Asus\Desktop\sorted
+2025-06-22 19:24:06,669 INFO u.s.a.GUIAgent [gui] Found 1 sorting agents and 1 monitor agents.
+2025-06-22 19:24:06,672 INFO u.s.a.GUIAgent [gui] Sent target folder to sorter: ( agent-identifier :name sorter1@192.168.142.64:1099/JADE  :addresses (sequence http://DESKTOP-VJD2UDM:7778/acc ))
+2025-06-22 19:24:06,673 INFO u.s.a.SortingAgent [sorter1] Target folder set to: C:\Users\Asus\Desktop\sorted
+2025-06-22 19:24:06,675 INFO u.s.a.MonitorAgent [monitor] Received folder setting request: C:\Users\Asus\Desktop\test,false
+2025-06-22 19:24:06,675 INFO u.s.a.GUIAgent [gui] Received confirmation message from sorter1: Directory set to: C:\Users\Asus\Desktop\sorted
+2025-06-22 19:24:06,675 INFO u.s.a.MonitorAgent [monitor] Directory set to: C:\Users\Asus\Desktop\test
+2025-06-22 19:24:06,676 INFO u.s.a.MonitorAgent [monitor] Deep scan enabled: false
+2025-06-22 19:24:06,677 INFO u.s.a.GUIAgent [gui] Received confirmation message from monitor: Directory set to: C:\Users\Asus\Desktop\test, Deep scan: false
+2025-06-22 19:24:08,681 INFO u.s.a.MonitorAgent [monitor] Found 1 classification coordinator(s). Sending file list.
+2025-06-22 19:24:08,681 INFO u.s.a.MonitorAgent [monitor] File list sent to: manager
+2025-06-22 19:24:08,681 INFO u.s.a.ClassifierManager [manager] Received scan request from monitor: 
+2025-06-22 19:24:08,682 INFO u.s.a.ClassifierManager [manager] Creating 0 worker agents to process 0 files.
+2025-06-22 19:24:08,682 INFO u.s.a.MonitorAgent [monitor] Received CONFIRM message from manager: Scan request processed. Number of files to classify: 0
+2025-06-22 21:57:06,613 INFO u.s.c.MainController [JavaFX Application Thread] MainController initialized.
+2025-06-22 21:57:06,617 INFO u.s.c.MainController [JavaFX Application Thread] Redirected System.out to TextArea
+2025-06-22 21:57:19,694 INFO u.s.a.ClassifierManager [manager] Classifier Manager Agent manager is starting up.
+2025-06-22 21:57:19,695 INFO u.s.a.ClassifierManager [manager] Registering service: manager-classification-coordinator
+2025-06-22 21:57:19,715 INFO u.s.a.ClassifierManager [manager] Service registered successfully.
+2025-06-22 21:57:19,781 INFO u.s.a.MonitorAgent [monitor] Monitor Agent monitor is starting up.
+2025-06-22 21:57:19,790 INFO u.s.a.SortingAgent [sorter1] Sorting Agent sorter1 is starting up.
+2025-06-22 21:57:19,794 INFO u.s.a.SortingAgent [sorter1] Registering service: sorter1-sorting-agent
+2025-06-22 21:57:19,803 INFO u.s.a.SortingAgent [sorter1] Service registered successfully.
+2025-06-22 21:57:19,836 INFO u.s.a.MonitorAgent [monitor] Registering service: monitor-monitor-agent
+2025-06-22 21:57:19,840 INFO u.s.a.MonitorAgent [monitor] Service registered successfully.
+2025-06-22 21:57:19,867 INFO u.s.a.GUIAgent [gui] GUI Agent gui is starting up.
+2025-06-22 21:57:19,869 INFO u.s.a.GUIAgent [gui] Source folder: C:\Users\Asus\Desktop\test
+2025-06-22 21:57:19,869 INFO u.s.a.GUIAgent [gui] Target folder: C:\Users\Asus\Desktop\sorted
+2025-06-22 21:57:19,870 INFO u.s.a.GUIAgent [gui] Deep scan option: false
+2025-06-22 21:57:19,871 INFO u.s.a.GUIAgent [gui] Registering service: gui-gui-boss
+2025-06-22 21:57:19,879 INFO u.s.a.GUIAgent [gui] Service registered successfully.
+2025-06-22 21:57:19,880 INFO u.s.a.GUIAgent [gui] Providing source folder: C:\Users\Asus\Desktop\test and target folder: C:\Users\Asus\Desktop\sorted
+2025-06-22 21:57:19,894 INFO u.s.a.GUIAgent [gui] Found 1 sorting agents and 1 monitor agents.
+2025-06-22 21:57:19,896 INFO u.s.a.GUIAgent [gui] Sent target folder to sorter: ( agent-identifier :name sorter1@192.168.142.64:1099/JADE  :addresses (sequence http://DESKTOP-VJD2UDM:7778/acc ))
+2025-06-22 21:57:19,896 INFO u.s.a.SortingAgent [sorter1] Target folder set to: C:\Users\Asus\Desktop\sorted
+2025-06-22 21:57:19,898 INFO u.s.a.MonitorAgent [monitor] Received folder setting request: C:\Users\Asus\Desktop\test,false
+2025-06-22 21:57:19,898 INFO u.s.a.GUIAgent [gui] Received confirmation message from sorter1: Directory set to: C:\Users\Asus\Desktop\sorted
+2025-06-22 21:57:19,899 INFO u.s.a.MonitorAgent [monitor] Directory set to: C:\Users\Asus\Desktop\test
+2025-06-22 21:57:19,899 INFO u.s.a.MonitorAgent [monitor] Deep scan enabled: false
+2025-06-22 21:57:19,903 INFO u.s.a.GUIAgent [gui] Received confirmation message from monitor: Directory set to: C:\Users\Asus\Desktop\test, Deep scan: false
+2025-06-22 21:57:21,912 INFO u.s.a.MonitorAgent [monitor] Found 1 classification coordinator(s). Sending file list.
+2025-06-22 21:57:21,913 WARN u.s.a.MonitorAgent [monitor] No files to send. The scannedFiles set is empty.
+2025-06-22 21:57:21,914 INFO u.s.a.ClassifierManager [manager] Received scan request from monitor: No files found in the specified directory.
+2025-06-22 21:57:21,914 INFO u.s.a.ClassifierManager [manager] Processed scan request. Current scanned files: 1
+2025-06-22 21:57:21,916 INFO u.s.a.ClassifierManager [manager] Creating 1 worker agents to process 1 files.
+2025-06-22 21:57:21,916 INFO u.s.a.MonitorAgent [monitor] Received CONFIRM message from manager: Scan request processed. Number of files to classify: 1
+2025-06-22 21:57:21,927 INFO u.s.a.ClassifierWorkerAgent [worker-1] Classifier Worker Agent worker-1 is starting up in container ClassifierContainer.
+2025-06-22 21:57:21,929 INFO u.s.a.ClassifierWorkerAgent [worker-1] Processed scan request. Current scanned files: 1
+2025-06-22 21:57:21,929 INFO u.s.a.ClassifierWorkerAgent [worker-1] Sucesfully processed scan request with 1 files.
+2025-06-22 21:57:21,933 INFO u.s.a.ClassifierWorkerAgent [worker-1] Found 1 sorting services.
+2025-06-22 21:57:21,935 INFO u.s.a.ClassifierWorkerAgent [worker-1] Classified 1 files into 1 categories.
+2025-06-22 21:57:21,947 WARN u.s.a.ClassifierWorkerAgent [worker-1] No specialized classifiers found for category: Unknown
+2025-06-22 21:57:22,226 INFO u.s.a.ClassifierWorkerAgent [worker-1] Classifier Worker Agent worker-1 is shutting down.
+2025-06-22 21:57:22,228 INFO u.s.a.ClassifierWorkerAgent [worker-1] Notification sent to manager about completion of work.
+2025-06-22 21:57:22,228 INFO u.s.a.ClassifierManager [manager] Received worker finished notice from worker-1: Worker worker-1 has finished processing files.
+2025-06-22 21:57:22,255 INFO u.s.a.SortingAgent [sorter1] Received file sorting request with 1 categories.
+2025-06-22 21:57:22,255 INFO u.s.a.SortingAgent [sorter1] Sorting files into categories...
+2025-06-22 21:57:22,259 ERROR u.s.a.SortingAgent [sorter1] Failed to move file 'No files found in the specified directory.' to 'C:\Users\Asus\Desktop\sorted\Unknown\No files found in the specified directory.': java.nio.file.NoSuchFileException: No files found in the specified directory.
+2025-06-22 21:57:22,266 INFO u.s.a.SortingAgent [sorter1] Found 1 GUI services.
+2025-06-22 21:57:22,267 INFO u.s.a.GUIAgent [gui] Received confirmation message from sorter1: Sucesfully sorted files into categories: [Unknown]
+2025-06-22 21:57:26,760 INFO u.s.a.GUIAgent [gui] GUI Agent gui is shutting down.
+2025-06-22 21:57:27,263 INFO u.s.a.GUIAgent [gui] GUI Agent gui is starting up.
+2025-06-22 21:57:27,264 INFO u.s.a.GUIAgent [gui] Source folder: C:\Users\Asus\Desktop\test
+2025-06-22 21:57:27,264 INFO u.s.a.GUIAgent [gui] Target folder: C:\Users\Asus\Desktop\sorted
+2025-06-22 21:57:27,264 INFO u.s.a.GUIAgent [gui] Deep scan option: false
+2025-06-22 21:57:27,264 INFO u.s.a.GUIAgent [gui] Registering service: gui-gui-boss
+2025-06-22 21:57:27,269 ERROR u.s.a.GUIAgent [gui] Failed to register service: ((action ( agent-identifier :name df@192.168.142.64:1099/JADE  :addresses (sequence http://DESKTOP-VJD2UDM:7778/acc )) (register (df-agent-description :name ( agent-identifier :name gui@192.168.142.64:1099/JADE  :addresses (sequence http://DESKTOP-VJD2UDM:7778/acc )) :services (set (service-description :name gui-gui-boss :type gui-boss))))) already-registered)
+2025-06-22 21:57:27,270 INFO u.s.a.GUIAgent [gui] Providing source folder: C:\Users\Asus\Desktop\test and target folder: C:\Users\Asus\Desktop\sorted
+2025-06-22 21:57:27,288 INFO u.s.a.GUIAgent [gui] Found 1 sorting agents and 1 monitor agents.
+2025-06-22 21:57:27,290 INFO u.s.a.GUIAgent [gui] Sent target folder to sorter: ( agent-identifier :name sorter1@192.168.142.64:1099/JADE  :addresses (sequence http://DESKTOP-VJD2UDM:7778/acc ))
+2025-06-22 21:57:27,290 INFO u.s.a.SortingAgent [sorter1] Target folder set to: C:\Users\Asus\Desktop\sorted
+2025-06-22 21:57:27,290 INFO u.s.a.MonitorAgent [monitor] Received folder setting request: C:\Users\Asus\Desktop\test,false
+2025-06-22 21:57:27,291 INFO u.s.a.MonitorAgent [monitor] Directory set to: C:\Users\Asus\Desktop\test
+2025-06-22 21:57:27,291 INFO u.s.a.MonitorAgent [monitor] Deep scan enabled: false
+2025-06-22 21:57:27,291 INFO u.s.a.GUIAgent [gui] Received confirmation message from sorter1: Directory set to: C:\Users\Asus\Desktop\sorted
+2025-06-22 21:57:27,292 INFO u.s.a.GUIAgent [gui] Received confirmation message from monitor: Directory set to: C:\Users\Asus\Desktop\test, Deep scan: false
+2025-06-22 21:57:29,304 INFO u.s.a.MonitorAgent [monitor] Found 1 classification coordinator(s). Sending file list.
+2025-06-22 21:57:29,304 WARN u.s.a.MonitorAgent [monitor] No files to send. The scannedFiles set is empty.
+2025-06-22 21:57:29,305 INFO u.s.a.ClassifierManager [manager] Received scan request from monitor: No files found in the specified directory.
+2025-06-22 21:57:29,306 INFO u.s.a.ClassifierManager [manager] Processed scan request. Current scanned files: 1
+2025-06-22 21:57:29,306 INFO u.s.a.ClassifierManager [manager] Creating 1 worker agents to process 1 files.
+2025-06-22 21:57:29,307 INFO u.s.a.MonitorAgent [monitor] Received CONFIRM message from manager: Scan request processed. Number of files to classify: 1
+2025-06-22 21:57:29,314 INFO u.s.a.ClassifierWorkerAgent [worker-1] Classifier Worker Agent worker-1 is starting up in container ClassifierContainer.
+2025-06-22 21:57:29,315 INFO u.s.a.ClassifierWorkerAgent [worker-1] Processed scan request. Current scanned files: 1
+2025-06-22 21:57:29,315 INFO u.s.a.ClassifierWorkerAgent [worker-1] Sucesfully processed scan request with 1 files.
+2025-06-22 21:57:29,319 INFO u.s.a.ClassifierWorkerAgent [worker-1] Found 1 sorting services.
+2025-06-22 21:57:29,320 INFO u.s.a.ClassifierWorkerAgent [worker-1] Classified 1 files into 1 categories.
+2025-06-22 21:57:29,323 WARN u.s.a.ClassifierWorkerAgent [worker-1] No specialized classifiers found for category: Unknown
+2025-06-22 21:57:29,325 INFO u.s.a.ClassifierWorkerAgent [worker-1] Classifier Worker Agent worker-1 is shutting down.
+2025-06-22 21:57:29,326 INFO u.s.a.ClassifierWorkerAgent [worker-1] Notification sent to manager about completion of work.
+2025-06-22 21:57:29,327 INFO u.s.a.SortingAgent [sorter1] Received file sorting request with 1 categories.
+2025-06-22 21:57:29,327 INFO u.s.a.SortingAgent [sorter1] Sorting files into categories...
+2025-06-22 21:57:29,326 INFO u.s.a.ClassifierManager [manager] Received worker finished notice from worker-1: Worker worker-1 has finished processing files.
+2025-06-22 21:57:29,328 ERROR u.s.a.SortingAgent [sorter1] Failed to move file 'No files found in the specified directory.' to 'C:\Users\Asus\Desktop\sorted\Unknown\No files found in the specified directory.': java.nio.file.NoSuchFileException: No files found in the specified directory.
+2025-06-22 21:57:29,335 INFO u.s.a.SortingAgent [sorter1] Found 1 GUI services.
+2025-06-22 21:57:29,336 INFO u.s.a.GUIAgent [gui] Received confirmation message from sorter1: Sucesfully sorted files into categories: [Unknown]
+2025-06-22 21:58:01,096 INFO u.s.c.MainController [JavaFX Application Thread] MainController initialized.
+2025-06-22 21:58:01,099 INFO u.s.c.MainController [JavaFX Application Thread] Redirected System.out to TextArea
+2025-06-22 21:58:17,858 INFO u.s.a.ClassifierManager [manager] Classifier Manager Agent manager is starting up.
+2025-06-22 21:58:17,861 INFO u.s.a.ClassifierManager [manager] Registering service: manager-classification-coordinator
+2025-06-22 21:58:17,865 INFO u.s.a.MonitorAgent [monitor] Monitor Agent monitor is starting up.
+2025-06-22 21:58:17,872 INFO u.s.a.MonitorAgent [monitor] Registering service: monitor-monitor-agent
+2025-06-22 21:58:17,880 INFO u.s.a.SortingAgent [sorter1] Sorting Agent sorter1 is starting up.
+2025-06-22 21:58:17,882 INFO u.s.a.GUIAgent [gui] GUI Agent gui is starting up.
+2025-06-22 21:58:17,883 INFO u.s.a.SortingAgent [sorter1] Registering service: sorter1-sorting-agent
+2025-06-22 21:58:17,883 INFO u.s.a.GUIAgent [gui] Source folder: C:\Users\Asus\Desktop\test
+2025-06-22 21:58:17,883 INFO u.s.a.GUIAgent [gui] Target folder: C:\Users\Asus\Desktop\sorted
+2025-06-22 21:58:17,883 INFO u.s.a.GUIAgent [gui] Deep scan option: false
+2025-06-22 21:58:17,884 INFO u.s.a.GUIAgent [gui] Registering service: gui-gui-boss
+2025-06-22 21:58:17,885 INFO u.s.a.ClassifierManager [manager] Service registered successfully.
+2025-06-22 21:58:17,888 INFO u.s.a.MonitorAgent [monitor] Service registered successfully.
+2025-06-22 21:58:17,891 INFO u.s.a.SortingAgent [sorter1] Service registered successfully.
+2025-06-22 21:58:17,892 INFO u.s.a.GUIAgent [gui] Service registered successfully.
+2025-06-22 21:58:17,893 INFO u.s.a.GUIAgent [gui] Providing source folder: C:\Users\Asus\Desktop\test and target folder: C:\Users\Asus\Desktop\sorted
+2025-06-22 21:58:17,901 INFO u.s.a.GUIAgent [gui] Found 1 sorting agents and 1 monitor agents.
+2025-06-22 21:58:17,903 INFO u.s.a.SortingAgent [sorter1] Target folder set to: C:\Users\Asus\Desktop\sorted
+2025-06-22 21:58:17,903 INFO u.s.a.GUIAgent [gui] Sent target folder to sorter: ( agent-identifier :name sorter1@192.168.142.64:1099/JADE  :addresses (sequence http://DESKTOP-VJD2UDM:7778/acc ))
+2025-06-22 21:58:17,905 INFO u.s.a.MonitorAgent [monitor] Received folder setting request: C:\Users\Asus\Desktop\test,false
+2025-06-22 21:58:17,905 INFO u.s.a.GUIAgent [gui] Received confirmation message from sorter1: Directory set to: C:\Users\Asus\Desktop\sorted
+2025-06-22 21:58:17,906 INFO u.s.a.MonitorAgent [monitor] Directory set to: C:\Users\Asus\Desktop\test
+2025-06-22 21:58:17,906 INFO u.s.a.MonitorAgent [monitor] Deep scan enabled: false
+2025-06-22 21:58:17,909 INFO u.s.a.GUIAgent [gui] Received confirmation message from monitor: Directory set to: C:\Users\Asus\Desktop\test, Deep scan: false
+2025-06-22 21:58:19,930 INFO u.s.a.MonitorAgent [monitor] Found 1 classification coordinator(s). Sending file list.
+2025-06-22 21:58:19,931 WARN u.s.a.MonitorAgent [monitor] No files to send. The scannedFiles set is empty.
+2025-06-22 21:58:19,932 INFO u.s.a.ClassifierManager [manager] Received scan request from monitor: No files found in the specified directory.
+2025-06-22 21:58:19,933 INFO u.s.a.ClassifierManager [manager] Processed scan request. Current scanned files: 1
+2025-06-22 21:58:19,934 INFO u.s.a.ClassifierManager [manager] Creating 1 worker agents to process 1 files.
+2025-06-22 21:58:19,934 INFO u.s.a.MonitorAgent [monitor] Received CONFIRM message from manager: Scan request processed. Number of files to classify: 1
+2025-06-22 21:58:19,939 INFO u.s.a.ClassifierWorkerAgent [worker-1] Classifier Worker Agent worker-1 is starting up in container ClassifierContainer.
+2025-06-22 21:58:19,941 INFO u.s.a.ClassifierWorkerAgent [worker-1] Processed scan request. Current scanned files: 1
+2025-06-22 21:58:19,941 INFO u.s.a.ClassifierWorkerAgent [worker-1] Sucesfully processed scan request with 1 files.
+2025-06-22 21:58:19,944 INFO u.s.a.ClassifierWorkerAgent [worker-1] Found 1 sorting services.
+2025-06-22 21:58:19,945 INFO u.s.a.ClassifierWorkerAgent [worker-1] Classified 1 files into 1 categories.
+2025-06-22 21:58:19,951 WARN u.s.a.ClassifierWorkerAgent [worker-1] No specialized classifiers found for category: Unknown
+2025-06-22 21:58:20,340 INFO u.s.a.ClassifierWorkerAgent [worker-1] Classifier Worker Agent worker-1 is shutting down.
+2025-06-22 21:58:20,343 INFO u.s.a.ClassifierWorkerAgent [worker-1] Notification sent to manager about completion of work.
+2025-06-22 21:58:20,344 INFO u.s.a.ClassifierManager [manager] Received worker finished notice from worker-1: Worker worker-1 has finished processing files.
+2025-06-22 21:58:20,392 INFO u.s.a.SortingAgent [sorter1] Received file sorting request with 1 categories.
+2025-06-22 21:58:20,394 INFO u.s.a.SortingAgent [sorter1] Sorting files into categories...
+2025-06-22 21:58:20,396 ERROR u.s.a.SortingAgent [sorter1] Failed to move file 'No files found in the specified directory.' to 'C:\Users\Asus\Desktop\sorted\Unknown\No files found in the specified directory.': java.nio.file.NoSuchFileException: No files found in the specified directory.
+2025-06-22 21:58:20,402 INFO u.s.a.SortingAgent [sorter1] Found 1 GUI services.
+2025-06-22 21:58:20,404 INFO u.s.a.GUIAgent [gui] Received confirmation message from sorter1: Sucesfully sorted files into categories: [Unknown]
+2025-06-22 21:58:55,689 INFO u.s.c.MainController [JavaFX Application Thread] MainController initialized.
+2025-06-22 21:58:55,692 INFO u.s.c.MainController [JavaFX Application Thread] Redirected System.out to TextArea
+2025-06-22 21:59:07,815 INFO u.s.a.MonitorAgent [monitor] Monitor Agent monitor is starting up.
+2025-06-22 21:59:07,821 INFO u.s.a.MonitorAgent [monitor] Registering service: monitor-monitor-agent
+2025-06-22 21:59:07,821 INFO u.s.a.ClassifierManager [manager] Classifier Manager Agent manager is starting up.
+2025-06-22 21:59:07,822 INFO u.s.a.SortingAgent [sorter1] Sorting Agent sorter1 is starting up.
+2025-06-22 21:59:07,824 INFO u.s.a.ClassifierManager [manager] Registering service: manager-classification-coordinator
+2025-06-22 21:59:07,826 INFO u.s.a.SortingAgent [sorter1] Registering service: sorter1-sorting-agent
+2025-06-22 21:59:07,829 INFO u.s.a.GUIAgent [gui] GUI Agent gui is starting up.
+2025-06-22 21:59:07,831 INFO u.s.a.GUIAgent [gui] Source folder: C:\Users\Asus\Desktop\test
+2025-06-22 21:59:07,832 INFO u.s.a.GUIAgent [gui] Target folder: C:\Users\Asus\Desktop\sorted
+2025-06-22 21:59:07,833 INFO u.s.a.GUIAgent [gui] Deep scan option: false
+2025-06-22 21:59:07,835 INFO u.s.a.GUIAgent [gui] Registering service: gui-gui-boss
+2025-06-22 21:59:07,852 INFO u.s.a.ClassifierManager [manager] Service registered successfully.
+2025-06-22 21:59:07,859 INFO u.s.a.MonitorAgent [monitor] Service registered successfully.
+2025-06-22 21:59:07,863 INFO u.s.a.SortingAgent [sorter1] Service registered successfully.
+2025-06-22 21:59:07,866 INFO u.s.a.GUIAgent [gui] Service registered successfully.
+2025-06-22 21:59:07,869 INFO u.s.a.GUIAgent [gui] Providing source folder: C:\Users\Asus\Desktop\test and target folder: C:\Users\Asus\Desktop\sorted
+2025-06-22 21:59:07,883 INFO u.s.a.GUIAgent [gui] Found 1 sorting agents and 1 monitor agents.
+2025-06-22 21:59:07,887 INFO u.s.a.GUIAgent [gui] Sent target folder to sorter: ( agent-identifier :name sorter1@192.168.142.64:1099/JADE  :addresses (sequence http://DESKTOP-VJD2UDM:7778/acc ))
+2025-06-22 21:59:07,887 INFO u.s.a.SortingAgent [sorter1] Target folder set to: C:\Users\Asus\Desktop\sorted
+2025-06-22 21:59:07,889 INFO u.s.a.GUIAgent [gui] Received confirmation message from sorter1: Directory set to: C:\Users\Asus\Desktop\sorted
+2025-06-22 21:59:07,890 INFO u.s.a.MonitorAgent [monitor] Received folder setting request: C:\Users\Asus\Desktop\test,false
+2025-06-22 21:59:07,890 INFO u.s.a.MonitorAgent [monitor] Directory set to: C:\Users\Asus\Desktop\test
+2025-06-22 21:59:07,890 INFO u.s.a.MonitorAgent [monitor] Deep scan enabled: false
+2025-06-22 21:59:07,892 INFO u.s.a.GUIAgent [gui] Received confirmation message from monitor: Directory set to: C:\Users\Asus\Desktop\test, Deep scan: false
+2025-06-22 21:59:07,896 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Desktop\test\denis.stanciu00.zip
+2025-06-22 21:59:07,896 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Desktop\test\Proiect-Proiectarea-aplicatiilor-ce-vor-rula-in-cloud.pdf
+2025-06-22 21:59:07,897 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Desktop\test\received_422879007176562.jpg
+2025-06-22 21:59:07,897 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Desktop\test\Referat_HaiostaMichelle.pdf
+2025-06-22 21:59:07,898 INFO u.s.a.MonitorAgent [monitor] [Shallow scan] File detected: C:\Users\Asus\Desktop\test\Screenshot 2023-12-04 104757.png
+2025-06-22 21:59:09,903 INFO u.s.a.MonitorAgent [monitor] Found 1 classification coordinator(s). Sending file list.
+2025-06-22 21:59:09,904 INFO u.s.a.MonitorAgent [monitor] File list sent to: manager
+2025-06-22 21:59:09,905 INFO u.s.a.ClassifierManager [manager] Received scan request from monitor: C:\Users\Asus\Desktop\test\denis.stanciu00.zip,C:\Users\Asus\Desktop\test\Proiect-Proiectarea-aplicatiilor-ce-vor-rula-in-cloud.pdf,C:\Users\Asus\Desktop\test\Referat_HaiostaMichelle.pdf,C:\Users\Asus\Desktop\test\received_422879007176562.jpg,C:\Users\Asus\Desktop\test\Screenshot 2023-12-04 104757.png
+2025-06-22 21:59:09,905 INFO u.s.a.ClassifierManager [manager] Processed scan request. Current scanned files: 5
+2025-06-22 21:59:09,906 INFO u.s.a.ClassifierManager [manager] Creating 1 worker agents to process 5 files.
+2025-06-22 21:59:09,906 INFO u.s.a.MonitorAgent [monitor] Received CONFIRM message from manager: Scan request processed. Number of files to classify: 5
+2025-06-22 21:59:09,914 INFO u.s.a.ClassifierWorkerAgent [worker-1] Classifier Worker Agent worker-1 is starting up in container ClassifierContainer.
+2025-06-22 21:59:09,915 INFO u.s.a.ClassifierWorkerAgent [worker-1] Processed scan request. Current scanned files: 5
+2025-06-22 21:59:09,915 INFO u.s.a.ClassifierWorkerAgent [worker-1] Sucesfully processed scan request with 5 files.
+2025-06-22 21:59:09,921 INFO u.s.a.ClassifierWorkerAgent [worker-1] Found 1 sorting services.
+2025-06-22 21:59:09,923 INFO u.s.a.ClassifierWorkerAgent [worker-1] Classified 5 files into 3 categories.
+2025-06-22 21:59:09,927 WARN u.s.a.ClassifierWorkerAgent [worker-1] No specialized classifiers found for category: PDFs
+2025-06-22 21:59:09,932 WARN u.s.a.ClassifierWorkerAgent [worker-1] No specialized classifiers found for category: Images
+2025-06-22 21:59:09,940 WARN u.s.a.ClassifierWorkerAgent [worker-1] No specialized classifiers found for category: Archives
+2025-06-22 21:59:10,245 INFO u.s.a.ClassifierWorkerAgent [worker-1] Classifier Worker Agent worker-1 is shutting down.
+2025-06-22 21:59:10,247 INFO u.s.a.ClassifierWorkerAgent [worker-1] Notification sent to manager about completion of work.
+2025-06-22 21:59:10,247 INFO u.s.a.ClassifierManager [manager] Received worker finished notice from worker-1: Worker worker-1 has finished processing files.
+2025-06-22 21:59:10,273 INFO u.s.a.SortingAgent [sorter1] Received file sorting request with 3 categories.
+2025-06-22 21:59:10,273 INFO u.s.a.SortingAgent [sorter1] Sorting files into categories...
+2025-06-22 21:59:10,286 INFO u.s.a.SortingAgent [sorter1] Moved file 'C:\Users\Asus\Desktop\test\Proiect-Proiectarea-aplicatiilor-ce-vor-rula-in-cloud.pdf' to category 'PDFs'.
+2025-06-22 21:59:10,291 INFO u.s.a.SortingAgent [sorter1] Moved file 'C:\Users\Asus\Desktop\test\Referat_HaiostaMichelle.pdf' to category 'PDFs'.
+2025-06-22 21:59:10,296 INFO u.s.a.SortingAgent [sorter1] Moved file 'C:\Users\Asus\Desktop\test\received_422879007176562.jpg' to category 'Images'.
+2025-06-22 21:59:10,300 INFO u.s.a.SortingAgent [sorter1] Moved file 'C:\Users\Asus\Desktop\test\Screenshot 2023-12-04 104757.png' to category 'Images'.
+2025-06-22 21:59:10,305 INFO u.s.a.SortingAgent [sorter1] Moved file 'C:\Users\Asus\Desktop\test\denis.stanciu00.zip' to category 'Archives'.
+2025-06-22 21:59:10,311 INFO u.s.a.SortingAgent [sorter1] Found 1 GUI services.
+2025-06-22 21:59:10,313 INFO u.s.a.GUIAgent [gui] Received confirmation message from sorter1: Sucesfully sorted files into categories: [PDFs, Images, Archives]

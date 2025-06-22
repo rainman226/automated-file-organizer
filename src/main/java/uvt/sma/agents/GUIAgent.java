@@ -83,13 +83,15 @@ public class GUIAgent extends Agent {
         public void action() {
             ACLMessage msg = myAgent.receive();
 
-            if(msg != null && msg.getPerformative() == ACLMessage.CONFIRM) {
+            if(msg != null && msg.getPerformative() == ACLMessage.CONFIRM) {    // CASE 1: confirmation message
                 LOGGER.info("Received confirmation message from {}: {}", msg.getSender().getLocalName(), msg.getContent());
                 System.out.println("Received confirmation message from " + msg.getSender().getLocalName() + ": " + msg.getContent());
-            } else {
+            } else if (msg != null && msg.getPerformative() == ACLMessage.INFORM) {   // CASE 2: inform message (empty folder)
+                LOGGER.info("Received inform message from {}: {}", msg.getSender().getLocalName(), msg.getContent());
+                System.out.println("Received inform message from " + msg.getSender().getLocalName() + ": " + msg.getContent());
+            } else
                 block();
             }
-        }
     }
 
     /*
