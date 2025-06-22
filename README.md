@@ -109,6 +109,7 @@ Agents communicate using JADE's ACL messages with specific performatives, conver
 4. Each **Classifier Worker Agent** categorizes files, delegates to specialized classifiers if available, and sends categorized lists to the **Sorting Agent**.
 5. The **Sorting Agent** creates category folders in the target directory, moves files accordingly, and notifies the **GUI Agent** of completion.
 
+![alt text for screen readers](/docs/sequence.png "Sequence Diagram")
 
 ## Future Enhancements
 
