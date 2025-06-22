@@ -74,7 +74,6 @@ public class GUIAgent extends Agent {
     private class MessageListener extends CyclicBehaviour {
         @Override
         public void action() {
-            LOGGER.info("GUI Agent {} is ready to receive messages.", getLocalName());
             ACLMessage msg = myAgent.receive();
 
             if(msg != null && msg.getConversationId().equals("confirm"))  {

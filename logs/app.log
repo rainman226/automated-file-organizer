@@ -1328,3 +1328,95 @@
 2025-06-22 15:54:27,001 INFO u.s.a.MonitorAgent [monitor] Received folder setting request: null,false
 2025-06-22 15:54:27,001 INFO u.s.a.MonitorAgent [monitor] Directory set to: null
 2025-06-22 15:54:27,002 INFO u.s.a.MonitorAgent [monitor] Deep scan enabled: false
+2025-06-22 15:55:17,458 INFO u.s.a.ClassifierManager [manager] Classifier Manager Agent manager is starting up.
+2025-06-22 15:55:17,458 INFO u.s.a.SortingAgent [sorter1] Sorting Agent sorter1 is starting up.
+2025-06-22 15:55:17,458 INFO u.s.a.MonitorAgent [monitor] Monitor Agent monitor is starting up.
+2025-06-22 15:55:17,464 INFO u.s.a.MonitorAgent [monitor] Registering service: monitor-monitor-agent
+2025-06-22 15:55:17,464 INFO u.s.a.ClassifierManager [manager] Registering service: manager-classification-coordinator
+2025-06-22 15:55:17,465 INFO u.s.a.SortingAgent [sorter1] Registering service: sorter1-sorting-agent
+2025-06-22 15:55:17,466 INFO u.s.a.GUIAgent [gui] GUI Agent gui is starting up.
+2025-06-22 15:55:17,467 INFO u.s.a.GUIAgent [gui] Source folder: C:\Users\Asus\Desktop\test
+2025-06-22 15:55:17,467 INFO u.s.a.GUIAgent [gui] Target folder: C:\Users\Asus\Desktop\sorted
+2025-06-22 15:55:17,469 INFO u.s.a.GUIAgent [gui] Registering service: gui-gui-boss
+2025-06-22 15:55:17,479 INFO u.s.a.GUIAgent [gui] Service registered successfully.
+2025-06-22 15:55:17,480 INFO u.s.a.GUIAgent [gui] GUI Agent gui is ready to receive messages.
+2025-06-22 15:55:17,481 INFO u.s.a.GUIAgent [gui] Providing source folder: C:\Users\Asus\Desktop\test and target folder: C:\Users\Asus\Desktop\sorted
+2025-06-22 15:55:17,482 INFO u.s.a.MonitorAgent [monitor] Service registered successfully.
+2025-06-22 15:55:17,484 INFO u.s.a.SortingAgent [sorter1] Service registered successfully.
+2025-06-22 15:55:17,485 INFO u.s.a.ClassifierManager [manager] Service registered successfully.
+2025-06-22 15:55:17,492 INFO u.s.a.GUIAgent [gui] Found 1 sorting agents and 1 monitor agents.
+2025-06-22 15:55:17,495 INFO u.s.a.GUIAgent [gui] Sent target folder to sorter: ( agent-identifier :name sorter1@192.168.142.64:1099/JADE  :addresses (sequence http://DESKTOP-VJD2UDM:7778/acc ))
+2025-06-22 15:55:17,496 INFO u.s.a.SortingAgent [sorter1] Target folder set to: C:\Users\Asus\Desktop\sorted
+2025-06-22 15:55:17,498 INFO u.s.a.GUIAgent [gui] GUI Agent gui is ready to receive messages.
+2025-06-22 15:55:17,499 INFO u.s.a.MonitorAgent [monitor] Received folder setting request: C:\Users\Asus\Desktop\test,false
+2025-06-22 15:55:17,499 INFO u.s.a.MonitorAgent [monitor] Directory set to: C:\Users\Asus\Desktop\test
+2025-06-22 15:55:17,499 INFO u.s.a.MonitorAgent [monitor] Deep scan enabled: false
+2025-06-22 16:00:33,757 INFO u.s.a.ClassifierManager [manager] Classifier Manager Agent manager is starting up.
+2025-06-22 16:00:33,762 INFO u.s.a.ClassifierManager [manager] Registering service: manager-classification-coordinator
+2025-06-22 16:00:33,778 INFO u.s.a.ClassifierManager [manager] Service registered successfully.
+2025-06-22 16:00:33,813 INFO u.s.a.MonitorAgent [monitor] Monitor Agent monitor is starting up.
+2025-06-22 16:00:33,815 INFO u.s.a.MonitorAgent [monitor] Registering service: monitor-monitor-agent
+2025-06-22 16:00:33,822 INFO u.s.a.MonitorAgent [monitor] Service registered successfully.
+2025-06-22 16:00:33,860 INFO u.s.a.SortingAgent [sorter1] Sorting Agent sorter1 is starting up.
+2025-06-22 16:00:33,863 INFO u.s.a.GUIAgent [gui] GUI Agent gui is starting up.
+2025-06-22 16:00:33,863 INFO u.s.a.GUIAgent [gui] Source folder: C:\Users\Asus\Desktop\test
+2025-06-22 16:00:33,863 INFO u.s.a.GUIAgent [gui] Target folder: C:\Users\Asus\Desktop\sorted
+2025-06-22 16:00:33,864 INFO u.s.a.GUIAgent [gui] Registering service: gui-gui-boss
+2025-06-22 16:00:33,868 INFO u.s.a.GUIAgent [gui] Service registered successfully.
+2025-06-22 16:00:33,868 INFO u.s.a.GUIAgent [gui] GUI Agent gui is ready to receive messages.
+2025-06-22 16:00:33,868 INFO u.s.a.GUIAgent [gui] Providing source folder: C:\Users\Asus\Desktop\test and target folder: C:\Users\Asus\Desktop\sorted
+2025-06-22 16:00:33,875 INFO u.s.a.GUIAgent [gui] Found 0 sorting agents and 1 monitor agents.
+2025-06-22 16:00:33,876 INFO u.s.a.SortingAgent [sorter1] Registering service: sorter1-sorting-agent
+2025-06-22 16:00:33,876 INFO u.s.a.GUIAgent [gui] GUI Agent gui is shutting down.
+2025-06-22 16:00:33,880 INFO u.s.a.SortingAgent [sorter1] Service registered successfully.
+2025-06-22 16:00:50,915 INFO u.s.a.ClassifierManager [manager] Classifier Manager Agent manager is starting up.
+2025-06-22 16:00:50,915 INFO u.s.a.MonitorAgent [monitor] Monitor Agent monitor is starting up.
+2025-06-22 16:00:50,916 INFO u.s.a.GUIAgent [gui] GUI Agent gui is starting up.
+2025-06-22 16:00:50,915 INFO u.s.a.SortingAgent [sorter1] Sorting Agent sorter1 is starting up.
+2025-06-22 16:00:50,920 INFO u.s.a.GUIAgent [gui] Source folder: C:\Users\Asus\Desktop\test
+2025-06-22 16:00:50,921 INFO u.s.a.GUIAgent [gui] Target folder: C:\Users\Asus\Desktop\sorted
+2025-06-22 16:00:50,922 INFO u.s.a.MonitorAgent [monitor] Registering service: monitor-monitor-agent
+2025-06-22 16:00:50,922 INFO u.s.a.ClassifierManager [manager] Registering service: manager-classification-coordinator
+2025-06-22 16:00:50,922 INFO u.s.a.GUIAgent [gui] Registering service: gui-gui-boss
+2025-06-22 16:00:50,924 INFO u.s.a.SortingAgent [sorter1] Registering service: sorter1-sorting-agent
+2025-06-22 16:00:50,937 INFO u.s.a.GUIAgent [gui] Service registered successfully.
+2025-06-22 16:00:50,937 INFO u.s.a.GUIAgent [gui] GUI Agent gui is ready to receive messages.
+2025-06-22 16:00:50,938 INFO u.s.a.GUIAgent [gui] Providing source folder: C:\Users\Asus\Desktop\test and target folder: C:\Users\Asus\Desktop\sorted
+2025-06-22 16:00:50,939 INFO u.s.a.SortingAgent [sorter1] Service registered successfully.
+2025-06-22 16:00:50,942 INFO u.s.a.MonitorAgent [monitor] Service registered successfully.
+2025-06-22 16:00:50,944 INFO u.s.a.ClassifierManager [manager] Service registered successfully.
+2025-06-22 16:00:50,954 INFO u.s.a.GUIAgent [gui] Found 1 sorting agents and 1 monitor agents.
+2025-06-22 16:00:50,956 INFO u.s.a.GUIAgent [gui] Sent target folder to sorter: ( agent-identifier :name sorter1@192.168.142.64:1099/JADE  :addresses (sequence http://DESKTOP-VJD2UDM:7778/acc ))
+2025-06-22 16:00:50,956 INFO u.s.a.SortingAgent [sorter1] Target folder set to: C:\Users\Asus\Desktop\sorted
+2025-06-22 16:00:50,958 INFO u.s.a.GUIAgent [gui] GUI Agent gui is ready to receive messages.
+2025-06-22 16:00:50,959 INFO u.s.a.GUIAgent [gui] Received confirmation message from sorter1: Directory set to: C:\Users\Asus\Desktop\sorted
+2025-06-22 16:00:50,959 INFO u.s.a.MonitorAgent [monitor] Received folder setting request: C:\Users\Asus\Desktop\test,false
+2025-06-22 16:00:50,959 INFO u.s.a.GUIAgent [gui] GUI Agent gui is ready to receive messages.
+2025-06-22 16:00:50,960 INFO u.s.a.MonitorAgent [monitor] Directory set to: C:\Users\Asus\Desktop\test
+2025-06-22 16:00:50,960 INFO u.s.a.MonitorAgent [monitor] Deep scan enabled: false
+2025-06-22 16:00:50,962 INFO u.s.a.GUIAgent [gui] GUI Agent gui is ready to receive messages.
+2025-06-22 16:00:50,962 INFO u.s.a.GUIAgent [gui] Received confirmation message from monitor: Directory set to: C:\Users\Asus\Desktop\test, Deep scan: false
+2025-06-22 16:00:50,962 INFO u.s.a.GUIAgent [gui] GUI Agent gui is ready to receive messages.
+2025-06-22 16:01:37,113 INFO u.s.a.MonitorAgent [monitor] Monitor Agent monitor is starting up.
+2025-06-22 16:01:37,113 INFO u.s.a.ClassifierManager [manager] Classifier Manager Agent manager is starting up.
+2025-06-22 16:01:37,113 INFO u.s.a.SortingAgent [sorter1] Sorting Agent sorter1 is starting up.
+2025-06-22 16:01:37,120 INFO u.s.a.MonitorAgent [monitor] Registering service: monitor-monitor-agent
+2025-06-22 16:01:37,120 INFO u.s.a.ClassifierManager [manager] Registering service: manager-classification-coordinator
+2025-06-22 16:01:37,122 INFO u.s.a.SortingAgent [sorter1] Registering service: sorter1-sorting-agent
+2025-06-22 16:01:37,136 INFO u.s.a.ClassifierManager [manager] Service registered successfully.
+2025-06-22 16:01:37,139 INFO u.s.a.MonitorAgent [monitor] Service registered successfully.
+2025-06-22 16:01:37,142 INFO u.s.a.SortingAgent [sorter1] Service registered successfully.
+2025-06-22 16:01:37,179 INFO u.s.a.GUIAgent [gui] GUI Agent gui is starting up.
+2025-06-22 16:01:37,180 INFO u.s.a.GUIAgent [gui] Source folder: C:\Users\Asus\Desktop\test
+2025-06-22 16:01:37,180 INFO u.s.a.GUIAgent [gui] Target folder: C:\Users\Asus\Desktop\sorted
+2025-06-22 16:01:37,181 INFO u.s.a.GUIAgent [gui] Registering service: gui-gui-boss
+2025-06-22 16:01:37,185 INFO u.s.a.GUIAgent [gui] Service registered successfully.
+2025-06-22 16:01:37,185 INFO u.s.a.GUIAgent [gui] Providing source folder: C:\Users\Asus\Desktop\test and target folder: C:\Users\Asus\Desktop\sorted
+2025-06-22 16:01:37,193 INFO u.s.a.GUIAgent [gui] Found 1 sorting agents and 1 monitor agents.
+2025-06-22 16:01:37,196 INFO u.s.a.GUIAgent [gui] Sent target folder to sorter: ( agent-identifier :name sorter1@192.168.142.64:1099/JADE  :addresses (sequence http://DESKTOP-VJD2UDM:7778/acc ))
+2025-06-22 16:01:37,196 INFO u.s.a.SortingAgent [sorter1] Target folder set to: C:\Users\Asus\Desktop\sorted
+2025-06-22 16:01:37,198 INFO u.s.a.GUIAgent [gui] Received confirmation message from sorter1: Directory set to: C:\Users\Asus\Desktop\sorted
+2025-06-22 16:01:37,198 INFO u.s.a.MonitorAgent [monitor] Received folder setting request: C:\Users\Asus\Desktop\test,false
+2025-06-22 16:01:37,198 INFO u.s.a.MonitorAgent [monitor] Directory set to: C:\Users\Asus\Desktop\test
+2025-06-22 16:01:37,198 INFO u.s.a.MonitorAgent [monitor] Deep scan enabled: false
+2025-06-22 16:01:37,200 INFO u.s.a.GUIAgent [gui] Received confirmation message from monitor: Directory set to: C:\Users\Asus\Desktop\test, Deep scan: false

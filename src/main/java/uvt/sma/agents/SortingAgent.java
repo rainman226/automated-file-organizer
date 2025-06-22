@@ -12,6 +12,7 @@ import jade.lang.acl.ACLMessage;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import uvt.sma.helpers.MessageTemplate;
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -66,16 +67,28 @@ public class SortingAgent extends Agent {
         public void action() {
             ACLMessage msg = myAgent.receive();
 
+            // CASE 1: Set target folder
             if(msg != null && msg.getConversationId().equals("set-folder")) {
                 String content = msg.getContent();
                 if (content != null && !content.isEmpty()) {
                     targetFolder = content;
                     LOGGER.info("Target folder set to: {}", targetFolder);
+
+                    MessageTemplate.sendMessage(
+                            myAgent,
+                            msg.getSender(),
+                            ACLMessage.CONFIRM,
+                            "folder-set",
+                            "confirm",
+                            "Directory set to: " + targetFolder
+                    );
+
                 } else {
                     LOGGER.warn("Received empty folder path. Using default: {}", targetFolder);
                 }
             }
 
+            // CASE 2: File sorting request
             if (msg != null && msg.getConversationId().equals("file-sorting-request")) {
                 try {
                     ObjectMapper objectMapper = new ObjectMapper();

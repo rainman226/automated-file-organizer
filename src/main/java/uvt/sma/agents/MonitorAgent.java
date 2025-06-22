@@ -10,6 +10,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import jade.core.Agent;
 import jade.core.behaviours.OneShotBehaviour;
+import uvt.sma.helpers.MessageTemplate;
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -87,6 +88,15 @@ public class MonitorAgent extends Agent {
                     deepScan = parts.length > 1 && Boolean.parseBoolean(parts[1]);
                     LOGGER.info("Directory set to: {}", directory);
                     LOGGER.info("Deep scan enabled: {}", deepScan);
+
+                    MessageTemplate.sendMessage(
+                            myAgent,
+                            msg.getSender(),
+                            ACLMessage.CONFIRM,
+                            "folder-set",
+                            "confirm",
+                            "Directory set to: " + directory + ", Deep scan: " + deepScan
+                    );
 
                 } else {
                     LOGGER.warn("Invalid folder setting request format.");
