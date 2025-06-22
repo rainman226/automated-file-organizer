@@ -8,20 +8,19 @@ import jade.domain.FIPAAgentManagement.DFAgentDescription;
 import jade.domain.FIPAAgentManagement.ServiceDescription;
 import jade.domain.FIPAException;
 import jade.lang.acl.ACLMessage;
+import jade.wrapper.AgentContainer;
 import jade.wrapper.AgentController;
-import jade.wrapper.ContainerController;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import uvt.sma.helpers.FileCategoryLoader;
 import uvt.sma.helpers.MessageTemplate;
-import jade.wrapper.AgentContainer;
 
 import java.util.HashMap;
 import java.util.Set;
 
 public class ClassifierManager extends Agent {
     private static final long serialVersionUID = 1L;
-    private Set<String> scannedFiles = new java.util.HashSet<>();
+    private final Set<String> scannedFiles = new java.util.HashSet<>();
     private final int maxFiles = 100; // maximum number of files allowed for each worker
     public static final HashMap<String, String> extensionMap = FileCategoryLoader.loadExtensionCategoryMap("src/main/resources/extensions.csv");
     private AgentContainer classifierContainer;
@@ -36,13 +35,13 @@ public class ClassifierManager extends Agent {
             classifierContainer = (AgentContainer) args[0];
         } else {
             System.err.println("ClassifierContainer not provided to ClassifierManager");
-            doDelete(); // Terminate the agent if no container is provided
+            // doDelete(); // Terminate the agent if no container is provided
             return;
         }
 
         // add behaviours
-        addBehaviour(new RegisterService());
-        addBehaviour(new MessageListener());
+        addBehaviour(new RegisterService());    // register the service
+        addBehaviour(new MessageListener());    // listen for messages
     }
 
     @Override

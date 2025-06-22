@@ -1,5 +1,6 @@
 package uvt.sma.agents;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
 import jade.core.Agent;
 import jade.core.behaviours.OneShotBehaviour;
 import jade.domain.DFService;
@@ -10,8 +11,6 @@ import jade.lang.acl.ACLMessage;
 import jade.wrapper.ControllerException;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import com.fasterxml.jackson.databind.ObjectMapper;
-import uvt.sma.helpers.MessageTemplate;
 
 import java.util.*;
 
@@ -22,7 +21,7 @@ public class ClassifierWorkerAgent extends Agent {
     private static final Logger LOGGER = LogManager.getLogger(ClassifierWorkerAgent.class);
     @Override
     protected void setup() {
-        // Initialization code for the Classifier Worker Agent
+
         try {
             LOGGER.info("Classifier Worker Agent {} is starting up in container {}.", getLocalName(), getContainerController().getContainerName());
         } catch (ControllerException e) {
@@ -50,6 +49,11 @@ public class ClassifierWorkerAgent extends Agent {
         notifyManger();
     }
 
+    /*
+        * Searches for sorting services in the Directory Facilitator (DF).
+        * This is a one-shot behaviour that runs once when the agent starts.
+        * It looks for services of type "sorting" and stores them in the sorters array.
+     */
     private class SearchForSorters extends OneShotBehaviour {
         @Override
         public void action() {
@@ -75,6 +79,11 @@ public class ClassifierWorkerAgent extends Agent {
     }
 
 
+    /*
+        * Classifies the scanned files based on their extensions.
+        * This is a one-shot behaviour that runs once after the files are scanned.
+        * It categorizes files into different types and sends them to the sorter service.
+     */
     private class ClassifyFiles extends OneShotBehaviour {
         @Override
         public void action() {
@@ -84,10 +93,10 @@ public class ClassifierWorkerAgent extends Agent {
                 String extension = filePath.substring(filePath.lastIndexOf('.')).toLowerCase();
                 String category = ClassifierManager.getCategoryForFile(extension);
 
-                // Initialize the category list if not present
+                // initialize the category list if it doesn't exist
                 fileCategories.computeIfAbsent(category, k -> new ArrayList<>());
 
-                // Add the file to the appropriate category
+                // add the file to the corresponding category
                 fileCategories.get(category).add(filePath);
             }
             LOGGER.info("Classified {} files into {} categories.", scannedFiles.size(), fileCategories.size());
@@ -116,6 +125,11 @@ public class ClassifierWorkerAgent extends Agent {
         }
     }
 
+    /*
+        * Notifies the manager agent that this worker has finished processing files.
+        * This is called in the takeDown method to inform the manager about the completion of work.
+        * It sends an INFORM message to the manager agent with the worker's name and status.
+     */
     private void notifyManger() {
         try {
             // Notify the manager that this worker has finished processing
@@ -131,6 +145,9 @@ public class ClassifierWorkerAgent extends Agent {
         }
     }
 
+    /*
+        * Processes the content of the message received from the Manager.
+     */
     private void processMessageContent(String content) {
         // check if content is null or empty
         if (content == null || content.isEmpty()) {

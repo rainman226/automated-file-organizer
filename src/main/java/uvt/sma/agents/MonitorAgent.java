@@ -1,6 +1,8 @@
 package uvt.sma.agents;
 
+import jade.core.Agent;
 import jade.core.behaviours.CyclicBehaviour;
+import jade.core.behaviours.OneShotBehaviour;
 import jade.domain.DFService;
 import jade.domain.FIPAAgentManagement.DFAgentDescription;
 import jade.domain.FIPAAgentManagement.ServiceDescription;
@@ -8,8 +10,6 @@ import jade.domain.FIPAException;
 import jade.lang.acl.ACLMessage;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import jade.core.Agent;
-import jade.core.behaviours.OneShotBehaviour;
 import uvt.sma.helpers.MessageTemplate;
 
 import java.io.IOException;
@@ -30,9 +30,7 @@ public class MonitorAgent extends Agent {
 
         // behaviour list
         addBehaviour(new RegisterService());  // register service
-        addBehaviour(new MessageListener());
-        //addBehaviour(new ScanFolder());     // MAKE TRIGGER
-        //addBehaviour(new SendFileList());   // MAKE TRIGGER
+        addBehaviour(new MessageListener());  // listen for messages
     }
 
     @Override
@@ -41,6 +39,11 @@ public class MonitorAgent extends Agent {
         // Cleanup code can be added here
     }
 
+    /*
+        * Registers the monitor service with the Directory Facilitator (DF).
+        * The service type is "monitor" and the name is based on the agent's local name.
+        * This allows other agents to discover this monitor service.
+     */
     private class RegisterService extends OneShotBehaviour {
         @Override
         public void action() {
@@ -152,13 +155,6 @@ public class MonitorAgent extends Agent {
 
                 if(result.length > 0) {
                     LOGGER.info("Found {} classification coordinator(s). Sending file list.", result.length);
-
-//                    ACLMessage msg = new ACLMessage(ACLMessage.INFORM);
-//                    msg.setConversationId("file-list");
-//                    msg.setContent(String.join(",", scannedFiles));
-//                    msg.addReceiver(result[0].getName());
-//
-//                    myAgent.send(msg);
 
                     MessageTemplate.sendMessage(
                             myAgent,

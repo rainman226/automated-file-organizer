@@ -42,7 +42,7 @@ public class GUIAgent extends Agent {
         // add behaviours
         addBehaviour(new RegisterService());    // register service
         addBehaviour(new MessageListener());    // listen for messages
-        addBehaviour(new ProvideFolders());
+        addBehaviour(new ProvideFolders());     // provide folders to sorters and monitors
     }
 
     @Override
@@ -50,6 +50,11 @@ public class GUIAgent extends Agent {
         LOGGER.info("GUI Agent {} is shutting down.", getLocalName());
     }
 
+    /*
+        * Registers the GUI service with the Directory Facilitator (DF).
+        * The service type is "gui-boss" and the name is based on the agent's local name.
+        * This allows other agents to discover this GUI service.
+     */
     private class RegisterService extends OneShotBehaviour {
         @Override
         public void action() {
@@ -84,6 +89,12 @@ public class GUIAgent extends Agent {
             }
         }
     }
+
+    /*
+        * Provides the source and target folders to the sorting and monitoring agents.
+        * It sends the target folder to the first sorter and the source folder (with deep scan option) to the first monitor.
+        * This is done after searching for available services in the Directory Facilitator (DF).
+     */
     private class ProvideFolders extends OneShotBehaviour {
         @Override
         public void action() {
@@ -101,6 +112,7 @@ public class GUIAgent extends Agent {
                     targetFolder
             );
             LOGGER.info("Sent target folder to sorter: {}", sorters[0].getName());
+
             // 2nd: send to monitor:
             MessageTemplate.sendMessage(
                     myAgent,
@@ -113,6 +125,11 @@ public class GUIAgent extends Agent {
         }
     }
 
+    /*
+        * Searches for sorting and monitoring services in the Directory Facilitator (DF).
+        * It looks for services of type "sorting" and "monitor" and stores them in the respective arrays.
+        * This allows the GUI agent to interact with available sorting and monitoring agents.
+     */
     private void searchForServices() {
         try {
             DFAgentDescription dfd = new DFAgentDescription();

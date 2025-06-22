@@ -1,6 +1,7 @@
 package uvt.sma.agents;
 
 import com.fasterxml.jackson.core.type.TypeReference;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import jade.core.Agent;
 import jade.core.behaviours.CyclicBehaviour;
 import jade.core.behaviours.OneShotBehaviour;
@@ -11,7 +12,6 @@ import jade.domain.FIPAException;
 import jade.lang.acl.ACLMessage;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import com.fasterxml.jackson.databind.ObjectMapper;
 import uvt.sma.helpers.MessageTemplate;
 
 import java.io.IOException;
@@ -25,7 +25,7 @@ import java.util.Map;
 public class SortingAgent extends Agent {
     private static final long serialVersionUID = 1L;
     private String targetFolder;
-    private DFAgentDescription[] guiBosses; // list of sorting services
+    private DFAgentDescription[] guiBosses; // list of GUI services
 
     private static final Logger LOGGER = LogManager.getLogger(SortingAgent.class);
     @Override
@@ -33,8 +33,8 @@ public class SortingAgent extends Agent {
         LOGGER.info("Sorting Agent {} is starting up.", getLocalName());
 
         // add behaviours
-        addBehaviour(new RegisterService());
-        addBehaviour(new MessageListener());
+        addBehaviour(new RegisterService());    // register service
+        addBehaviour(new MessageListener());    // listen for messages
     }
 
     @Override
@@ -42,6 +42,11 @@ public class SortingAgent extends Agent {
         LOGGER.info("Sorting Agent {} is shutting down.", getLocalName());
     }
 
+    /*
+        * Registers the sorting service with the Directory Facilitator (DF).
+        * The service type is "sorting" and the name is based on the agent's local name.
+        * This allows other agents to discover this sorting service.
+     */
     private class RegisterService extends OneShotBehaviour {
         @Override
         public void action() {
@@ -147,6 +152,11 @@ public class SortingAgent extends Agent {
         }
     }
 
+    /*
+        * Sorts files into categories based on the provided file map.
+        * Each category corresponds to a folder in the target directory.
+        * @param fileMap A map where keys are category names and values are lists of file paths.
+     */
     private void sortFiles(Map<String, List<String>> fileMap) {
 
         LOGGER.info("Sorting files into categories...");
