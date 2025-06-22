@@ -17,7 +17,7 @@ public class GUIAgent extends Agent {
     private String sourceFolder;
     private String targetFolder;
 
-    private Boolean deepScan = false; // TODO make this configurable from UI
+    private Boolean deepScan;
 
     private DFAgentDescription[] sorters; // list of services
     private DFAgentDescription[] monitors; // list of services
@@ -30,11 +30,13 @@ public class GUIAgent extends Agent {
 
         // Initialize source and target folders
         Object[] args = getArguments();
-        if (args != null && args.length >= 2) {
+        if (args != null && args.length >= 3) {
             sourceFolder = (String) args[0];
             targetFolder = (String) args[1];
+            deepScan = Boolean.parseBoolean((String) args[2]);
             LOGGER.info("Source folder: {}", sourceFolder);
             LOGGER.info("Target folder: {}", targetFolder);
+            LOGGER.info("Deep scan option: {}", deepScan);
         } else {
             LOGGER.error("No source or target folder provided. Please provide both as arguments.");
         }

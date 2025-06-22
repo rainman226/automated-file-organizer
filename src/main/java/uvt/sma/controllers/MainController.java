@@ -3,6 +3,7 @@ package uvt.sma.controllers;
 import javafx.application.Platform;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
+import javafx.scene.control.CheckBox;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.scene.text.Text;
@@ -24,6 +25,8 @@ public class MainController {
     @FXML
     private Button targetSelectButton;
     @FXML
+    private Button deepScanButton;
+    @FXML
     private TextField sourceTextField;
     @FXML
     private TextField targetTextField;
@@ -35,8 +38,8 @@ public class MainController {
     private TextArea textArea;
 
     private String sourcePath;
-
     private String targetPath;
+    private Boolean deepScan = false;
 
     @FXML
     public void initialize() {
@@ -116,17 +119,26 @@ public class MainController {
         }
     }
 
+    public void toggleDeepScan() {
+        if(!deepScan) {
+            deepScan = true;
+            deepScanButton.setText("Deep Scan: ON");
+            System.out.println("Deep scan enabled.");
+        } else {
+            deepScan = false;
+            deepScanButton.setText("Deep Scan: OFF");
+            System.out.println("Deep scan disabled.");
+        }
+    }
+
     public void startSorting() {
         if (sourcePath == null || targetPath == null) {
             infoText.setText("Please select both source and target folders.");
             return;
         }
 
-        // not the best way but it works so who cares
-        StartPlatform platform = new StartPlatform(sourcePath,
-                targetPath,
-                false);
+            StartPlatform platform = new StartPlatform(sourcePath, targetPath, deepScan);
+            platform.startPlatform();
 
-        platform.startPlatform();
     }
 }

@@ -8,12 +8,16 @@ import jade.wrapper.StaleProxyException;
 public class StartPlatform {
     private static String sourceFolder;
     private static String targetFolder;
-    private Boolean deepScan;
+    private static Boolean deepScan;
 
     public StartPlatform(String sourceFolder, String targetFolder, Boolean deepScan) {
         StartPlatform.sourceFolder = sourceFolder;
         StartPlatform.targetFolder = targetFolder;
-        this.deepScan = deepScan;
+        StartPlatform.deepScan = deepScan;
+    }
+
+    public StartPlatform() {
+
     }
 
     public static void startPlatform() {
@@ -57,8 +61,7 @@ public class StartPlatform {
             mainContainer.createNewAgent("manager", "uvt.sma.agents.ClassifierManager", managerArgs).start();
 
             // MonitorAgent
-            Object[] argsMonitor = new Object[]{"C:\\Users\\Asus\\Desktop\\test", "false"};
-            monitorContainer.createNewAgent("monitor", "uvt.sma.agents.MonitorAgent", argsMonitor).start();
+            monitorContainer.createNewAgent("monitor", "uvt.sma.agents.MonitorAgent", null).start();
 
             // SorterAgent
             // should get target folder from param
@@ -66,7 +69,7 @@ public class StartPlatform {
 
             // GUI + ClassifierManager
             // GUI should get the file path from the user
-            Object[] argsGui = new Object[]{sourceFolder, targetFolder};
+            Object[] argsGui = new Object[]{sourceFolder, targetFolder, deepScan.toString()};
             mainContainer.createNewAgent("gui", "uvt.sma.agents.GUIAgent", argsGui).start();
 
 

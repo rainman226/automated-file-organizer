@@ -13,6 +13,9 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import uvt.sma.helpers.MessageTemplate;
 
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.*;
 
 public class ClassifierWorkerAgent extends Agent {
@@ -90,17 +93,38 @@ public class ClassifierWorkerAgent extends Agent {
         public void action() {
             Map<String, List<String>> fileCategories = new HashMap<>();
 
-            for(String filePath : scannedFiles) {
-                String extension = filePath.substring(filePath.lastIndexOf('.')).toLowerCase();
+            for (String filePath : scannedFiles) {
+                Path path = Paths.get(filePath);
+
+                // Skip directories (just in case one slipped in)
+                if (Files.isDirectory(path)) {
+                    LOGGER.warn("Skipping directory: {}", filePath);
+                    continue;
+                }
+
+                // Extract extension safely
+                String extension;
+                int dotIndex = filePath.lastIndexOf('.');
+                int sepIndex = Math.max(filePath.lastIndexOf('/'), filePath.lastIndexOf('\\'));
+
+                if (dotIndex == -1 || dotIndex < sepIndex || dotIndex == filePath.length() - 1) {
+                    extension = ""; // No extension
+                } else {
+                    extension = filePath.substring(dotIndex).toLowerCase(); // includes the dot
+                }
+
+                // Get category or default to "Unknown"
                 String category = ClassifierManager.getCategoryForFile(extension);
+                if (category == null) {
+                    category = "Unknown";
+                }
 
-                // initialize the category list if it doesn't exist
-                fileCategories.computeIfAbsent(category, k -> new ArrayList<>());
-
-                // add the file to the corresponding category
-                fileCategories.get(category).add(filePath);
+                // Add file to the category list
+                fileCategories.computeIfAbsent(category, k -> new ArrayList<>()).add(filePath);
             }
+
             LOGGER.info("Classified {} files into {} categories.", scannedFiles.size(), fileCategories.size());
+            System.out.println("Categories:" + fileCategories.keySet());
 
             searchForSpecializedClassifiers(fileCategories);
             sendClassifiedFilesToSorter(fileCategories);
