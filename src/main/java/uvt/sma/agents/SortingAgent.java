@@ -165,7 +165,7 @@ public class SortingAgent extends Agent {
             String category = entry.getKey();
             List<String> files = entry.getValue();
 
-            // Sanitize category name before using it in a path
+            // sanitize category name before using it in a path
             String safeCategoryName = sanitizeCategoryName(category);
             Path categoryFolder;
 
@@ -197,6 +197,12 @@ public class SortingAgent extends Agent {
             //...
     }
 
+    /*
+        * Sanitizes the category name by replacing invalid characters with underscores.
+        * This ensures that the category name can be used as a directory name.
+        * @param category The original category name.
+        * @return A sanitized version of the category name.
+     */
     private String sanitizeCategoryName(String category) {
         return category.replaceAll("[\\\\/:*?\"<>|]", "_").trim();
     }

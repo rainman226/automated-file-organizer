@@ -10,6 +10,9 @@ public class StartPlatform {
     private static String targetFolder;
     private static Boolean deepScan;
 
+    private static AgentContainer mainContainer;
+    private static final String GUI_AGENT_NAME = "gui";
+
     public StartPlatform(String sourceFolder, String targetFolder, Boolean deepScan) {
         StartPlatform.sourceFolder = sourceFolder;
         StartPlatform.targetFolder = targetFolder;
@@ -27,7 +30,7 @@ public class StartPlatform {
 
         // === Main Container ===
         Profile pMain = new ProfileImpl();
-        AgentContainer mainContainer = rt.createMainContainer(pMain);
+        mainContainer = rt.createMainContainer(pMain);
 
         // === Monitor Container ===
         Profile pMonitor = new ProfileImpl();
@@ -70,10 +73,29 @@ public class StartPlatform {
             // GUI + ClassifierManager
             // GUI should get the file path from the user
             Object[] argsGui = new Object[]{sourceFolder, targetFolder, deepScan.toString()};
-            mainContainer.createNewAgent("gui", "uvt.sma.agents.GUIAgent", argsGui).start();
+            mainContainer.createNewAgent(GUI_AGENT_NAME, "uvt.sma.agents.GUIAgent", argsGui).start();
 
 
         } catch (StaleProxyException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public static void restartGuiAgent() {
+        try {
+            // Kill the old GUI agent
+            jade.wrapper.AgentController existingGui = mainContainer.getAgent(GUI_AGENT_NAME);
+            if (existingGui != null) {
+                existingGui.kill();
+                Thread.sleep(500); // Wait a bit to ensure it's fully terminated
+            }
+
+            // Create a new GUI agent with updated arguments
+            Object[] argsGui = new Object[]{sourceFolder, targetFolder, deepScan.toString()};
+            mainContainer.createNewAgent(GUI_AGENT_NAME, "uvt.sma.agents.GUIAgent", argsGui).start();
+
+            System.out.println("GUIAgent restarted successfully.");
+        } catch (Exception e) {
             e.printStackTrace();
         }
     }

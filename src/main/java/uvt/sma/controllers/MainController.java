@@ -40,6 +40,7 @@ public class MainController {
     private String sourcePath;
     private String targetPath;
     private Boolean deepScan = false;
+    private Boolean alreadyStarted = false;
 
     @FXML
     public void initialize() {
@@ -137,8 +138,12 @@ public class MainController {
             return;
         }
 
-            StartPlatform platform = new StartPlatform(sourcePath, targetPath, deepScan);
-            platform.startPlatform();
-
+        StartPlatform platform = new StartPlatform(sourcePath, targetPath, deepScan);
+        if (!alreadyStarted) {
+            platform.startPlatform();        // Initialize platform (only once)
+            alreadyStarted = true;           // Mark it as started
+        } else {
+            StartPlatform.restartGuiAgent(); // Just restart the GUI agent
+        }
     }
 }
